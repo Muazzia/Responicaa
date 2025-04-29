@@ -10,4 +10,5 @@ export class ROUTES {
 
   // BPO SUB ROUTES
   static SALES = this.BPO + "/sales";
+  static CUSTOMERSUPPORT = this.BPO + "/customerSupport";
 }
