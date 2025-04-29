@@ -7,7 +7,7 @@ import { TbMailBitcoin } from "react-icons/tb";
 const LandingPage = () => {
   return (
     <>
-      <div className="mt-14 flex flex-col px-4 md:px-10 bg-[#f2f3f5]">
+      <div className=" flex flex-col px-4 md:px-10 bg-[#f2f3f5]">
         <div className="flex flex-col-reverse md:flex-row justify-around items-center gap-10">
           {/* Text Section */}
           <div className="flex-[0.5] flex flex-col justify-center items-center text-center gap-10">
@@ -309,7 +309,12 @@ const LandingPage = () => {
       </div>
       <div className=" text-center py-14 flex flex-col gap-5 justify-center items-center">
         <h1 className="text-5xl font-bold">OUR CEO</h1>
-        <img src="/images/landingPage/ceo.webp" alt="ceo" width={400} height={800} />
+        <img
+          src="/images/landingPage/ceo.webp"
+          alt="ceo"
+          width={400}
+          height={800}
+        />
         <div>
           <h1 className="text-2xl font-semibold">Syed Zain Ul Hussain Zaidi</h1>
           <h1 className="text-lg">(CEO)</h1>
@@ -326,114 +331,115 @@ const LandingPage = () => {
         </h2>
         <div className="max-w-4xl mx-auto space-y-10">
           <Collapse accordion>
-        <Collapse.Panel
-          header={
-          <div className="flex justify-between items-center">
-        <span className="text-lg md:text-xl font-semibold text-black">
-          Do you Offer Free Consultations?
-        </span>
-        <span className="text-xl font-bold text-gray-500">+</span>
-          </div>
-          }
-          key="1"
-          className="px-6 py-4"
-        >
-          <p className="text-base md:text-lg text-gray-600">
-          Absolutely! We believe the best partnerships start with a chat.
-          In your free consultation, we'll talk about what you're trying
-          to achieve online. No pressure, just a friendly chat to see how
-          we can help you crush your goals. You'll walk away with clear
-          ideas and a roadmap to online success!
-          </p>
-        </Collapse.Panel>
-        <Collapse.Panel
-          header={
-          <div className="flex justify-between items-center">
-        <span className="text-lg md:text-xl font-semibold text-black">
-          What Makes Your Digital Solutions Special?
-        </span>
-        <span className="text-xl font-bold text-gray-500">+</span>
-          </div>
-          }
-          key="2"
-          className="px-6 py-4"
-        >
-          <p className="text-base md:text-lg text-gray-600">
-          Our team rocks with passion and brains, and we don't just throw
-          generic solutions at you. We listen to your goals, your
-          struggles, and even your budget, then craft a plan that's
-          perfect for you. Think of us as your digital bestie, cheering
-          you on and making sure you get the results you deserve.
-          </p>
-        </Collapse.Panel>
-        <Collapse.Panel
-          header={
-          <div className="flex justify-between items-center">
-        <span className="text-lg md:text-xl font-semibold text-black">
-          Do you Design and Develop Websites?
-        </span>
-        <span className="text-xl font-bold text-gray-500">+</span>
-          </div>
-          }
-          key="3"
-          className="px-6 py-4"
-        >
-          <p className="text-base md:text-lg text-gray-600">
-          Websites are like your online home, so they got to be stunning
-          and useful. We build everything from simple, eye-catching
-          landing pages to full-blown online stores. We'll make sure your
-          website is beautiful, easy to use, and converts visitors into
-          happy customers.
-          </p>
-        </Collapse.Panel>
-        <Collapse.Panel
-          header={
-          <div className="flex justify-between items-center">
-        <span className="text-lg md:text-xl font-semibold text-black">
-          Can you Help me Improve my Website SEO?
-        </span>
-        <span className="text-xl font-bold text-gray-500">+</span>
-          </div>
-          }
-          key="4"
-          className="px-6 py-4"
-        >
-          <p className="text-base md:text-lg text-gray-600">
-          Getting found online can be tricky, but SEO is our superpower!
-          We help you climb the search engine ladder by figuring out what
-          words people are using to find stuff like yours. Then, we'll
-          create relevancy throughout your website and build some online
-          connections so everyone knows how awesome you are.
-          </p>
-        </Collapse.Panel>
-        <Collapse.Panel
-          header={
-          <div className="flex justify-between items-center">
-        <span className="text-lg md:text-xl font-semibold text-black">
-          How do you Track and Measure the Results of Your Campaigns?
-        </span>
-        <span className="text-xl font-bold text-gray-500">+</span>
-          </div>
-          }
-          key="5"
-          className="px-6 py-4"
-        >
-          <p className="text-base md:text-lg text-gray-600">
-          We utilize innovative tools to track every click, visit, and
-          purchase on your website. Then, we turn that data into clear
-          reports that show you exactly how your campaigns are doing.
-          Think of it as a secret decoder ring for your online success.
-          We use the insights to constantly tweak and improve your
-          campaigns, making sure your money works extra hard for you.
-          </p>
-        </Collapse.Panel>
+            <Collapse.Panel
+              header={
+                <div className="flex justify-between items-center">
+                  <span className="text-lg md:text-xl font-semibold text-black">
+                    Do you Offer Free Consultations?
+                  </span>
+                  <span className="text-xl font-bold text-gray-500">+</span>
+                </div>
+              }
+              key="1"
+              className="px-6 py-4"
+            >
+              <p className="text-base md:text-lg text-gray-600">
+                Absolutely! We believe the best partnerships start with a chat.
+                In your free consultation, we'll talk about what you're trying
+                to achieve online. No pressure, just a friendly chat to see how
+                we can help you crush your goals. You'll walk away with clear
+                ideas and a roadmap to online success!
+              </p>
+            </Collapse.Panel>
+            <Collapse.Panel
+              header={
+                <div className="flex justify-between items-center">
+                  <span className="text-lg md:text-xl font-semibold text-black">
+                    What Makes Your Digital Solutions Special?
+                  </span>
+                  <span className="text-xl font-bold text-gray-500">+</span>
+                </div>
+              }
+              key="2"
+              className="px-6 py-4"
+            >
+              <p className="text-base md:text-lg text-gray-600">
+                Our team rocks with passion and brains, and we don't just throw
+                generic solutions at you. We listen to your goals, your
+                struggles, and even your budget, then craft a plan that's
+                perfect for you. Think of us as your digital bestie, cheering
+                you on and making sure you get the results you deserve.
+              </p>
+            </Collapse.Panel>
+            <Collapse.Panel
+              header={
+                <div className="flex justify-between items-center">
+                  <span className="text-lg md:text-xl font-semibold text-black">
+                    Do you Design and Develop Websites?
+                  </span>
+                  <span className="text-xl font-bold text-gray-500">+</span>
+                </div>
+              }
+              key="3"
+              className="px-6 py-4"
+            >
+              <p className="text-base md:text-lg text-gray-600">
+                Websites are like your online home, so they got to be stunning
+                and useful. We build everything from simple, eye-catching
+                landing pages to full-blown online stores. We'll make sure your
+                website is beautiful, easy to use, and converts visitors into
+                happy customers.
+              </p>
+            </Collapse.Panel>
+            <Collapse.Panel
+              header={
+                <div className="flex justify-between items-center">
+                  <span className="text-lg md:text-xl font-semibold text-black">
+                    Can you Help me Improve my Website SEO?
+                  </span>
+                  <span className="text-xl font-bold text-gray-500">+</span>
+                </div>
+              }
+              key="4"
+              className="px-6 py-4"
+            >
+              <p className="text-base md:text-lg text-gray-600">
+                Getting found online can be tricky, but SEO is our superpower!
+                We help you climb the search engine ladder by figuring out what
+                words people are using to find stuff like yours. Then, we'll
+                create relevancy throughout your website and build some online
+                connections so everyone knows how awesome you are.
+              </p>
+            </Collapse.Panel>
+            <Collapse.Panel
+              header={
+                <div className="flex justify-between items-center">
+                  <span className="text-lg md:text-xl font-semibold text-black">
+                    How do you Track and Measure the Results of Your Campaigns?
+                  </span>
+                  <span className="text-xl font-bold text-gray-500">+</span>
+                </div>
+              }
+              key="5"
+              className="px-6 py-4"
+            >
+              <p className="text-base md:text-lg text-gray-600">
+                We utilize innovative tools to track every click, visit, and
+                purchase on your website. Then, we turn that data into clear
+                reports that show you exactly how your campaigns are doing.
+                Think of it as a secret decoder ring for your online success. We
+                use the insights to constantly tweak and improve your campaigns,
+                making sure your money works extra hard for you.
+              </p>
+            </Collapse.Panel>
           </Collapse>
         </div>
       </section>
 
-
       <div className="bg-[#f9f9f9] py-14">
-        <h2 className="text-4xl font-semibold text-center mb-12">Testimonials</h2>
+        <h2 className="text-4xl font-semibold text-center mb-12">
+          Testimonials
+        </h2>
         <Carousel
           autoplay
           autoplaySpeed={2500}
@@ -441,35 +447,40 @@ const LandingPage = () => {
           slidesToShow={3}
           swipeToSlide
           responsive={[
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
           ]}
         >
           {[...Array(6)].map((_, i) => (
-        <div key={i} className="flex flex-col items-center text-center px-4">
-          <img
-            src={`/images/testimonials/user${i + 1}.jpg`}
-            alt={`User ${i + 1}`}
-            className="w-20 h-20 rounded-full object-cover mb-4"
-          />
-          <div className="text-yellow-500 text-lg mb-2">★★★★★</div>
-          <p className="text-base leading-relaxed mb-4">
-            {i % 2 === 0
-          ? "Simply put, I can confidently recommend Nexcel Solution’s App development services. The commitment to excellence was evident from the moment the conversation started right to the end."
-          : "A company with professional individuals who are confident enough to meet deadlines and handle immediate changes. I needed assistance with my website’s UI/UX and seriously, they exceeded my expectations."}
-          </p>
-          <h3 className="font-semibold">{i % 2 === 0 ? "Michael" : "John"}</h3>
-        </div>
+            <div
+              key={i}
+              className="flex flex-col items-center text-center px-4"
+            >
+              <img
+                src={`/images/testimonials/user${i + 1}.jpg`}
+                alt={`User ${i + 1}`}
+                className="w-20 h-20 rounded-full object-cover mb-4"
+              />
+              <div className="text-yellow-500 text-lg mb-2">★★★★★</div>
+              <p className="text-base leading-relaxed mb-4">
+                {i % 2 === 0
+                  ? "Simply put, I can confidently recommend Nexcel Solution’s App development services. The commitment to excellence was evident from the moment the conversation started right to the end."
+                  : "A company with professional individuals who are confident enough to meet deadlines and handle immediate changes. I needed assistance with my website’s UI/UX and seriously, they exceeded my expectations."}
+              </p>
+              <h3 className="font-semibold">
+                {i % 2 === 0 ? "Michael" : "John"}
+              </h3>
+            </div>
           ))}
         </Carousel>
       </div>
