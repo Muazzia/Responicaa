@@ -108,7 +108,7 @@ const WebDevelopment = () => {
             </div>
             <div className="flex-[0.5] flex justify-center items-center">
               <img
-                src={"/pages/webdevelopment/Website-Development.png"}
+                src={"/images/digitalSolutions/Website-Development.png"}
                 alt="web-development"
                 className="w-[620px] h-[460px]"
               />
@@ -200,7 +200,7 @@ const WebDevelopment = () => {
         </div>
         <div className="relative h-[700px]">
           <img
-            src="/pages/webdevelopment/uxDesigner.jpg"
+            src="/images/digitalSolutions/uxDesigner.jpg"
             alt="image"
             className="w-full h-full object-cover"
           />

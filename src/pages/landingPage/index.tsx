@@ -7,7 +7,7 @@ import { TbMailBitcoin } from "react-icons/tb";
 const LandingPage = () => {
   return (
     <>
-      <div className=" flex flex-col px-4 md:px-10 bg-[#f2f3f5]">
+      <div className="flex flex-col px-4 md:px-10 bg-[#f2f3f5]">
         <div className="flex flex-col-reverse md:flex-row justify-around items-center gap-10">
           {/* Text Section */}
           <div className="flex-[0.5] flex flex-col justify-center items-center text-center gap-10">
