@@ -1,41 +1,46 @@
+import HeroSectionWithCTA from "../../../components/HeroSectionWithCTA";
+import ImageWithServiceDetails from "../../../components/ImageWithServiceDetails";
 import WebDevService from "./components/webDevService";
 
-import { IoIosCheckmarkCircle } from "react-icons/io";
-
 const WebDevelopment = () => {
+  const whyChooseOurServiceData = [
+    {
+      id: 1,
+      title: "Custom Web Development",
+      description:
+        "To turn your business ideas into fact, your company and our web developers work closely together. We build your web presence by utilizing open-source platform ideas while utilizing cutting-edge technology to keep your business secure. You can design anything with the aid of our services, including simple content management systems, educational websites, personalized apps, and online shops.",
+    },
+    {
+      id: 2,
+      title: "Streamlined User-Friendly Web Solutions",
+      description:
+        "The creation of clear, user-friendly websites and applications that provide a unique user experience is our aim. We start by learning what your business needs in a new website or application. We do market and competitor research for the custom Development and design process and produce the necessary documentation. We develop a project plan to provide unique and innovative work.",
+    },
+    {
+      id: 3,
+      title: "Dynamic Design and Seamless Integration   ",
+      description:
+        "Our web development company makes sure to give the website design samples life by integrating them with CMS and adding content. Before the website is released, we provide you with a link to a trial address so you can check out the final design. Teach your staff how to manage the necessary access to your website and application as well. We offer a variety of custom web development services.",
+    },
+    {
+      id: 4,
+      title: "Responsive & Intuitive Web Development",
+      description:
+        "Our best web development company takes care of all screen lengths, and content exposure is chosen by designers. We make sure that the logical path progresses by putting the most crucial details and content in the front.",
+    },
+  ];
+
   return (
     <div className="">
-      <div className="bg-black">
-        <div className=" max-w-7xl mx-auto flex  bg-black text-white py-[40px]">
-          <div className="space-y-[20px] max-w-[768px]">
-            <span className="bg-[#CCCECF] text-black rounded-xs px-2 py-2  text-xs font-semibold ">
-              Digital Solution
-            </span>
-            <div>
-              <p className="text-[60px] font-semibold">
-                Web Development Service
-              </p>
-              <p className="font-normal text-[20px]">
-                Welcome to Nexcel Solutions, your trusted partner in shaping
-                digital dreams into reality. As a leading web development
-                services company, we specialize in transforming innovative ideas
-                and business goals into powerful, user-friendly websites and web
-                applications. Our dedicated team of skilled developers,
-                designers, and strategists collaborates seamlessly to deliver
-                tailor-made solutions that not only meet but exceed your
-                expectations.
-              </p>
-            </div>
-
-            <div>
-              <span className="rounded-xs text-primary bg-white px-3 py-2 font-semibold">
-                Schedule A Free Consultation
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="max-w-7xl mx-auto py-[30px] space-y-[30px]">
+      <HeroSectionWithCTA
+        description="Welcome to Nexcel Solutions, your trusted partner in shaping digital dreams into reality. As a leading web development services company, we specialize in transforming innovative ideas and business goals into powerful, user-friendly websites and web applications. Our dedicated team of skilled developers, designers, and strategists collaborates seamlessly to deliver tailor-made solutions that not only meet but exceed your expectations."
+        heading="Web Development Services"
+        primaryButtonLabel="Digital Solutions"
+        primaryButtonUrl="/digitalSolutions"
+        secondaryButtonLabel="Schedule A Free Consultation  "
+        secondaryButtonUrl="contact"
+      />
+      <div className="max-w-7xl mx-auto py-[40px] space-y-[30px]">
         <div>
           <div className="text-center">
             <p className="text-[48px] font-semibold text-primary">
@@ -59,7 +64,7 @@ const WebDevelopment = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col gap-[60px]">
+        <div className="mb-[20px] flex flex-col gap-[80px]">
           <div className="flex w-full">
             <div className="flex-[0.5]">
               <p className="capitalize text-[48px] font-semibold">
@@ -142,7 +147,7 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="bg-black py-[40px] text-white text-center">
+      <div className="bg-black py-[50px] text-white text-center">
         <div className="max-w-7xl mx-auto">
           <p className="text-[48px] mb-[10px] text-primary font-semibold">
             Benefits of Web Development
@@ -157,12 +162,25 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="flex w-full h-[400px]">
-        <div className="flex-1/2 bg-[#F7F7F7] mx-auto">
-          <p>asdf</p>
-          <p>asdf</p>
+      <div className="flex w-full " id="contact">
+        <div className="flex-1/2 flex w-full bg-[#F7F7F7] justify-end">
+          <p className=" text-[16px]">
+            Brand and Business Awareness A well-designed website acts as a
+            visitor’s virtual storefront, creating a lasting first impression.
+            Your website can become an extension of your brand’s identity by
+            combining the appropriate amount of aesthetics and functionality.
+            Our professional CMS development services can design your website
+            with your brand’s colors, logo, and messaging in mind to create a
+            visually appealing identity that will appeal to visitors and improve
+            brand recall and recognition. You can present your brand’s unique
+            story and values online because of our web design services. You can
+            effectively communicate your brand’s mission and culture by using
+            attractive imagery, exciting information, and interactive features.
+            This emotional bond develops a closer connection with your audience,
+            transforming casual site visitors into committed brand promoters.
+          </p>
         </div>
-        <div className="flex-1/2 bg-[#A71717]"></div>
+        <div className="flex-1/2 bg-[#A71717]">asdlkfjsald</div>
       </div>
 
       <div className="max-w-7xl mx-auto text-center py-[30px]">
@@ -179,36 +197,53 @@ const WebDevelopment = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mt-[40px] mx-auto items-center grid grid-cols-3 gap-[30px]">
-        <div className="col-span-2">
-          <p className="text-[30px] font-semibold">
-            Why Choose Our Web Development Services?
-          </p>
-          <p className="text-[16px]">
-            Nexcel Solutions has been offering web design and development
-            services for several years. Our expertise in developing safe,
-            user-friendly websites and app development services assists business
-            growth. We create HTML, CSS, and Javascript-based web pages with
-            interactive content that loads quickly. The Nexcel design creates an
-            excellent user experience for visitors by increasing your view from
-            the smallest screen size.
-          </p>
-
-          <div className="mt-[30px]">
-            <RenderWhyChoooseService />
-          </div>
-        </div>
-        <div className="relative h-[700px]">
-          <img
-            src="/images/digitalSolutions/uxDesigner.jpg"
-            alt="image"
-            className="w-full h-full object-cover"
-          />
-        </div>
-      </div>
+      <ImageWithServiceDetails
+        imageUrl="/images/digitalSolutions/uxDesigner.jpg"
+        label="Why Choose Our Web Development Services?"
+        description="Nexcel Solutions has been offering web design and development services
+          for several years. Our expertise in developing safe, user-friendly
+          websites and app development services assists business growth. We
+          create HTML, CSS, and Javascript-based web pages with interactive
+          content that loads quickly. The Nexcel design creates an excellent
+          user experience for visitors by increasing your view from the smallest
+          screen size."
+        data={whyChooseOurServiceData}
+      />
     </div>
   );
 };
+
+// const ComponentWithImageAndText = () => {
+//   return (
+//     <div className="max-w-7xl my-[70px] mx-auto items-center flex gap-[50px]">
+//       <div className="flex-[0.59]">
+//         <p className="text-[30px] font-semibold">
+//           Why Choose Our Web Development Services?
+//         </p>
+//         <p className="text-[16px]">
+//           Nexcel Solutions has been offering web design and development services
+//           for several years. Our expertise in developing safe, user-friendly
+//           websites and app development services assists business growth. We
+//           create HTML, CSS, and Javascript-based web pages with interactive
+//           content that loads quickly. The Nexcel design creates an excellent
+//           user experience for visitors by increasing your view from the smallest
+//           screen size.
+//         </p>
+
+//         <div className="mt-[30px]">
+//           <RenderWhyChoooseService />
+//         </div>
+//       </div>
+//       <div className="relative flex-[0.41] h-[900px]">
+//         <img
+//           src="/images/digitalSolutions/uxDesigner.jpg"
+//           alt="image"
+//           className="w-full h-full object-cover"
+//         />
+//       </div>
+//     </div>
+//   );
+// };
 
 const RenderWebDevService = () => {
   const dataArr = [
@@ -257,7 +292,7 @@ const RenderWebDevService = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[30px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[100px]">
       {dataArr.map((item) => (
         <WebDevService
           key={item.id}
@@ -266,52 +301,6 @@ const RenderWebDevService = () => {
           description={item.description}
         />
       ))}
-    </div>
-  );
-};
-
-const RenderWhyChoooseService = () => {
-  const data = [
-    {
-      id: 1,
-      title: "Custom Web Development",
-      description:
-        "To turn your business ideas into fact, your company and our web developers work closely together. We build your web presence by utilizing open-source platform ideas while utilizing cutting-edge technology to keep your business secure. You can design anything with the aid of our services, including simple content management systems, educational websites, personalized apps, and online shops.",
-    },
-    {
-      id: 2,
-      title: "Streamlined User-Friendly Web Solutions",
-      description:
-        "The creation of clear, user-friendly websites and applications that provide a unique user experience is our aim. We start by learning what your business needs in a new website or application. We do market and competitor research for the custom Development and design process and produce the necessary documentation. We develop a project plan to provide unique and innovative work.",
-    },
-    {
-      id: 3,
-      title: "Dynamic Design and Seamless Integration   ",
-      description:
-        "Our web development company makes sure to give the website design samples life by integrating them with CMS and adding content. Before the website is released, we provide you with a link to a trial address so you can check out the final design. Teach your staff how to manage the necessary access to your website and application as well. We offer a variety of custom web development services.",
-    },
-    {
-      id: 4,
-      title: "Responsive & Intuitive Web Development",
-      description:
-        "Our best web development company takes care of all screen lengths, and content exposure is chosen by designers. We make sure that the logical path progresses by putting the most crucial details and content in the front.",
-    },
-  ];
-  return (
-    <div className="grid grid-cols-2 gap-[40px] ">
-      {data.map((item) => {
-        return (
-          <div className="flex gap-[10px] items-start">
-            <div className="mt-[3px]">
-              <IoIosCheckmarkCircle size={24} />
-            </div>
-            <div>
-              <p className="text-[20px] font-semibold ">{item.title}</p>
-              <p className="text-[14px]">{item.description}</p>
-            </div>
-          </div>
-        );
-      })}
     </div>
   );
 };

@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+
+@theme{
+    --color-primary:#AE0000; 
+  }
+
+.perspective {
+    perspective: 1000px;
+  }
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotate-x-180 {
+    transform: rotateX(180deg);
+  }
+  /* Add this new class */
+  .rotating-card {
+    transform: rotateX(0deg);
+    transition: transform 0.7s ease;
+  }
+  .rotating-card:hover {
+    transform: rotateX(180deg);
+  }
