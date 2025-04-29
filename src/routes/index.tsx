@@ -3,6 +3,7 @@ import LandingPage from "../pages/landingPage";
 import WebDevelopment from "../pages/digitalSolutions/webDevelopment";
 import { ROUTES } from "../constants";
 import Layout from "../components/Layout";
+import Sales from "../pages/bpo/sales";
 
 export const routes = createBrowserRouter([
   {
@@ -16,6 +17,12 @@ export const routes = createBrowserRouter([
       {
         path: ROUTES.WEBDEVELOPMENT,
         element: <WebDevelopment />,
+      },
+
+      // BPO SUB ROUTES
+      {
+        path: ROUTES.SALES,
+        element: <Sales />,
       },
     ],
   },

@@ -208,6 +208,7 @@ const WebDevelopment = () => {
           user experience for visitors by increasing your view from the smallest
           screen size."
         data={whyChooseOurServiceData}
+        imageClass="h-[900px]"
       />
     </div>
   );

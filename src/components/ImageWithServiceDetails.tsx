@@ -1,4 +1,5 @@
 import { IoIosCheckmarkCircle } from "react-icons/io";
+import { cn } from "../lib/utils";
 
 interface Data {
   id: number;
@@ -11,6 +12,7 @@ interface Props {
   label: string;
   description: string;
   data: Data[];
+  imageClass: string;
 }
 
 const ImageWithServiceDetails = ({
@@ -18,6 +20,7 @@ const ImageWithServiceDetails = ({
   label,
   description,
   data,
+  imageClass = "",
 }: Props) => {
   return (
     <div className="max-w-7xl my-[70px] mx-auto items-center flex gap-[50px]">
@@ -29,7 +32,7 @@ const ImageWithServiceDetails = ({
           <RenderWhyChoooseService data={data} />
         </div>
       </div>
-      <div className="relative flex-[0.41] h-[900px]">
+      <div className={cn(`flex-[0.41]  ${imageClass} `)}>
         <img
           src={imageUrl}
           alt="image"
