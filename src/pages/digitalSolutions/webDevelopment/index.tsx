@@ -212,7 +212,7 @@ const WebDevelopment = () => {
           user experience for visitors by increasing your view from the smallest
           screen size."
         data={whyChooseOurServiceData}
-        imageClass="max-h-[180px] lg:h-[900px]"
+        imageClass="h-auto max-h-[180px] lg:max-h-none lg:h-[900px]"
       />
     </div>
   );
