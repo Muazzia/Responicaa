@@ -7,7 +7,7 @@ import { TbMailBitcoin } from "react-icons/tb";
 const LandingPage = () => {
   return (
     <>
-      <div className="mt-14 flex flex-col px-4 md:px-10 bg-[#f2f3f5]">
+      <div className="flex flex-col px-4 md:px-10 bg-[#f2f3f5]">
         <div className="flex flex-col-reverse md:flex-row justify-around items-center gap-10">
           {/* Text Section */}
           <div className="flex-[0.5] flex flex-col justify-center items-center text-center gap-10">
@@ -309,7 +309,12 @@ const LandingPage = () => {
       </div>
       <div className=" text-center py-14 flex flex-col gap-5 justify-center items-center">
         <h1 className="text-5xl font-bold">OUR CEO</h1>
-        <img src="/images/landingPage/ceo.webp" alt="ceo" width={400} height={800} />
+        <img
+          src="/images/landingPage/ceo.webp"
+          alt="ceo"
+          width={400}
+          height={800}
+        />
         <div>
           <h1 className="text-2xl font-semibold">Syed Zain Ul Hussain Zaidi</h1>
           <h1 className="text-lg">(CEO)</h1>
@@ -431,9 +436,10 @@ const LandingPage = () => {
         </div>
       </section>
 
-
       <div className="bg-[#f9f9f9] py-14">
-        <h2 className="text-4xl font-semibold text-center mb-12">Testimonials</h2>
+        <h2 className="text-4xl font-semibold text-center mb-12">
+          Testimonials
+        </h2>
         <Carousel
           autoplay
           autoplaySpeed={2500}
@@ -441,35 +447,40 @@ const LandingPage = () => {
           slidesToShow={3}
           swipeToSlide
           responsive={[
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
           ]}
         >
           {[...Array(6)].map((_, i) => (
-        <div key={i} className="flex flex-col items-center text-center px-4">
-          <img
-            src={`/images/testimonials/user${i + 1}.jpg`}
-            alt={`User ${i + 1}`}
-            className="w-20 h-20 rounded-full object-cover mb-4"
-          />
-          <div className="text-yellow-500 text-lg mb-2">★★★★★</div>
-          <p className="text-base leading-relaxed mb-4">
-            {i % 2 === 0
-          ? "Simply put, I can confidently recommend Nexcel Solution’s App development services. The commitment to excellence was evident from the moment the conversation started right to the end."
-          : "A company with professional individuals who are confident enough to meet deadlines and handle immediate changes. I needed assistance with my website’s UI/UX and seriously, they exceeded my expectations."}
-          </p>
-          <h3 className="font-semibold">{i % 2 === 0 ? "Michael" : "John"}</h3>
-        </div>
+            <div
+              key={i}
+              className="flex flex-col items-center text-center px-4"
+            >
+              <img
+                src={`/images/testimonials/user${i + 1}.jpg`}
+                alt={`User ${i + 1}`}
+                className="w-20 h-20 rounded-full object-cover mb-4"
+              />
+              <div className="text-yellow-500 text-lg mb-2">★★★★★</div>
+              <p className="text-base leading-relaxed mb-4">
+                {i % 2 === 0
+                  ? "Simply put, I can confidently recommend Nexcel Solution’s App development services. The commitment to excellence was evident from the moment the conversation started right to the end."
+                  : "A company with professional individuals who are confident enough to meet deadlines and handle immediate changes. I needed assistance with my website’s UI/UX and seriously, they exceeded my expectations."}
+              </p>
+              <h3 className="font-semibold">
+                {i % 2 === 0 ? "Michael" : "John"}
+              </h3>
+            </div>
           ))}
         </Carousel>
       </div>
