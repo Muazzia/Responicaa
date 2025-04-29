@@ -1,14 +1,22 @@
 import { createBrowserRouter } from "react-router-dom";
 import LandingPage from "../pages/landingPage";
-import { ROUTES } from "../constants";
 import WebDevelopment from "../pages/digitalSolutions/webDevelopment";
+import { ROUTES } from "../constants";
+import Layout from "../components/Layout";
 
 export const routes = createBrowserRouter([
-  { path: ROUTES.LANDINGPAGE, Component: LandingPage },
-
-  // DIGITAL SOLUTIONS
   {
-    path: ROUTES.WEBDEVELOPMENT,
-    Component: WebDevelopment,
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: ROUTES.LANDINGPAGE,
+        element: <LandingPage />,
+      },
+      {
+        path: ROUTES.WEBDEVELOPMENT,
+        element: <WebDevelopment />,
+      },
+    ],
   },
 ]);
