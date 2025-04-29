@@ -3,8 +3,9 @@ export class ROUTES {
 
   static BPO = "/bpo";
   static DIGITALSOLUTIONS = "/digitalSolutions";
-  static CONTACTUS = "/contactUs";
+  static CONTACT = "/contact";
 
   // DIGITAL SOLUTIONS SUB ROUTES
   static WEBDEVELOPMENT = this.DIGITALSOLUTIONS + "/webDevelopment";
+  static MOBILEDEVELOPMENT = this.DIGITALSOLUTIONS + "/mobileDevelopment";
 }
