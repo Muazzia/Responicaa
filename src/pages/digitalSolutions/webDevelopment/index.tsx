@@ -40,13 +40,13 @@ const WebDevelopment = () => {
         secondaryButtonLabel="Schedule A Free Consultation  "
         secondaryButtonUrl="contact"
       />
-      <div className="max-w-7xl mx-auto py-[40px] space-y-[30px]">
+      <div className="px-4 lg:px-5  lg:max-w-7xl lg:mx-auto py-[40px] space-y-[30px]">
         <div>
           <div className="text-center">
-            <p className="text-[48px] font-semibold text-primary">
+            <p className="text-[25px] lg:text-[48px] font-semibold text-primary">
               Our Process of Web Development Services
             </p>
-            <p className="text-[14px]">
+            <p className="text-[16px] lg:text-[14px] mt-4 lg:mt-0">
               When developing the layout and overall appearance of the website,
               many factors must be considered. To avoid becoming overloaded, the
               process of web design creation can be divided into various steps.
@@ -64,14 +64,14 @@ const WebDevelopment = () => {
           </div>
         </div>
 
-        <div className="mb-[20px] flex flex-col gap-[80px]">
-          <div className="flex w-full">
-            <div className="flex-[0.5]">
-              <p className="capitalize text-[48px] font-semibold">
-                How Things Works
+        <div className="mb-[20px] flex flex-col  gap-[55px] lg:gap-[80px]">
+          <div className="flex flex-col lg:flex-row w-full">
+            <div className="flex-[0.5] order-2 lg:order-1">
+              <p className="mb-2 lg:mb-0 text-center lg:text-left text-[25px] capitalize lg:text-[48px] font-semibold text-primary">
+                How Things Works?
               </p>
 
-              <div className="space-y-[18px]">
+              <div className="text-center lg:text-left space-y-[18px]">
                 <div>
                   <p>
                     The various steps and procedures that go into web
@@ -111,22 +111,22 @@ const WebDevelopment = () => {
                 </div>
               </div>
             </div>
-            <div className="flex-[0.5] flex justify-center items-center">
+            <div className="flex-[0.5] flex justify-center items-center order-1 lg:order-2">
               <img
                 src={"/images/digitalSolutions/Website-Development.png"}
                 alt="web-development"
-                className="w-[620px] h-[460px]"
+                className="w-[260px] h-[180px] lg:w-[620px] lg:h-[460px]"
               />
             </div>
           </div>
 
-          <div className="flex w-full gap-[20px]">
+          <div className="flex flex-col lg:flex-row w-full lg:gap-[20px]">
             <div className="flex-1/2 flex justify-center items-center">
-              <p className="text-primary  text-[48px] font-semibold text-center">
+              <p className="mb-2 lg:mb-0 text-center lg:text-left text-primary text-[25px] lg:text-[48px] font-semibold ">
                 Enterprise Web Development & Design Company
               </p>
             </div>
-            <div className="flex-1/2 space-y-[18px] ">
+            <div className="flex-1/2 space-y-[18px] text-center lg:text-left ">
               <p className="">
                 Enterprise digital solutions can include dozens of complex
                 capabilities, modules, and pieces. All of this ensures the
@@ -148,11 +148,11 @@ const WebDevelopment = () => {
       </div>
 
       <div className="bg-black py-[50px] text-white text-center">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-[48px] mb-[10px] text-primary font-semibold">
+        <div className="px-4 lg:max-w-7xl lg:mx-auto">
+          <p className="text-[25px] lg:text-[48px] mb-[10px] text-primary font-semibold">
             Benefits of Web Development
           </p>
-          <p className="text-[16px]">
+          <p className="text-[15px] lg:text-[16px]">
             A solid online presence is essential for successful branding and
             business growth in the modern age of the environment. Utilizing
             specialized development services can highlight your brand and make
@@ -162,8 +162,8 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="flex w-full " id="contact">
-        <div className="flex-1/2 flex w-full bg-[#F7F7F7] justify-end">
+      <div className=" flex flex-col lg:flex-row w-full " id="contact">
+        <div className="px-4 lg:px-0 py-4 lg:py-0 lg:flex-1/2 flex w-full bg-[#F7F7F7] justify-end">
           <p className=" text-[16px]">
             Brand and Business Awareness A well-designed website acts as a
             visitor’s virtual storefront, creating a lasting first impression.
@@ -180,11 +180,15 @@ const WebDevelopment = () => {
             transforming casual site visitors into committed brand promoters.
           </p>
         </div>
-        <div className="flex-1/2 bg-[#A71717]">asdlkfjsald</div>
+        <div className="px-4 lg:px-0 py-4 lg:py-0 lg:flex-1/2 bg-[#A71717]">
+          asdlkfjsald
+        </div>
       </div>
 
-      <div className="max-w-7xl mx-auto text-center py-[30px]">
-        <p className="text-[48px] font-semibold text-primary">Who We Are?</p>
+      <div className="px-4 lg:px-0 lg:max-w-7xl mx-auto text-center py-[30px]">
+        <p className="text-[25px] lg:text-[48px] font-semibold text-primary">
+          Who We Are?
+        </p>
         <p className="font-[16px]">
           As a leading web development company, we not just provide
           knowledgeable consultants, designers, and developers to advance your
@@ -208,43 +212,11 @@ const WebDevelopment = () => {
           user experience for visitors by increasing your view from the smallest
           screen size."
         data={whyChooseOurServiceData}
-        imageClass="h-[900px]"
+        imageClass="max-h-[180px] lg:h-[900px]"
       />
     </div>
   );
 };
-
-// const ComponentWithImageAndText = () => {
-//   return (
-//     <div className="max-w-7xl my-[70px] mx-auto items-center flex gap-[50px]">
-//       <div className="flex-[0.59]">
-//         <p className="text-[30px] font-semibold">
-//           Why Choose Our Web Development Services?
-//         </p>
-//         <p className="text-[16px]">
-//           Nexcel Solutions has been offering web design and development services
-//           for several years. Our expertise in developing safe, user-friendly
-//           websites and app development services assists business growth. We
-//           create HTML, CSS, and Javascript-based web pages with interactive
-//           content that loads quickly. The Nexcel design creates an excellent
-//           user experience for visitors by increasing your view from the smallest
-//           screen size.
-//         </p>
-
-//         <div className="mt-[30px]">
-//           <RenderWhyChoooseService />
-//         </div>
-//       </div>
-//       <div className="relative flex-[0.41] h-[900px]">
-//         <img
-//           src="/images/digitalSolutions/uxDesigner.jpg"
-//           alt="image"
-//           className="w-full h-full object-cover"
-//         />
-//       </div>
-//     </div>
-//   );
-// };
 
 const RenderWebDevService = () => {
   const dataArr = [
@@ -293,7 +265,7 @@ const RenderWebDevService = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[100px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px] mt-[70px] lg:mt-[100px]">
       {dataArr.map((item) => (
         <WebDevService
           key={item.id}
