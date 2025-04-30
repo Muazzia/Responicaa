@@ -7,6 +7,7 @@ import { Contact } from "../pages/contact";
 import { MobileDevelopment } from "../pages/digitalSolutions/mobileDevelopment";
 import Sales from "../pages/bpo/sales";
 import CustomerSupport from "../pages/bpo/customerSupport";
+import BPO from "../pages/bpo";
 
 export const routes = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ export const routes = createBrowserRouter([
       {
         path: ROUTES.CUSTOMERSUPPORT,
         element: <CustomerSupport />,
+      },
+      {
+        path: ROUTES.BPO,
+        element: <BPO />,
       },
     ],
   },
