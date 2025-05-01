@@ -7,6 +7,7 @@ import { Contact } from "../pages/contact";
 import { MobileDevelopment } from "../pages/digitalSolutions/mobileDevelopment";
 import Sales from "../pages/bpo/sales";
 import CustomerSupport from "../pages/bpo/customerSupport";
+import { DigitalMarketing } from "../pages/digitalSolutions/digitalMarketing";
 
 export const routes = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const routes = createBrowserRouter([
       {
         path: ROUTES.LANDINGPAGE,
         element: <LandingPage />,
+      },
+      {
+        path: ROUTES.DIGIALMARKETING,
+        element: <DigitalMarketing />,
       },
       {
         path: ROUTES.WEBDEVELOPMENT,

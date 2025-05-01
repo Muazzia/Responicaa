@@ -6,6 +6,7 @@ import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest"
 import { FaCircleCheck } from "react-icons/fa6";
 
 export const MobileDevelopment = () => {
+  
   return (
     <>
       {" "}
