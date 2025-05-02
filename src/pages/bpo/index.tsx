@@ -1,4 +1,58 @@
+import { ROUTES } from "../../constants";
+import ServiceBoxes from "./components/ServiceBoxes";
+
 const BPO = () => {
+  const boxData = [
+    {
+      id: 1,
+      title: "Customer Support",
+      description:
+        "We are here to ensure that your customers receive impeccable service. Our BPO outsourcing service USA enables you to always communicate with your clients.",
+      logo: <></>,
+      url: ROUTES.BPO,
+    },
+    {
+      id: 2,
+      title: "TeleSales",
+      description:
+        "Our telemarketing sales in BPO outsourcing service involve promoting products or services over the phone, targeting potential customers to increase your sales.",
+      logo: <></>,
+      url: ROUTES.BPO,
+    },
+
+    {
+      id: 3,
+      title: "Technical Support",
+      description:
+        "Technical Support will also assist with the integration of computer applications by identifying and resolving network issues.",
+      logo: <></>,
+      url: ROUTES.BPO,
+    },
+    {
+      id: 4,
+      title: "Truck Dispatch Service",
+      description:
+        "Lets make trucking easy, we have trucks and loads specialized dirve.",
+      logo: <></>,
+      url: ROUTES.BPO,
+    },
+    {
+      id: 5,
+      title: "Lead Generation",
+      description:
+        "A lead-generation service is used to grow your business, attract new clients, and create sales pipelines. It is a fundamental key to success for many businesses.",
+      logo: <></>,
+      url: ROUTES.BPO,
+    },
+    {
+      id: 6,
+      title: "Medical Billing Service",
+      description:
+        "Manage medical billing with ease and make the practice more efficient.",
+      logo: <></>,
+      url: ROUTES.BPO,
+    },
+  ];
   return (
     <div>
       <div className="max-w-7xl mx-auto">
@@ -217,7 +271,7 @@ const BPO = () => {
       </div>
 
       <div>
-        <RenderBPOServicesBoxes />
+        <ServiceBoxes data={boxData} />
       </div>
 
       <div className="max-w-7xl mx-auto mt-10">
@@ -401,21 +455,6 @@ const RenderBPOService = () => {
             </p>
           </div>
         </div>
-      </div>
-    </div>
-  );
-};
-
-const RenderBPOServicesBoxes = () => {
-  return (
-    <div className="w-full">
-      <div className="max-w-7xl">
-        {/* <BpoServiceBox
-          description="We are here to ensure that your customers receive impeccable service.
-Our BPO outsourcing service USA enables you to always communicate with your clients."
-          label="Customer Support"
-          logo
-        /> */}
       </div>
     </div>
   );
