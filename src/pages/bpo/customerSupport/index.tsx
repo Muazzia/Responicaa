@@ -29,27 +29,27 @@ const CustomerSupport = () => {
     },
   ];
   return (
-    <div>
+    <div className="">
       <HeroSectionWithCTA
         primaryButtonLabel="Solutions"
         primaryButtonUrl="/digitalSolutions"
         heading="Customer Support Service"
         description="Greetings to our dedicated customer support outsourcing service department, where we put your satisfaction first. We are dedicated to providing unmatched support that exceeds expectations because we recognize that every encounter you have with us forms your overall impression of us."
-        secondaryButtonLabel="Schedule A Free Consultation  "
+        secondaryButtonLabel="Schedule A Free Consultation"
         secondaryButtonUrl="contact"
       />
 
-      <div className="max-w-7xl mx-auto">
-        <div className="flex items-center justify-center ">
-          <p className="text-primary font-semibold text-[48px]">
+      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
+        <div className="flex items-center justify-center">
+          <p className="text-primary font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
             How Does Customer Support Service Work?
           </p>
         </div>
-        <div className="space-y-4 mt-4">
+        <div className="space-y-4 mt-4 text-sm sm:text-base">
           <p>
             Customer support outsourcing service is the cornerstone of any
-            successful organization in today’s connected world. When a problem
-            emerges, it’s the comforting voice on the other end of the phone,
+            successful organization in today's connected world. When a problem
+            emerges, it's the comforting voice on the other end of the phone,
             the guiding hand that turns issues into solutions.
           </p>
           <p>
@@ -77,49 +77,49 @@ const CustomerSupport = () => {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-6 flex flex-col">
-        <div className="flex items-center justify-center ">
-          <p className="text-primary font-semibold text-[48px]">
+      <div className="px-4 md:px-8 xl:px-0max-w-7xl mx-auto mt-8 md:mt-12">
+        <div className="flex items-center justify-center">
+          <p className="text-primary font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
             Key Features of Customer Support
           </p>
         </div>
-        <div className=" mt-4">
+        <div className="mt-4 text-sm sm:text-base">
           <p>
             Excellent customer support outsourcing service is the crucial
-            element that can distinguish your company in today’s competitive
+            element that can distinguish your company in today's competitive
             business landscape. Inbound customer service representative at
             Nexcel Solutions understand that customer assistance is more than a
-            convenience. It is a symbol of your company’s dedication to its
+            convenience. It is a symbol of your company's dedication to its
             consumers. Our customer service manager exceeds expectations to
-            ensure clients’ interactions with brands are easy, pleasurable, and
+            ensure clients' interactions with brands are easy, pleasurable, and
             memorable.
           </p>
         </div>
 
-        <div className="mt-6">
+        <div className="mt-8 md:mt-12">
           <RenderDescriptionTextWithLabels />
         </div>
 
-        <div className="flex flex-col mt-6  ">
-          <p className="text-center text-primary font-semibold text-[48px] px-[40px]">
+        <div className="mt-8 md:mt-12">
+          <p className="text-center text-primary font-semibold text-3xl sm:text-4xl lg:text-[48px] px-4 md:px-10">
             How Does Customer Support Service Benefit Businesses
           </p>
-          <div className="space-y-4 mt-4">
+          <div className="space-y-4 mt-4 text-sm sm:text-base">
             <p>
               A solid and devoted client base is essential for sustained success
               in the fast-paced and constantly evolving business sector. An
               efficient customer support outsourcing service is one of the most
-              effective instruments at a company’s disposal for doing this.
-              Today’s customer service goes beyond the conventional job of
+              effective instruments at a company's disposal for doing this.
+              Today's customer service goes beyond the conventional job of
               resolving problems to become a strategic asset that may
               significantly influence many different aspects of a business.
             </p>
 
-            <div>
-              <p className="font-bold text-[17px]">
+            <div className="mt-4">
+              <p className="font-bold text-base sm:text-[17px]">
                 Increased Customer Satisfaction
               </p>
-              <p>
+              <p className="mt-2">
                 Customer satisfaction is the cornerstone of any flourishing
                 company. Customer satisfaction increases when they are treated
                 with respect and have their issues resolved quickly. A skilled
@@ -129,28 +129,28 @@ const CustomerSupport = () => {
                 prompt and efficient replies to questions, issues, or
                 complaints.
               </p>
-              <p>
+              <p className="mt-2">
                 A satisfied customer is likely to remain with the business and
                 recommend it to others, enhancing its reputation. Since the
                 introduction of social media, a single good customer support
                 experience has the power to spread across platforms and produce
-                organic marketing that money can’t buy.
+                organic marketing that money can't buy.
               </p>
             </div>
 
-            <div>
-              <p className="font-bold text-[17px]">
+            <div className="mt-4">
+              <p className="font-bold text-base sm:text-[17px]">
                 Improved Client Engagement
               </p>
-              <p>
-                Engagement comprises all of a customer’s interactions with a
+              <p className="mt-2">
+                Engagement comprises all of a customer's interactions with a
                 brand, not only marketing activities. Customer support
                 outsourcing service is essential to this connection. Every
-                meeting is a chance to demonstrate the brand’s dedication to its
+                meeting is a chance to demonstrate the brand's dedication to its
                 clients. Customers that have engaging customer support feel
                 heard, understood, and valued.
               </p>
-              <p>
+              <p className="mt-2">
                 Customer service can also provide customized guidance and
                 solutions, strengthening the bond between the client and the
                 business. These interactions provide companies with information
@@ -159,17 +159,19 @@ const CustomerSupport = () => {
               </p>
             </div>
 
-            <div>
-              <p className="font-bold text-[17px]">Increased Conversions</p>
-              <p>
+            <div className="mt-4">
+              <p className="font-bold text-base sm:text-[17px]">
+                Increased Conversions
+              </p>
+              <p className="mt-2">
                 Effective customer support outsourcing service through improving
-                conversions can directly impact a company’s bottom line. Quick
+                conversions can directly impact a company's bottom line. Quick
                 and detailed replies from customer service associates can
                 alleviate worries from potential consumers who might have
                 questions or uncertainties about a product or service,
                 increasing the possibility that they will purchase.
               </p>
-              <p>
+              <p className="mt-2">
                 Additionally, a knowledgeable and enthusiastic consumer is more
                 inclined to investigate other tele sales services or upgrades,
                 increasing the likelihood of upselling. Customer support
@@ -181,15 +183,15 @@ const CustomerSupport = () => {
           </div>
         </div>
 
-        <div className="mt-4">
-          <p className=" text-center text-[48px] text-black px-[50px]">
+        <div className="mt-8 md:mt-12">
+          <p className="text-center text-3xl sm:text-4xl lg:text-[48px] text-black px-4 md:px-10">
             Why Choose Nexcel as Your Customer Support Provider
           </p>
 
-          <div className="mt-4">
+          <div className="mt-4 text-sm sm:text-base">
             <p>
               Nexcel Solutions believes that assistance is more than simply
-              giving advice, it’s about establishing deep connections. With
+              giving advice, it's about establishing deep connections. With
               skill, compassion, and dependability at every touchpoint,we
               perfectly capture the soul of any brand. By working with us,
               clients invest in a superior customer support experience that
@@ -199,13 +201,13 @@ const CustomerSupport = () => {
             </p>
           </div>
 
-          <div>
+          <div className="mt-8 md:mt-12">
             <ImageWithServiceDetails
               imageUrl="/images/bpo/customerCare.webp"
               label="Why Choose Our Customer Support?"
               description="If you have any inquiries, worries, or problems, our devoted customer service team is ready to help. Whether you want to learn more about our services, need assistance with a product, or need technical support, we can help."
               data={whyChooseOurServiceData}
-              imageClass="h-[680px]"
+              imageClass="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[680px]"
             />
           </div>
         </div>
@@ -254,11 +256,15 @@ const RenderDescriptionTextWithLabels = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-3 gap-[25px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-[25px]">
       {data.map((item) => (
-        <div key={item.id} className="flex flex-col items-center">
-          <p className="text-black font-semibold text-[30px]">{item.label}</p>
-          <p className="text-black mt-4">{item.description}</p>
+        <div key={item.id} className="flex flex-col items-center p-4 md:p-0">
+          <p className="text-black font-semibold text-xl sm:text-2xl lg:text-[30px] text-center">
+            {item.label}
+          </p>
+          <p className="text-black mt-2 sm:mt-4 text-sm sm:text-base text-center">
+            {item.description}
+          </p>
         </div>
       ))}
     </div>
