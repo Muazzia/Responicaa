@@ -1,6 +1,9 @@
 import HeroSectionWithCTA from "../../../components/HeroSectionWithCTA";
 import ImageWithServiceDetails from "../../../components/ImageWithServiceDetails";
 import { IoCall } from "react-icons/io5";
+import TestimonialsSection from "../../../components/TestimonialsSection";
+import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest";
+import ContactUs from "../../../components/ContactUs";
 
 const Sales = () => {
   const outBoundParaData = [
@@ -126,53 +129,22 @@ const Sales = () => {
     },
   ];
   return (
-    <div>
-      {/* <div className="bg-black">
-        <div className=" max-w-7xl mx-auto flex  bg-black text-white py-[40px]">
-          <div className="space-y-[20px] max-w-[768px]">
-            <span className="bg-[#CCCECF] text-black rounded-xs px-2 py-2  text-xs font-semibold ">
-              Digital Solution
-            </span>
-            <div>
-              <p className="text-[60px] font-semibold">
-                Web Development Service
-              </p>
-              <p className="font-normal text-[20px]">
-                Welcome to Nexcel Solutions, your trusted partner in shaping
-                digital dreams into reality. As a leading web development
-                services company, we specialize in transforming innovative ideas
-                and business goals into powerful, user-friendly websites and web
-                applications. Our dedicated team of skilled developers,
-                designers, and strategists collaborates seamlessly to deliver
-                tailor-made solutions that not only meet but exceed your
-                expectations.
-              </p>
-            </div>
-
-            <div>
-              <span className="rounded-xs text-primary bg-white px-3 py-2 font-semibold">
-                Schedule A Free Consultation
-              </span>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
+    <div className="">
       <HeroSectionWithCTA
         primaryButtonLabel="Solutions"
         primaryButtonUrl="/digitalSolutions"
         heading="Outsource Tele Sales Services"
         description="You may produce and close quality leads with the help of our professional inbound/outbound Tele Sales services.Our B2B lead generation service uses a variety of calling strategies to attract potential customers."
-        secondaryButtonLabel="Schedule A Free Consultation  "
+        secondaryButtonLabel="Schedule A Free Consultation"
         secondaryButtonUrl="contact"
       />
 
-      <div className="max-w-7xl flex gap-[20px] mx-auto py-[20px] space-y-[30px]">
+      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto py-5 md:py-10 space-y-5 md:space-y-0 md:flex md:gap-5 lg:gap-10">
         <RotatingCard
           label="OutBound Tele Sales Service"
           description="Our outbound call promotions involve proactively reaching out to potential customers via phone calls to present and highlight products, services, or offers."
           invertedCardLabel="How It Works"
-          invertedCardDescription="Outbound tele sales service comprises strategic product sales to inform and draw in additional clients about an already-existing service or a newly-launched product. This includes making cold calls to clients who aren’t very interested in a product."
+          invertedCardDescription="Outbound tele sales service comprises strategic product sales to inform and draw in additional clients about an already-existing service or a newly-launched product. This includes making cold calls to clients who aren't very interested in a product."
           invertedCardButtonLabel="Click Here"
           invertedCardButtonUrl="asdf"
         />
@@ -180,7 +152,7 @@ const Sales = () => {
           label="In-Bound Tele Sales Services"
           description="The primary goal of inbound telemarketing is to get customers to call you without you ever having to pick up the phone. This is performed by inbound support centers through advertising on many platforms, such as your company website, social media, email, etc."
           invertedCardLabel="How It Works"
-          invertedCardDescription="Outbound tele sales service comprises strategic product sales to inform and draw in additional clients about an already-existing service or a newly-launched product. This includes making cold calls to clients who aren’t very interested in a product."
+          invertedCardDescription="Outbound tele sales service comprises strategic product sales to inform and draw in additional clients about an already-existing service or a newly-launched product. This includes making cold calls to clients who aren't very interested in a product."
           invertedCardButtonLabel="Click Here"
           invertedCardButtonUrl="asdf"
           logoInverted={true}
@@ -192,45 +164,53 @@ const Sales = () => {
         label="Why Choose Our Tele Sales Services"
         description="We provide you with insightful information about the needs, level of happiness, and unfulfilled wants of your clients when you hire us for tele sales services. Our strategic solutions are designed to improve customer connections while addressing your customers problems."
         data={whyChooseOurServiceData}
-        imageClass="h-[680px]"
+        imageClass="h-[400px] sm:h-[500px] md:h-[600px] lg:h-[680px]"
       />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto mt-10 md:mt-20">
         <div className="w-full text-center">
-          <p className="text-[48px] font-semibold">
+          <p className="text-3xl sm:text-4xl lg:text-[48px] font-semibold">
             Outbound-Tele Sales Services
           </p>
         </div>
-        <div className="space-y-[20px] mt-[20px]">
-          {outBoundParaData.map((item) => {
-            return (
-              <RenderParaWithHeading
-                key={item.id}
-                description={item.description}
-                heading={item.heading}
-              />
-            );
-          })}
+        <div className="space-y-5 md:space-y-8 mt-5 md:mt-10">
+          {outBoundParaData.map((item) => (
+            <RenderParaWithHeading
+              key={item.id}
+              description={item.description}
+              heading={item.heading}
+            />
+          ))}
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto my-[30px]">
+      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto my-10 md:my-20">
         <div className="w-full text-center">
-          <p className="text-[48px] font-semibold">
+          <p className="text-3xl sm:text-4xl lg:text-[48px] font-semibold">
             Inbound-Tele Sales Service
           </p>
         </div>
-        <div className="space-y-[20px] mt-[20px]">
-          {inBoundParaData.map((item) => {
-            return (
-              <RenderParaWithHeading
-                key={item.id}
-                description={item.description}
-                heading={item.heading}
-              />
-            );
-          })}
+        <div className="space-y-5 md:space-y-8 mt-5 md:mt-10">
+          {inBoundParaData.map((item) => (
+            <RenderParaWithHeading
+              key={item.id}
+              description={item.description}
+              heading={item.heading}
+            />
+          ))}
         </div>
+      </div>
+
+      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto">
+        <TestimonialsSection />
+      </div>
+
+      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto mb-10">
+        <RecognizedByBest />
+      </div>
+
+      <div>
+        <ContactUs />
       </div>
     </div>
   );
@@ -244,9 +224,11 @@ const RenderParaWithHeading = ({
   description: string;
 }) => {
   return (
-    <div>
-      <p className="font-semibold text-[30px]">{heading}</p>
-      <p className="text-[16px] text-black/60">{description}</p>
+    <div className="px-2 sm:px-0">
+      <p className="font-semibold text-xl sm:text-2xl lg:text-[30px]">
+        {heading}
+      </p>
+      <p className="text-sm sm:text-base text-black/60 mt-2">{description}</p>
     </div>
   );
 };
@@ -271,32 +253,42 @@ const RotatingCard = ({
   invertedCardLabel,
 }: RotatingCardProps) => {
   return (
-    <div className="w-full h-[300px] perspective group">
-      {/* Added 'group' class */}
-      {/* This div will handle the hover and rotation */}
+    <div className="w-full h-[300px] md:h-[350px] perspective group">
       <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-180">
         {/* Front Side */}
-        <div className="absolute w-full h-full bg-[#AC0404] text-white flex flex-col items-center justify-center px-5 text-center gap-5 backface-hidden">
+        <div className="absolute w-full h-full bg-[#AC0404] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden">
           <span
             className={`transform transition-transform duration-700 ${
               logoInverted ? "rotate-260" : ""
             }`}
           >
-            <IoCall color={"white"} size={50} />
+            <IoCall
+              color={"white"}
+              size={40}
+              className="sm:w-[50px] sm:h-[50px]"
+            />
           </span>
-          <p className="text-[26px] font-semibold">{label}</p>
-          <span className="text-[14px]">{description}</span>
+          <p className="text-xl sm:text-2xl lg:text-[26px] font-semibold">
+            {label}
+          </p>
+          <span className="text-xs sm:text-sm md:text-[14px]">
+            {description}
+          </span>
         </div>
 
         {/* Back Side */}
-        <div className="absolute w-full h-full bg-gradient-to-b from-[#f7f3f3] to-[#6d0c0c] text-black flex flex-col items-center justify-center px-5 text-center gap-5 backface-hidden transform rotate-x-180">
-          <p className="text-[20px] font-semibold">{invertedCardLabel}</p>
-          <span className="text-[14px]">{invertedCardDescription}</span>
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#f7f3f3] to-[#6d0c0c] text-black flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden transform rotate-x-180">
+          <p className="text-lg sm:text-xl font-semibold">
+            {invertedCardLabel}
+          </p>
+          <span className="text-xs sm:text-sm md:text-[14px]">
+            {invertedCardDescription}
+          </span>
           <button
             onClick={() => {
               console.log(invertedCardButtonUrl);
             }}
-            className="mt-2 px-4 py-2 bg-[#AC0404] text-white rounded"
+            className="mt-2 px-3 py-1 sm:px-4 sm:py-2 bg-[#AC0404] text-white rounded text-sm sm:text-base"
           >
             {invertedCardButtonLabel}
           </button>
