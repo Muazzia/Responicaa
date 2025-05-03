@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import ContactUs from "../../components/ContactUs";
 import TestimonialsSection from "../../components/TestimonialsSection";
 import { ROUTES } from "../../constants";
@@ -69,6 +70,19 @@ const BPO = () => {
       url: ROUTES.ENERGYSUPPLIES,
     },
   ];
+
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   return (
     <div className="">
       <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto">
@@ -304,9 +318,12 @@ const BPO = () => {
               can rely on to meet your organization with competent sales and
               marketing tech.
             </p>
-            <div className="bg-primary text-white w-fit px-4 py-2 rounded-lg cursor-pointer hover:bg-primary/90 transition">
+            <button
+              onClick={scrollToContact}
+              className="bg-primary text-white w-fit px-4 py-2 rounded-lg cursor-pointer hover:bg-primary/90 transition"
+            >
               Get in Touch
-            </div>
+            </button>
           </div>
           <div className="w-full lg:w-1/2">
             <div className="w-full object-cover h-[300px] sm:h-[375px] lg:h-[475px] overflow-hidden">
@@ -329,7 +346,7 @@ const BPO = () => {
       </div>
 
       <div>
-        <ContactUs />
+        <ContactUs ref={contactRef} />
       </div>
     </div>
   );

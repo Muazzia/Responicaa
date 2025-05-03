@@ -1,9 +1,21 @@
-import { Button } from "antd";
 import TestimonialsSection from "../../components/TestimonialsSection";
 import { RecognizedByBest } from "../landingPage/components/RecognizedByBest";
 import ContactUs from "../../components/ContactUs";
+import { useRef } from "react";
 
 export const Contact = () => {
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-10">
       <div className="my-5 flex flex-col justify-center items-center">
@@ -24,13 +36,13 @@ export const Contact = () => {
             <p>support@responica.com</p>
           </div>
         </div>
-        <Button
-          type="primary"
-          htmlType="submit"
-          className="!bg-red-800 !w-fit text-white !rounded-full !py-4 md:!py-6 !font-semibold text-sm"
+        <button
+          onClick={scrollToContact}
+          // className={`md:mt-0 bg-red-700 ${hoverClass} text-white px-6 py-1.5 rounded-full font-semibold transition-colors text-sm whitespace-nowrap ${className}`}
+          className="bg-red-800 w-fit text-white rounded-full  cursor-pointer px-6 py-3 !font-semibold  transition-colors text-sm whitespace-nowrap"
         >
           Schedule a free consultation
-        </Button>
+        </button>
       </div>
       <div className="mt-10 text-center">
         <img
@@ -77,7 +89,7 @@ export const Contact = () => {
       <div className="mt-10 flex flex-col gap-10">
         <TestimonialsSection />
         <RecognizedByBest />
-        <ContactUs />
+        <ContactUs ref={contactRef} />
       </div>
     </div>
   );
