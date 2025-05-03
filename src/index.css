@@ -5,6 +5,8 @@
 
 @theme{
     --color-primary:#AE0000; 
+
+    --font-primary: "Inter Tight", sans-serif;
   }
 
 .perspective {
