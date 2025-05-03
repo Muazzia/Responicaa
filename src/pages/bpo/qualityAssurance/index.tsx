@@ -100,7 +100,7 @@ const QualityAssurance = () => {
         <div className="mt-4 text-sm sm:text-base">
           <p>
             Superior Quality Assurance is essential for maintaining competitive
-            advantage in today's technology-driven marketplace. Nexcel Solutions
+            advantage in today's technology-driven marketplace. Responica
             understands that QA is not just about finding bugs - it's about
             ensuring product excellence at every level. Our comprehensive QA
             services help businesses deliver flawless products that exceed
@@ -187,17 +187,17 @@ const QualityAssurance = () => {
 
         <div className="mt-8 md:mt-12">
           <p className="text-center text-3xl sm:text-4xl lg:text-[48px] text-black px-4 md:px-10">
-            Why Choose Nexcel as Your QA Provider
+            Why Choose Responica as Your QA Provider
           </p>
 
           <div className="mt-4 text-sm sm:text-base">
             <p>
-              Nexcel Solutions approaches Quality Assurance as a strategic
-              partnership rather than just a service. We combine technical
-              expertise with business acumen to deliver QA solutions that align
-              with your organizational goals. Our team becomes an extension of
-              your development process, providing insights that enhance both
-              current products and future iterations.
+              Responica approaches Quality Assurance as a strategic partnership
+              rather than just a service. We combine technical expertise with
+              business acumen to deliver QA solutions that align with your
+              organizational goals. Our team becomes an extension of your
+              development process, providing insights that enhance both current
+              products and future iterations.
             </p>
           </div>
 
@@ -246,7 +246,7 @@ const RenderDescriptionTextWithLabels = () => {
       id: 3,
       label: "Quality Standards",
       description:
-        "Nexcel adheres to international quality standards including ISO 9001 and ISTQB guidelines. Our QA processes are designed to meet regulatory requirements for various industries while maintaining flexibility to adapt to your specific quality benchmarks. We don't just find defects - we help you establish quality metrics and continuous improvement processes.",
+        "Responica adheres to international quality standards including ISO 9001 and ISTQB guidelines. Our QA processes are designed to meet regulatory requirements for various industries while maintaining flexibility to adapt to your specific quality benchmarks. We don't just find defects - we help you establish quality metrics and continuous improvement processes.",
     },
     {
       id: 4,

@@ -2,28 +2,38 @@ import { Carousel } from "antd";
 
 const TestimonialsSection = () => {
   return (
-    <div className="flex items-center justify-center overflow-hidden">
+    <div className="flex items-center justify-center overflow-hidden px-4 md:px-10">
       <div className="py-10 max-w-7xl mx-auto">
-        {" "}
-        {/* Reduced py-14 to py-10 */}
-        <h2 className="text-5xl font-semibold text-center mb-8">
-          {" "}
-          {/* Reduced mb-12 to mb-8 */}
+        <h2 className="text-3xl md:text-5xl font-semibold text-center mb-6 md:mb-8">
           Testimonials
         </h2>
-        <div className="text-center max-w-7xl mx-auto ">
+        <div className="text-center max-w-7xl mx-auto">
           <Carousel
             autoplay
             autoplaySpeed={2500}
             dots={false}
             slidesToShow={3}
             swipeToSlide
-            className="m-4"
+            responsive={[
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                },
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                },
+              },
+            ]}
+            className="m-2 md:m-4"
           >
             {[...Array(6)].map((_, i) => (
               <div
                 key={i}
-                className="shadow-lg p-4 rounded-lg bg-white !w-fit !text-center flex flex-col !items-center !justify-center gap-4 m-6"
+                className="shadow-lg p-4 rounded-lg bg-white !w-fit !text-center flex flex-col !items-center !justify-center gap-4 m-2 md:m-6"
               >
                 <div className="flex flex-col items-center">
                   <img
@@ -31,21 +41,20 @@ const TestimonialsSection = () => {
                     alt={`Random ${i}`}
                     className="mb-3 rounded-full w-16 h-16 object-cover"
                   />
-                  {/* Reduced mb-4 to mb-3 */}
                   <div className="flex mb-1">
                     {Array(5)
                       .fill(0)
                       .map((_, starIndex) => (
                         <span
                           key={starIndex}
-                          className="text-yellow-500 text-3xl"
+                          className="text-yellow-500 text-2xl md:text-3xl"
                         >
                           ★
                         </span>
                       ))}
                   </div>
-                  <p className="text-gray-600 italic mb-3 text-lg">
-                    Simply put, I can confidently recommend Nexcel Solution’s
+                  <p className="text-gray-600 italic mb-3 text-base md:text-lg px-2">
+                    Simply put, I can confidently recommend Responica Solution's
                     App development services. The commitment to excellence was
                     evident from the moment the conversation started right to
                     the end.

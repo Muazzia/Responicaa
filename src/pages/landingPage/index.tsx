@@ -26,9 +26,11 @@ const LandingPage = () => {
       <WhyResponicaSection />
       <CEOSection />
       <FAQSection />
-      <TestimonialsSection />
-      <RecognizedByBest />
-      <ContactUs />
+      <div className="mt-10 flex flex-col gap-10">
+        <TestimonialsSection />
+        <RecognizedByBest />
+        <ContactUs />
+      </div>{" "}
     </>
   );
 };

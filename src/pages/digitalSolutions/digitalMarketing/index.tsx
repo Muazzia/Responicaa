@@ -47,30 +47,32 @@ export const DigitalMarketing = () => {
 
     window.scrollTo({ top, behavior: "smooth" });
   };
+
   return (
     <>
       <HeroSectionWithCTA
-        description="As modern-age digital storytellers, we craft narratives that enchant, engage, and elevate your brand's voice. Nexcel Solutions transforms your digital presence through data-driven strategies, delivering measurable growth in today's competitive landscape."
+        description="As modern-age digital storytellers, we craft narratives that enchant, engage, and elevate your brand's voice. Responica transforms your digital presence through data-driven strategies, delivering measurable growth in today's competitive landscape."
         heading="Full-Service Digital Marketing Agency"
         primaryButtonLabel="View Services"
         secondaryButtonLabel="Get Free Audit"
         onSecondaryButtonClick={scrollToContact}
       />
 
-      <div className="max-w-7xl mx-auto">
-        <div className="mt-10 max-w-7xl mx-auto">
-          <h2 className="text-5xl font-semibold text-center text-red-700">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mt-10">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-red-700">
             Comprehensive Digital Marketing Solutions
           </h2>
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-4xl text-gray-800 mb-4">Who We Are?</h3>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl text-gray-800 mb-4">
+                Who We Are?
+              </h3>
               <p className="text-gray-700 leading-relaxed">
-                Nexcel Solutions is more than a digital marketing agency - we're
-                growth architects. Our team of certified experts combines
-                cutting-edge technology with proven marketing methodologies to
-                deliver:
+                Responica is more than a digital marketing agency - we're growth
+                architects. Our team of certified experts combines cutting-edge
+                technology with proven marketing methodologies to deliver:
               </p>
               <ul className="mt-4 space-y-3">
                 <li className="flex items-center">
@@ -89,19 +91,23 @@ export const DigitalMarketing = () => {
             </div>
 
             <div>
-              <h3 className="text-4xl text-gray-800 mb-4">What We Do?</h3>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl text-gray-800 mb-4">
+                What We Do?
+              </h3>
               <p className="text-gray-700 leading-relaxed">
                 Our 360-degree approach covers every aspect of digital
                 marketing:
               </p>
-              <div className="mt-6 grid grid-cols-2 gap-4">
+              <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {marketingServices.map((service, index) => (
                   <div
                     key={index}
                     className="p-4 border rounded-lg hover:shadow-lg transition"
                   >
                     <div className="text-red-600 mb-2">{service.icon}</div>
-                    <h4 className="text-xl font-semibold">{service.title}</h4>
+                    <h4 className="text-lg sm:text-xl font-semibold">
+                      {service.title}
+                    </h4>
                     <p className="text-gray-600 text-sm mt-2">
                       {service.content}
                     </p>
@@ -111,8 +117,8 @@ export const DigitalMarketing = () => {
             </div>
           </div>
 
-          <div className="mt-16 bg-gray-50 p-8 rounded-xl">
-            <h3 className="text-4xl text-center text-red-700 mb-8">
+          <div className="mt-16 bg-gray-50 p-6 sm:p-8 rounded-xl">
+            <h3 className="text-3xl sm:text-4xl text-center text-red-700 mb-8">
               Our 4-Pillar Marketing Process
             </h3>
             <ServiceProcess
@@ -138,16 +144,16 @@ export const DigitalMarketing = () => {
             />
           </div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="order-2 md:order-1">
+          <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="order-2 lg:order-1">
               <img
                 src="https://picsum.photos/600/400?random=2"
                 alt="Marketing Analytics"
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl w-full"
               />
             </div>
-            <div className="order-1 md:order-2">
-              <h3 className="text-4xl text-red-700 mb-4">
+            <div className="order-1 lg:order-2">
+              <h3 className="text-3xl sm:text-4xl text-red-700 mb-4">
                 Data-Driven Growth Strategies
               </h3>
               <p className="text-gray-700 mb-6">
@@ -158,7 +164,7 @@ export const DigitalMarketing = () => {
                 <div className="flex items-center bg-white p-4 rounded-lg shadow">
                   <MdAnalytics className="text-3xl text-red-600 mr-4" />
                   <div>
-                    <h4 className="text-xl font-semibold">
+                    <h4 className="text-lg sm:text-xl font-semibold">
                       Real-Time Optimization
                     </h4>
                     <p className="text-gray-600">
@@ -169,7 +175,7 @@ export const DigitalMarketing = () => {
                 <div className="flex items-center bg-white p-4 rounded-lg shadow">
                   <FaChartLine className="text-3xl text-red-600 mr-4" />
                   <div>
-                    <h4 className="text-xl font-semibold">
+                    <h4 className="text-lg sm:text-xl font-semibold">
                       Predictive Analytics
                     </h4>
                     <p className="text-gray-600">
@@ -182,10 +188,10 @@ export const DigitalMarketing = () => {
           </div>
 
           <div className="mt-16">
-            <h3 className="text-4xl text-center text-red-700 mb-8">
+            <h3 className="text-3xl sm:text-4xl text-center text-red-700 mb-8">
               Industries We Master
             </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
               {[
                 "E-Commerce",
                 "Healthcare",
@@ -206,19 +212,21 @@ export const DigitalMarketing = () => {
             </div>
           </div>
 
-          <div className="mt-16 bg-red-700 text-white p-8 rounded-xl">
-            <h3 className="text-4xl text-center mb-8">Why Choose Nexcel?</h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="mt-16 bg-red-700 text-white p-6 sm:p-8 rounded-xl">
+            <h3 className="text-3xl sm:text-4xl text-center mb-8">
+              Why Choose Responica?
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {[
                 "200% Average ROI Increase",
                 "24/7 Campaign Monitoring",
                 "Dedicated Account Managers",
               ].map((item, index) => (
                 <div key={index} className="text-center p-4 flex gap-5">
-                  <div className="text-3xl mb-2 ">
+                  <div className="text-3xl mb-2">
                     <FaCircleCheck />
                   </div>
-                  <h4 className="text-xl font-semibold">{item}</h4>
+                  <h4 className="text-lg sm:text-xl font-semibold">{item}</h4>
                 </div>
               ))}
             </div>
@@ -227,11 +235,11 @@ export const DigitalMarketing = () => {
 
         <div className="mt-16 flex flex-col gap-10">
           <TestimonialsSection />
-          <div className="bg-gray-50 p-8 rounded-xl">
-            <h3 className="text-4xl text-center text-red-700 mb-8">
+          <div className="bg-gray-50 p-6 sm:p-8 rounded-xl">
+            <h3 className="text-3xl sm:text-4xl text-center text-red-700 mb-8">
               Marketing Technologies We Use
             </h3>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-4 items-center justify-center">
+            <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 items-center justify-center">
               {[
                 "Google Marketing Platform",
                 "HubSpot",

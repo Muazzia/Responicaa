@@ -2,21 +2,22 @@ import { TbMailBitcoin } from "react-icons/tb";
 
 const CEOSection = () => {
   return (
-    <div className="text-center py-14 flex flex-col gap-5 justify-center items-center">
-      <h1 className="text-5xl font-bold">OUR CEO</h1>
+    <div className="text-center py-10 md:py-14 px-4 md:px-10 flex flex-col gap-4 md:gap-5 justify-center items-center">
+      <h1 className="text-3xl md:text-5xl font-bold">OUR CEO</h1>
       <img
         src="/images/landingPage/ceo.webp"
         alt="CEO"
-        width={500}
-        height={500}
+        className="w-full max-w-[300px] md:max-w-[500px]"
       />
       <div>
-        <h1 className="text-2xl font-semibold">Syed Zain Ul Hussain Zaidi</h1>
-        <h1 className="text-lg">(CEO)</h1>
+        <h1 className="text-xl md:text-2xl font-semibold">
+          Syed Zain Ul Hussain Zaidi
+        </h1>
+        <h1 className="text-base md:text-lg">(CEO)</h1>
       </div>
-      <div className="flex items-center gap-2 justify-center">
-        <TbMailBitcoin className="!text-xs" />
-        <h1>zain@nexcelsolutions.com</h1>
+      <div className="flex items-center gap-2 justify-center text-sm md:text-base">
+        <TbMailBitcoin className="text-base md:text-lg" />
+        <h1>zain@responica.com</h1>
       </div>
     </div>
   );

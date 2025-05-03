@@ -11,10 +11,10 @@ const ContactUs = ({ id, ref }: Props) => {
     <div
       id={id ?? ""}
       ref={ref}
-      className="bg-white text-center py-8 md:py-14 px-4"
+      className="bg-white text-center mt-10 py-8 md:py-14 px-4 md:px-10"
     >
       <h1 className="text-3xl md:text-5xl font-semibold mb-2 md:mb-4">
-        Contact Nexcel Solutions Today!
+        Contact Responica Today!
       </h1>
       <p className="text-sm md:text-base text-gray-500 mb-2 md:mb-4">
         <EnvironmentOutlined /> USA | Newark, Delaware, United States

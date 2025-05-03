@@ -104,7 +104,7 @@ const CustomerSupport = () => {
             Excellent customer support outsourcing service is the crucial
             element that can distinguish your company in today's competitive
             business landscape. Inbound customer service representative at
-            Nexcel Solutions understand that customer assistance is more than a
+            Responica understand that customer assistance is more than a
             convenience. It is a symbol of your company's dedication to its
             consumers. Our customer service manager exceeds expectations to
             ensure clients' interactions with brands are easy, pleasurable, and
@@ -201,19 +201,19 @@ const CustomerSupport = () => {
 
         <div className="mt-8 md:mt-12">
           <p className="text-center text-3xl sm:text-4xl lg:text-[48px] text-black px-4 md:px-10">
-            Why Choose Nexcel as Your Customer Support Provider
+            Why Choose Responica as Your Customer Support Provider
           </p>
 
           <div className="mt-4 text-sm sm:text-base">
             <p>
-              Nexcel Solutions believes that assistance is more than simply
-              giving advice, it's about establishing deep connections. With
-              skill, compassion, and dependability at every touchpoint,we
-              perfectly capture the soul of any brand. By working with us,
-              clients invest in a superior customer support experience that
-              fosters happiness, loyalty, and eventually growth rather than
-              merely outsourcing assistance. With Nexcel, you can experience the
-              service of the future.
+              Responica believes that assistance is more than simply giving
+              advice, it's about establishing deep connections. With skill,
+              compassion, and dependability at every touchpoint,we perfectly
+              capture the soul of any brand. By working with us, clients invest
+              in a superior customer support experience that fosters happiness,
+              loyalty, and eventually growth rather than merely outsourcing
+              assistance. With Responica, you can experience the service of the
+              future.
             </p>
           </div>
 
@@ -262,13 +262,13 @@ const RenderDescriptionTextWithLabels = () => {
       id: 3,
       label: "Quality",
       description:
-        "Nexcel customer support outsourcing service vocabulary includes something other than blandness. We are dedicated to providing outstanding support that goes above and beyond. Even the most complex questions can be handled by our Technical support associates since they are knowledgeable, well-equipped, and well-resourced. By upholding high standards, we address problems and provide your consumers with a long-lasting sense of reliability.",
+        "Responica customer support outsourcing service vocabulary includes something other than blandness. We are dedicated to providing outstanding support that goes above and beyond. Even the most complex questions can be handled by our Technical support associates since they are knowledgeable, well-equipped, and well-resourced. By upholding high standards, we address problems and provide your consumers with a long-lasting sense of reliability.",
     },
     {
       id: 4,
       label: "Speed",
       description:
-        "Time is of the essence in the digital era. Nexcel customer service associates respond to requests as quickly as possible. The pillars of our service are prompt response times, quick issue resolution, and proactive support. By placing a high value on your customers’ time, we improve their whole experience and foster trust and loyalty.",
+        "Time is of the essence in the digital era. Responica customer service associates respond to requests as quickly as possible. The pillars of our service are prompt response times, quick issue resolution, and proactive support. By placing a high value on your customers’ time, we improve their whole experience and foster trust and loyalty.",
     },
     {
       id: 5,

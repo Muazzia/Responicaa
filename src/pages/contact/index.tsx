@@ -5,10 +5,10 @@ import ContactUs from "../../components/ContactUs";
 
 export const Contact = () => {
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className=" my-5 flex flex-col justify-center items-center">
-        <h1 className="text-6xl text-center font-semibold text-red-700">
-          We’re here to help
+    <div className="max-w-7xl mx-auto px-4 md:px-10">
+      <div className="my-5 flex flex-col justify-center items-center">
+        <h1 className="text-4xl md:text-6xl text-center font-semibold text-red-700">
+          We're here to help
         </h1>
         <div className="flex md:flex-row flex-col justify-center gap-10 my-10 md:items-center items-start">
           <div className="text-base font-medium">
@@ -21,7 +21,7 @@ export const Contact = () => {
           </div>
           <div className="text-base font-medium">
             <p>Email us:</p>
-            <p>support@nexcelsolutions.com</p>
+            <p>support@responica.com</p>
           </div>
         </div>
         <Button
@@ -34,34 +34,36 @@ export const Contact = () => {
       </div>
       <div className="mt-10 text-center">
         <img
-          src="https://picsum.photos/800/300"
+          src="/images/contactUs.jpg"
           alt="Random"
           className="w-full rounded-lg shadow-lg"
         />
-        <h2 className="text-5xl font-semibold text-black mt-6">
+        <h2 className="text-3xl md:text-5xl font-semibold text-black mt-6">
           Good Things Happen When You Say Hello!
         </h2>
-        <p className="text-base mt-4">
+        <p className="text-base mt-4 max-w-4xl mx-auto">
           Welcome to our digital crossroads with the solutions you need! At
-          Nexcel Solutions, we value your voice and ambition, willing to know
-          more. Whether you're here to seek answers, share insights, or simply
-          say hello, we're all ears.
+          Responica, we value your voice and ambition, willing to know more.
+          Whether you're here to seek answers, share insights, or simply say
+          hello, we're all ears.
         </p>
-        <div className="mt-8">
-          <h3 className="text-3xl font-bold text-red-700">Reach Out</h3>
+        <div className="mt-8 max-w-4xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold text-red-700">
+            Reach Out
+          </h3>
           <p className="text-base mt-2">
             Explain your business needs and goals to us. Feel free to call us
             and say what you want to say at{" "}
             <span className="font-bold text-red-700">1-302-797-8888</span> or
             simply write your needs to{" "}
-            <span className=" text-red-700 font-bold">
-              support@nexcelsolutions.com
+            <span className="text-red-700 font-bold">
+              support@responica.com
             </span>
             .
           </p>
         </div>
-        <div className="mt-8">
-          <h3 className="text-3xl font-bold text-red-700">
+        <div className="mt-8 max-w-4xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-bold text-red-700">
             Find Us On Socials
           </h3>
           <p className="text-base mt-2">
