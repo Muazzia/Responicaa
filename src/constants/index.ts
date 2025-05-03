@@ -8,9 +8,10 @@ export class ROUTES {
   // DIGITAL SOLUTIONS SUB ROUTES
   static WEBDEVELOPMENT = this.DIGITALSOLUTIONS + "/webDevelopment";
   static MOBILEDEVELOPMENT = this.DIGITALSOLUTIONS + "/mobileDevelopment";
-  static  DIGIALMARKETING = this.DIGITALSOLUTIONS + "/digitalMarketing";
+  static DIGIALMARKETING = this.DIGITALSOLUTIONS + "/digitalMarketing";
 
   // BPO SUB ROUTES
   static SALES = this.BPO + "/sales";
   static CUSTOMERSUPPORT = this.BPO + "/customerSupport";
+  static QUALITYASSURANCE = this.BPO + "/qualityAssurance";
 }
