@@ -18,7 +18,7 @@ const HeroSectionWithCTA = ({
         backgroundImage: "url('/images/digitalSolutions/blackBackground.webp')",
       }}
     >
-      <div className="px-4 md:px-8 xl:px-0  max-w-7xl mx-auto flex bg-transparent text-white lg:py-[60px]">
+      <div className="px-4 md:px-10 xl:px-0  max-w-7xl mx-auto flex bg-transparent text-white lg:py-[60px]">
         <div className="mt-[40px] space-y-[20px] max-w-[768px]">
           <span
             // href={primaryButtonUrl}

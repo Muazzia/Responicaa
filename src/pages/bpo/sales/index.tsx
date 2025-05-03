@@ -152,7 +152,7 @@ const Sales = () => {
         onSecondaryButtonClick={scrollToContact}
       />
 
-      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto py-5 md:py-10 space-y-5 md:space-y-0 md:flex md:gap-5 lg:gap-10">
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto py-5 md:py-10 space-y-5 md:space-y-0 md:flex md:gap-5 lg:gap-10">
         <RotatingCard
           label="OutBound Tele Sales Service"
           description="Our outbound call promotions involve proactively reaching out to potential customers via phone calls to present and highlight products, services, or offers."
@@ -180,7 +180,7 @@ const Sales = () => {
         imageClass="h-[400px] sm:h-[500px] md:h-[600px] lg:h-[680px]"
       />
 
-      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto mt-10 md:mt-20">
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-10 md:mt-20">
         <div className="w-full text-center">
           <p className="text-3xl sm:text-4xl lg:text-[48px] font-semibold">
             Outbound-Tele Sales Services
@@ -197,7 +197,7 @@ const Sales = () => {
         </div>
       </div>
 
-      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto my-10 md:my-20">
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto my-10 md:my-20">
         <div className="w-full text-center">
           <p className="text-3xl sm:text-4xl lg:text-[48px] font-semibold">
             Inbound-Tele Sales Service
@@ -214,11 +214,11 @@ const Sales = () => {
         </div>
       </div>
 
-      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto">
+      <div className="px-4 md:px-10  xl:px-0 max-w-7xl mx-auto">
         <TestimonialsSection />
       </div>
 
-      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto mb-10">
+      <div className="px-4 md:px-10  xl:px-0  max-w-7xl mx-auto mb-10">
         <RecognizedByBest />
       </div>
 
