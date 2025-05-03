@@ -87,7 +87,7 @@ const BPO = () => {
     <div className="">
       <div className="px-4 md:px-10  xl:px-0  max-w-7xl mx-auto">
         <div className="w-full space-y-5 text-center my-7">
-          <p className="text-3xl sm:text-4xl lg:text-[48px] text-primary font-semibold">
+          <p className="text-3xl sm:text-4xl lg:text-[48px] text-primary-red font-semibold">
             Trusted BPO Services
           </p>
           <p className="text-sm sm:text-base">
@@ -200,7 +200,7 @@ const BPO = () => {
           </div>
 
           <div className="mt-5">
-            <p className="text-2xl sm:text-3xl lg:text-[40px] text-center text-primary font-semibold">
+            <p className="text-2xl sm:text-3xl lg:text-[40px] text-center text-primary-red font-semibold">
               How Can We Be of Assistance?
             </p>
             <p className="my-2 text-sm sm:text-base">
@@ -320,7 +320,7 @@ const BPO = () => {
             </p>
             <button
               onClick={scrollToContact}
-              className="bg-primary text-white w-fit px-4 py-2 rounded-lg cursor-pointer hover:bg-primary/90 transition"
+              className="bg-primary-red text-white w-fit px-4 py-2 rounded-lg cursor-pointer hover:bg-primary-red/90 transition"
             >
               Get in Touch
             </button>

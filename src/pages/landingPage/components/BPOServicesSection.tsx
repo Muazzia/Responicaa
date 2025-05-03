@@ -64,7 +64,7 @@ const boxData = [
 const BPOServicesSection = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 py-10 md:py-28 gap-8 md:gap-4">
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 py-10 md:py-28 gap-8 md:gap-4">
         <div className="flex flex-col gap-6 md:gap-8 order-first">
           <h1 className="text-4xl md:text-6xl font-bold text-[#a10202]">
             BPO Services

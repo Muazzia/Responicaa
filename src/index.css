@@ -3,11 +3,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme{
-    --color-primary:#AE0000; 
-
-    --font-primary: "Inter Tight", sans-serif;
-  }
 
 .perspective {
     perspective: 1000px;
@@ -151,3 +146,11 @@
 }
 
   
+
+
+
+@theme{
+  --color-primary-red: #AE0000; 
+
+  --font-primary: "Inter Tight", sans-serif;
+}

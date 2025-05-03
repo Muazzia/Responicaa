@@ -1,7 +1,6 @@
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import DigitalSolutionSection from "./components/DigitalSolutionSection";
-import DigitalMarketingSection from "./components/DigitalMarketingSection";
 import BPOServicesSection from "./components/BPOServicesSection";
 import IndustriesSection from "./components/IndustriesSection";
 import WhyResponicaSection from "./components/WhyResponicaSection";
@@ -33,7 +32,7 @@ const LandingPage = () => {
         <h1 className="text-5xl font-semibold">Our Services</h1>
       </div>
       <DigitalSolutionSection />
-      <DigitalMarketingSection />
+      {/* <DigitalMarketingSection /> */}
       <BPOServicesSection />
       <IndustriesSection />
       <WhyResponicaSection />

@@ -56,7 +56,7 @@ const EnergySupplies = () => {
 
       <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
         <div className="flex items-center justify-center">
-          <p className="text-primary font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
+          <p className="text-primary-red font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
             How Does Our Energy Supply Service Work?
           </p>
         </div>
@@ -92,7 +92,7 @@ const EnergySupplies = () => {
 
       <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
         <div className="flex items-center justify-center">
-          <p className="text-primary font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
+          <p className="text-primary-redy font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
             Key Features of Our Energy Supply
           </p>
         </div>
@@ -113,7 +113,7 @@ const EnergySupplies = () => {
         </div>
 
         <div className="mt-8 md:mt-12">
-          <p className="text-center text-primary font-semibold text-3xl sm:text-4xl lg:text-[48px] px-4 md:px-10">
+          <p className="text-center text-primary-red font-semibold text-3xl sm:text-4xl lg:text-[48px] px-4 md:px-10">
             How Does Professional Energy Supply Benefit Businesses
           </p>
           <div className="space-y-4 mt-4 text-sm sm:text-base">

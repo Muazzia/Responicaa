@@ -155,91 +155,91 @@ export const Navbar = () => {
               className="pt-20 sm:w-full md:w-[50%] lg:w-[30%] mx-auto bg-gray-50 rounded-lg shadow-lg"
             >
               <nav className="flex flex-col gap-6 p-4">
-              <SheetClose asChild>
-                <Link
-                to={ROUTES.DIGITALSOLUTIONS}
-                className="text-lg font-semibold text-gray-800 hover:text-blue-600"
-                >
-                Digital Solutions
-                </Link>
-              </SheetClose>
-              <div className="ml-4 flex flex-col gap-2">
                 <SheetClose asChild>
-                <Link
-                  to={ROUTES.DIGIALMARKETING}
-                  className="text-gray-700 hover:text-blue-600"
-                >
-                  Digital Marketing
-                </Link>
+                  <Link
+                    to={ROUTES.DIGITALSOLUTIONS}
+                    className="text-lg font-semibold text-gray-800 hover:text-blue-600"
+                  >
+                    Digital Solutions
+                  </Link>
                 </SheetClose>
-                <SheetClose asChild>
-                <Link
-                  to={ROUTES.WEBDEVELOPMENT}
-                  className="text-gray-700 hover:text-blue-600"
-                >
-                  Web Development
-                </Link>
-                </SheetClose>
-                <SheetClose asChild>
-                <Link
-                  to={ROUTES.MOBILEDEVELOPMENT}
-                  className="text-gray-700 hover:text-blue-600"
-                >
-                  Mobile Development
-                </Link>
-                </SheetClose>
-              </div>
+                <div className="ml-4 flex flex-col gap-2">
+                  <SheetClose asChild>
+                    <Link
+                      to={ROUTES.DIGIALMARKETING}
+                      className="text-gray-700 hover:text-blue-600"
+                    >
+                      Digital Marketing
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      to={ROUTES.WEBDEVELOPMENT}
+                      className="text-gray-700 hover:text-blue-600"
+                    >
+                      Web Development
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      to={ROUTES.MOBILEDEVELOPMENT}
+                      className="text-gray-700 hover:text-blue-600"
+                    >
+                      Mobile Development
+                    </Link>
+                  </SheetClose>
+                </div>
 
-              <SheetClose asChild>
-                <Link
-                to={ROUTES.BPO}
-                className="text-lg font-semibold text-gray-800 hover:text-blue-600"
-                >
-                BPO
-                </Link>
-              </SheetClose>
-              <div className="ml-4 flex flex-col gap-2">
                 <SheetClose asChild>
-                <Link
-                  to={ROUTES.SALES}
-                  className="text-gray-700 hover:text-blue-600"
-                >
-                  Sales
-                </Link>
+                  <Link
+                    to={ROUTES.BPO}
+                    className="text-lg font-semibold text-gray-800 hover:text-blue-600"
+                  >
+                    BPO
+                  </Link>
                 </SheetClose>
-                <SheetClose asChild>
-                <Link
-                  to={ROUTES.CUSTOMERSUPPORT}
-                  className="text-gray-700 hover:text-blue-600"
-                >
-                  Customer Support
-                </Link>
-                </SheetClose>
-                <SheetClose asChild>
-                <Link
-                  to={ROUTES.QUALITYASSURANCE}
-                  className="text-gray-700 hover:text-blue-600"
-                >
-                  Quality Assurance
-                </Link>
-                </SheetClose>
-                <SheetClose asChild>
-                <Link
-                  to={ROUTES.ENERGYSUPPLIES}
-                  className="text-gray-700 hover:text-blue-600"
-                >
-                  Energy Supplies
-                </Link>
-                </SheetClose>
-                <SheetClose asChild>
-                <Link
-                  to={ROUTES.HOMEWARRANTY}
-                  className="text-gray-700 hover:text-blue-600"
-                >
-                  Home Warranty
-                </Link>
-                </SheetClose>
-              </div>
+                <div className="ml-4 flex flex-col gap-2">
+                  <SheetClose asChild>
+                    <Link
+                      to={ROUTES.SALES}
+                      className="text-gray-700 hover:text-blue-600"
+                    >
+                      Sales
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      to={ROUTES.CUSTOMERSUPPORT}
+                      className="text-gray-700 hover:text-blue-600"
+                    >
+                      Customer Support
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      to={ROUTES.QUALITYASSURANCE}
+                      className="text-gray-700 hover:text-blue-600"
+                    >
+                      Quality Assurance
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      to={ROUTES.ENERGYSUPPLIES}
+                      className="text-gray-700 hover:text-blue-600"
+                    >
+                      Energy Supplies
+                    </Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link
+                      to={ROUTES.HOMEWARRANTY}
+                      className="text-gray-700 hover:text-blue-600"
+                    >
+                      Home Warranty
+                    </Link>
+                  </SheetClose>
+                </div>
               </nav>
             </SheetContent>
           </Sheet>
