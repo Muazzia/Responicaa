@@ -59,7 +59,7 @@ const WebDevelopment = () => {
         secondaryButtonLabel="Schedule A Free Consultation  "
         onSecondaryButtonClick={scrollToContact}
       />
-      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto py-[40px] space-y-[30px]">
+      <div className="px-4 md:px-10  xl:px-0  max-w-7xl mx-auto py-[40px] space-y-[30px]">
         <div>
           <div className="text-center">
             <p className="text-[25px] lg:text-[48px] font-semibold text-primary">
@@ -262,7 +262,7 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto text-center py-[30px]">
+      <div className="px-4 md:px-10  xl:px-0 max-w-7xl mx-auto text-center py-[30px]">
         <p className="text-[25px] lg:text-[48px] font-semibold text-primary">
           Who We Are?
         </p>
@@ -292,11 +292,11 @@ const WebDevelopment = () => {
         imageClass="h-auto max-h-[180px] lg:max-h-none lg:h-[900px]"
       />
 
-      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto">
+      <div className="px-4 md:px-10  xl:px-0 max-w-7xl mx-auto">
         <TestimonialsSection />
       </div>
 
-      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto mb-10">
+      <div className="px-4 md:px-10  xl:px-0  max-w-7xl mx-auto mb-10">
         <RecognizedByBest />
       </div>
 

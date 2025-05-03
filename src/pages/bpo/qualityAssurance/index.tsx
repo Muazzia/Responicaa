@@ -54,7 +54,7 @@ const QualityAssurance = () => {
         onSecondaryButtonClick={scrollToContact}
       />
 
-      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
         <div className="flex items-center justify-center">
           <p className="text-primary font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
             How Does Quality Assurance Service Work?
@@ -91,7 +91,7 @@ const QualityAssurance = () => {
         </div>
       </div>
 
-      <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
         <div className="flex items-center justify-center">
           <p className="text-primary font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
             Key Features of Our Quality Assurance
@@ -213,11 +213,11 @@ const QualityAssurance = () => {
         </div>
       </div>
 
-      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto">
+      <div className="px-4 md:px-10  xl:px-0 max-w-7xl mx-auto">
         <TestimonialsSection />
       </div>
 
-      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto mb-10">
+      <div className="px-4 md:px-10  xl:px-0  max-w-7xl mx-auto mb-10">
         <RecognizedByBest />
       </div>
 
