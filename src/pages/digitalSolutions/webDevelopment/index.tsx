@@ -1,5 +1,8 @@
+import ContactUs from "../../../components/ContactUs";
 import HeroSectionWithCTA from "../../../components/HeroSectionWithCTA";
 import ImageWithServiceDetails from "../../../components/ImageWithServiceDetails";
+import TestimonialsSection from "../../../components/TestimonialsSection";
+import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest";
 import WebDevService from "./components/webDevService";
 
 const WebDevelopment = () => {
@@ -40,7 +43,7 @@ const WebDevelopment = () => {
         secondaryButtonLabel="Schedule A Free Consultation  "
         secondaryButtonUrl="contact"
       />
-      <div className="px-4 lg:px-5  lg:max-w-7xl lg:mx-auto py-[40px] space-y-[30px]">
+      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto py-[40px] space-y-[30px]">
         <div>
           <div className="text-center">
             <p className="text-[25px] lg:text-[48px] font-semibold text-primary">
@@ -185,7 +188,7 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="px-4 lg:px-0 lg:max-w-7xl mx-auto text-center py-[30px]">
+      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto text-center py-[30px]">
         <p className="text-[25px] lg:text-[48px] font-semibold text-primary">
           Who We Are?
         </p>
@@ -214,6 +217,18 @@ const WebDevelopment = () => {
         data={whyChooseOurServiceData}
         imageClass="h-auto max-h-[180px] lg:max-h-none lg:h-[900px]"
       />
+
+      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto">
+        <TestimonialsSection />
+      </div>
+
+      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto mb-10">
+        <RecognizedByBest />
+      </div>
+
+      <div>
+        <ContactUs />
+      </div>
     </div>
   );
 };
