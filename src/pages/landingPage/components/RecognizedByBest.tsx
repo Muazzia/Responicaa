@@ -3,7 +3,7 @@ import { Carousel } from "antd";
 export const RecognizedByBest = () => {
   return (
     <>
-      <div className="text-center py-8 md:py-14 flex flex-col gap-4 md:gap-10 px-4">
+      <div className="text-center flex flex-col gap-4 md:gap-10 px-4">
         <h1 className="text-3xl md:text-5xl font-semibold">
           Recognized by the best
         </h1>

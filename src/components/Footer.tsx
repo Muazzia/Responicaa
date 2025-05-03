@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import { MdLocationOn } from "react-icons/md";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { ROUTES } from "../constants";
 
 interface ContactInfoItemProps {
   icon: React.ComponentType<{ className: string }>;
@@ -45,10 +46,7 @@ export const Footer = () => {
 
       <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row gap-8 lg:gap-12 justify-between">
         <div className="w-full md:flex-[0.8] flex flex-col items-center md:items-start text-center md:text-left justify-center">
-          <Link
-            to="/"
-            className="mb-4 max-w-[200px] lg:max-w-[250px]"
-          >
+          <Link to="/" className="mb-4 max-w-[200px] lg:max-w-[250px]">
             <img
               src="/logo.jpeg"
               alt="Responica Logo"
@@ -105,10 +103,10 @@ export const Footer = () => {
       <div className="border-t border-gray-600 text-center text-white text-sm py-4 px-4">
         Copyright © 2024{" "}
         <a
-          href="mailto:contact@nexcelsolutions.com"
+          href="mailto:contact@responica.com"
           className="text-white hover:text-red-500 transition-colors"
         >
-          contact@nexcelsolutions.com
+          contact@responica.com
         </a>
         . All rights reserved.
       </div>
@@ -117,13 +115,10 @@ export const Footer = () => {
 };
 
 const FOOTER_LINKS = [
-  { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Services", href: "/services" },
-  { title: "Blog", href: "/blog" },
-  { title: "Contact", href: "/contact" },
-  { title: "Terms & Conditions", href: "/terms" },
-  { title: "Privacy Policy", href: "/privacy" },
+  { title: "Home", href: ROUTES.LANDINGPAGE },
+  { title: "Contact", href: ROUTES.CONTACT },
+  { title: "Digital Solutions", href: ROUTES.DIGITALSOLUTIONS },
+  { title: "BPO", href: ROUTES.BPO },
 ];
 
 const CONTACT_INFO = {
@@ -144,9 +139,9 @@ const CONTACT_INFO = {
       href: "tel:1-302-797-8888",
     },
     {
-      text: "support@nexcelsolutions.com",
+      text: "support@responica.com",
       icon: FaEnvelope,
-      href: "mailto:support@nexcelsolutions.com",
+      href: "mailto:support@responica.com",
     },
   ],
 };

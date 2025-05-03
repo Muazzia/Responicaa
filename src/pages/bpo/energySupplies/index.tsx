@@ -100,10 +100,10 @@ const EnergySupplies = () => {
           <p>
             Superior energy supply services are essential for maintaining
             operational efficiency and cost control in today's dynamic business
-            environment. Nexcel Solutions understands that energy is not just a
-            utility cost - it's a strategic resource that impacts your bottom
-            line and sustainability profile. Our comprehensive energy services
-            help businesses secure reliable power while optimizing energy
+            environment. Responica understands that energy is not just a utility
+            cost - it's a strategic resource that impacts your bottom line and
+            sustainability profile. Our comprehensive energy services help
+            businesses secure reliable power while optimizing energy
             expenditures.
           </p>
         </div>
@@ -182,17 +182,17 @@ const EnergySupplies = () => {
 
         <div className="mt-8 md:mt-12">
           <p className="text-center text-3xl sm:text-4xl lg:text-[48px] text-black px-4 md:px-10">
-            Why Choose Nexcel as Your Energy Provider
+            Why Choose Responica as Your Energy Provider
           </p>
 
           <div className="mt-4 text-sm sm:text-base">
             <p>
-              Nexcel Solutions approaches energy supply as a strategic
-              partnership rather than just a commodity service. We combine
-              market expertise with technical knowledge to deliver energy
-              solutions that align with your organizational goals. Our team
-              becomes an extension of your operations, providing insights that
-              enhance both your energy efficiency and sustainability profile.
+              Responica approaches energy supply as a strategic partnership
+              rather than just a commodity service. We combine market expertise
+              with technical knowledge to deliver energy solutions that align
+              with your organizational goals. Our team becomes an extension of
+              your operations, providing insights that enhance both your energy
+              efficiency and sustainability profile.
             </p>
           </div>
 

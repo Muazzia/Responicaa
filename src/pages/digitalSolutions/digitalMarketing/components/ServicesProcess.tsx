@@ -1,5 +1,3 @@
-import { FaChevronRight } from "react-icons/fa";
-
 interface Step {
   title: string;
   content: string;
@@ -25,7 +23,6 @@ export const ServiceProcess = ({ steps }: { steps: Step[] }) => {
             <p className="text-gray-600 text-sm">{step.content}</p>
             {index !== steps.length - 1 && (
               <div className="md:hidden absolute -right-6 top-1/2 transform -translate-y-1/2">
-                <FaChevronRight className="text-red-700 text-xl" />
               </div>
             )}
           </div>

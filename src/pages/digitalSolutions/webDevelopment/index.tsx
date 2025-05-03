@@ -49,7 +49,7 @@ const WebDevelopment = () => {
   return (
     <div className="">
       <HeroSectionWithCTA
-        description="Welcome to Nexcel Solutions, your trusted partner in shaping digital dreams into reality. As a leading web development services company, we specialize in transforming innovative ideas and business goals into powerful, user-friendly websites and web applications. Our dedicated team of skilled developers, designers, and strategists collaborates seamlessly to deliver tailor-made solutions that not only meet but exceed your expectations."
+        description="Welcome to Responica, your trusted partner in shaping digital dreams into reality. As a leading web development services company, we specialize in transforming innovative ideas and business goals into powerful, user-friendly websites and web applications. Our dedicated team of skilled developers, designers, and strategists collaborates seamlessly to deliver tailor-made solutions that not only meet but exceed your expectations."
         heading="Web Development Services"
         primaryButtonLabel="Digital Solutions"
         secondaryButtonLabel="Schedule A Free Consultation  "
@@ -208,7 +208,7 @@ const WebDevelopment = () => {
           As a leading web development company, we not just provide
           knowledgeable consultants, designers, and developers to advance your
           online presence rather you can also get cloud management services as
-          well. Nexcel can assist businesses with changes, upgrades, and
+          well. Responica can assist businesses with changes, upgrades, and
           integration in addition to building strong, scalable, and secure
           professional web-based experiences. We provide full Managed Services,
           which includes 24/7 support, maintenance and can handle even the most
@@ -219,11 +219,11 @@ const WebDevelopment = () => {
       <ImageWithServiceDetails
         imageUrl="/images/digitalSolutions/uxDesigner.jpg"
         label="Why Choose Our Web Development Services?"
-        description="Nexcel Solutions has been offering web design and development services
+        description="Responica has been offering web design and development services
           for several years. Our expertise in developing safe, user-friendly
           websites and app development services assists business growth. We
           create HTML, CSS, and Javascript-based web pages with interactive
-          content that loads quickly. The Nexcel design creates an excellent
+          content that loads quickly. The Responica design creates an excellent
           user experience for visitors by increasing your view from the smallest
           screen size."
         data={whyChooseOurServiceData}

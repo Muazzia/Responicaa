@@ -13,11 +13,17 @@ import DigitalSolutions from "../pages/digitalSolutions";
 import QualityAssurance from "../pages/bpo/qualityAssurance";
 import EnergySupplies from "../pages/bpo/energySupplies";
 import HomeWarranty from "../pages/bpo/homeWarranty";
+import ScrollToTop from "../components/ScrollToTop";
 
 export const routes = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: (
+      <>
+        <ScrollToTop />
+        <Layout />
+      </>
+    ),
     children: [
       {
         path: ROUTES.LANDINGPAGE,

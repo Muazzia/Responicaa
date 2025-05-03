@@ -157,7 +157,7 @@ const BPO = () => {
                 culture, and business customs. One advantage of our onshore
                 business process outsourcing service is the comfort of being in
                 the same time zone, which enables real-time cooperation and
-                quicker reaction times. Additionally, Nexcel Solutions' onshore
+                quicker reaction times. Additionally, Responica' onshore
                 business process outsourcing service gives you access to a pool
                 of local personnel familiar with your nation's rules and market
                 dynamics. This could happen in more efficient project execution
@@ -190,14 +190,14 @@ const BPO = () => {
               How Can We Be of Assistance?
             </p>
             <p className="my-2 text-sm sm:text-base">
-              Working with Nexcel Solutions' BPO services has several
-              advantages, such as cost savings, the capacity to concentrate on
-              core duties, improved outcomes in non-core areas, and higher
-              productivity. You can streamline operations, spur development, and
-              acquire a competitive edge in your sector by outsourcing specific
-              business tasks. It's time to consider the advantages of working
-              with reputable services like ours and be prepared to discover how
-              far your business can go.
+              Working with Responica' BPO services has several advantages, such
+              as cost savings, the capacity to concentrate on core duties,
+              improved outcomes in non-core areas, and higher productivity. You
+              can streamline operations, spur development, and acquire a
+              competitive edge in your sector by outsourcing specific business
+              tasks. It's time to consider the advantages of working with
+              reputable services like ours and be prepared to discover how far
+              your business can go.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-4 mt-5">
@@ -230,11 +230,11 @@ const BPO = () => {
                   To Accomplish More
                 </p>
                 <p className="text-black/60 text-sm sm:text-base">
-                  Nexcel Solutions’ BPO services have areas of expertise in
-                  finance, accounting, customer assistance, and data input. By
-                  utilizing our resources and skills, you can ensure that these
-                  non-core tasks are carried out proficiently and successfully,
-                  improving the results for your company.
+                  Responica’ BPO services have areas of expertise in finance,
+                  accounting, customer assistance, and data input. By utilizing
+                  our resources and skills, you can ensure that these non-core
+                  tasks are carried out proficiently and successfully, improving
+                  the results for your company.
                 </p>
               </div>
               <div className="text-center p-3">
@@ -300,9 +300,9 @@ const BPO = () => {
             </p>
             <p className="text-black/60 text-sm sm:text-[14px] mb-5">
               Get specialized support and expertise from the renowned BPO
-              service experts, Nexcel Solutions. We are your trusted partners
-              whom you can rely on to meet your organization with competent
-              sales and marketing tech.
+              service experts, Responica. We are your trusted partners whom you
+              can rely on to meet your organization with competent sales and
+              marketing tech.
             </p>
             <div className="bg-primary text-white w-fit px-4 py-2 rounded-lg cursor-pointer hover:bg-primary/90 transition">
               Get in Touch
@@ -339,7 +339,7 @@ const RenderBPOService = () => {
   return (
     <div>
       <p className="text-2xl sm:text-3xl lg:text-[40px] font-semibold text-center">
-        BPO Solutions Offered BY Nexcel Solutions
+        BPO Solutions Offered BY Responica
       </p>
       <div className="mt-5 space-y-5">
         <div>
@@ -397,7 +397,7 @@ const RenderBPOService = () => {
               with their electronic devices, such as computers, smartphones, or
               other hardware or software. Businesses must have the right
               resources to thrive in offering top-notch technical assistance.
-              Additionally, Nexcel BPO services provide a ticketing mechanism
+              Additionally, Responica BPO services provide a ticketing mechanism
               made just for this use.
             </p>
             <p className="mt-2">
@@ -486,14 +486,15 @@ const RenderBPOService = () => {
           </p>
           <div className="text-black/60 mt-2 text-sm sm:text-base">
             <p>
-              Nexcel Solution is a well-known outsourcing firm that recognizes
-              the value of truck dispatch services for independent contractors
-              specializing in fieldwork. One of the most adaptable trucks
-              dispatching businesses is Nexcel Solution. It can support your
-              current calling process by arranging appointments, quickly
-              delivering important calls, taking messages, and rerouting them to
-              the right people. Additionally, our after-hours answering services
-              reassure your clients that you are accessible whenever they call.
+              Responica Solution is a well-known outsourcing firm that
+              recognizes the value of truck dispatch services for independent
+              contractors specializing in fieldwork. One of the most adaptable
+              trucks dispatching businesses is Responica Solution. It can
+              support your current calling process by arranging appointments,
+              quickly delivering important calls, taking messages, and rerouting
+              them to the right people. Additionally, our after-hours answering
+              services reassure your clients that you are accessible whenever
+              they call.
             </p>
           </div>
         </div>
