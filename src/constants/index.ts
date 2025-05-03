@@ -15,4 +15,5 @@ export class ROUTES {
   static CUSTOMERSUPPORT = this.BPO + "/customerSupport";
   static QUALITYASSURANCE = this.BPO + "/qualityAssurance";
   static ENERGYSUPPLIES = this.BPO + "/energySupplies";
+  static HOMEWARRANTY = this.BPO + "/homeWarranty";
 }

@@ -12,6 +12,7 @@ import BPO from "../pages/bpo";
 import DigitalSolutions from "../pages/digitalSolutions";
 import QualityAssurance from "../pages/bpo/qualityAssurance";
 import EnergySupplies from "../pages/bpo/energySupplies";
+import HomeWarranty from "../pages/bpo/homeWarranty";
 
 export const routes = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ export const routes = createBrowserRouter([
       {
         path: ROUTES.ENERGYSUPPLIES,
         element: <EnergySupplies />,
+      },
+      {
+        path: ROUTES.HOMEWARRANTY,
+        element: <HomeWarranty />,
       },
     ],
   },
