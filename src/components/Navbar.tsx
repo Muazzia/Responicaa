@@ -19,8 +19,6 @@ import { Button } from "..//components/ui/button";
 import { Menu } from "lucide-react";
 
 export const Navbar = () => {
-  const [openSolutions, setOpenSolutions] = useState(false);
-  const [openBPO, setOpenBPO] = useState(false);
   const navigate = useNavigate(); // Initialize useNavigate
 
   return (
@@ -155,100 +153,94 @@ export const Navbar = () => {
             </SheetTrigger>
             <SheetContent
               side="top"
-              className="pt-20 sm:w-full md:w-[50%] lg:w-[30%] mx-auto"
+              className="pt-20 sm:w-full md:w-[50%] lg:w-[30%] mx-auto bg-gray-50 rounded-lg shadow-lg"
             >
-              <nav className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2">
-                  <Button
-                    variant="ghost"
-                    onClick={() => setOpenSolutions(!openSolutions)}
-                    className="justify-start"
-                  >
-                    Digital Solutions
-                  </Button>
-                  {openSolutions && (
-                    <div className="ml-4 flex flex-col gap-2">
-                      <SheetClose asChild>
-                        <Link
-                          to={ROUTES.DIGIALMARKETING}
-                          className="text-gray-700 hover:text-blue-600"
-                        >
-                          Digital Marketing
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          to={ROUTES.WEBDEVELOPMENT}
-                          className="text-gray-700 hover:text-blue-600"
-                        >
-                          Web Development
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          to={ROUTES.MOBILEDEVELOPMENT}
-                          className="text-gray-700 hover:text-blue-600"
-                        >
-                          Mobile Development
-                        </Link>
-                      </SheetClose>
-                    </div>
-                  )}
-                </div>
+              <nav className="flex flex-col gap-6 p-4">
+              <SheetClose asChild>
+                <Link
+                to={ROUTES.DIGITALSOLUTIONS}
+                className="text-lg font-semibold text-gray-800 hover:text-blue-600"
+                >
+                Digital Solutions
+                </Link>
+              </SheetClose>
+              <div className="ml-4 flex flex-col gap-2">
+                <SheetClose asChild>
+                <Link
+                  to={ROUTES.DIGIALMARKETING}
+                  className="text-gray-700 hover:text-blue-600"
+                >
+                  Digital Marketing
+                </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                <Link
+                  to={ROUTES.WEBDEVELOPMENT}
+                  className="text-gray-700 hover:text-blue-600"
+                >
+                  Web Development
+                </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                <Link
+                  to={ROUTES.MOBILEDEVELOPMENT}
+                  className="text-gray-700 hover:text-blue-600"
+                >
+                  Mobile Development
+                </Link>
+                </SheetClose>
+              </div>
 
-                <div className="flex flex-col gap-2">
-                  <Button
-                    variant="ghost"
-                    onClick={() => setOpenBPO(!openBPO)}
-                    className="justify-start"
-                  >
-                    BPO
-                  </Button>
-                  {openBPO && (
-                    <div className="ml-4 flex flex-col gap-2">
-                      <SheetClose asChild>
-                        <Link
-                          to={ROUTES.SALES}
-                          className="text-gray-700 hover:text-blue-600"
-                        >
-                          Sales
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          to={ROUTES.CUSTOMERSUPPORT}
-                          className="text-gray-700 hover:text-blue-600"
-                        >
-                          Customer Support
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          to={ROUTES.QUALITYASSURANCE}
-                          className="text-gray-700 hover:text-blue-600"
-                        >
-                          Quality Assurance
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          to={ROUTES.ENERGYSUPPLIES}
-                          className="text-gray-700 hover:text-blue-600"
-                        >
-                          Energy Supplies
-                        </Link>
-                      </SheetClose>
-                      <SheetClose asChild>
-                        <Link
-                          to={ROUTES.HOMEWARRANTY}
-                          className="text-gray-700 hover:text-blue-600"
-                        >
-                          Home Warranty
-                        </Link>
-                      </SheetClose>
-                    </div>
-                  )}
-                </div>
+              <SheetClose asChild>
+                <Link
+                to={ROUTES.BPO}
+                className="text-lg font-semibold text-gray-800 hover:text-blue-600"
+                >
+                BPO
+                </Link>
+              </SheetClose>
+              <div className="ml-4 flex flex-col gap-2">
+                <SheetClose asChild>
+                <Link
+                  to={ROUTES.SALES}
+                  className="text-gray-700 hover:text-blue-600"
+                >
+                  Sales
+                </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                <Link
+                  to={ROUTES.CUSTOMERSUPPORT}
+                  className="text-gray-700 hover:text-blue-600"
+                >
+                  Customer Support
+                </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                <Link
+                  to={ROUTES.QUALITYASSURANCE}
+                  className="text-gray-700 hover:text-blue-600"
+                >
+                  Quality Assurance
+                </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                <Link
+                  to={ROUTES.ENERGYSUPPLIES}
+                  className="text-gray-700 hover:text-blue-600"
+                >
+                  Energy Supplies
+                </Link>
+                </SheetClose>
+                <SheetClose asChild>
+                <Link
+                  to={ROUTES.HOMEWARRANTY}
+                  className="text-gray-700 hover:text-blue-600"
+                >
+                  Home Warranty
+                </Link>
+                </SheetClose>
+              </div>
               </nav>
             </SheetContent>
           </Sheet>
