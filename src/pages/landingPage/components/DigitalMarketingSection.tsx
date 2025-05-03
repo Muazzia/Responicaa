@@ -3,7 +3,7 @@ import { FaDesktop } from "react-icons/fa";
 const DigitalMarketingSection = () => {
   return (
     <>
-      <div className=" xl:px-0 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 py-10 md:py-28 gap-8 md:gap-4">
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl  mx-auto grid grid-cols-1 md:grid-cols-2 py-10 md:py-28 gap-8 md:gap-4">
         <div className="relative w-full h-full flex items-center justify-center order-first">
           <img
             src="/images/landingPage/marketing.png"
