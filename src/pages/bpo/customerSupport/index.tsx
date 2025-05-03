@@ -1,5 +1,8 @@
+import ContactUs from "../../../components/ContactUs";
 import HeroSectionWithCTA from "../../../components/HeroSectionWithCTA";
 import ImageWithServiceDetails from "../../../components/ImageWithServiceDetails";
+import TestimonialsSection from "../../../components/TestimonialsSection";
+import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest";
 
 const CustomerSupport = () => {
   const whyChooseOurServiceData = [
@@ -211,6 +214,18 @@ const CustomerSupport = () => {
             />
           </div>
         </div>
+      </div>
+
+      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto">
+        <TestimonialsSection />
+      </div>
+
+      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto mb-10">
+        <RecognizedByBest />
+      </div>
+
+      <div>
+        <ContactUs />
       </div>
     </div>
   );
