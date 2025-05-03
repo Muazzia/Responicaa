@@ -83,8 +83,13 @@ const BPOServicesSection = () => {
           </div>
         </div>
         <div className="relative w-full h-full flex items-center justify-center">
-          <FaHeadset className="text-9xl text-[#a10202]" />{" "}
-          {/* Replace image with a large icon */}
+          <img
+            src="/images/landingPage/bop.png"
+            alt="BPO Services"
+            width={400}
+            height={400}
+            className="w-auto h-auto"
+          />
         </div>
       </div>
       <div className="max-w-full lg:max-w-[80%] xl:max-w-6xl mx-auto px-4 sm:px-6">
