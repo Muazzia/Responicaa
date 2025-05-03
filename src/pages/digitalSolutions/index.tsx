@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import ContactUs from "../../components/ContactUs";
 import ServiceCard from "../../components/ServiceCard";
 import TestimonialsSection from "../../components/TestimonialsSection";
@@ -5,6 +6,17 @@ import { RecognizedByBest } from "../landingPage/components/RecognizedByBest";
 import MobileDevelopmentCard from "./components/mobileDevelopmentCard";
 
 const DigitalSolutions = () => {
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
   return (
     <>
       <div className="mx-auto max-w-7xl px-4 md:px-0">
@@ -342,7 +354,10 @@ const DigitalSolutions = () => {
               path that will help you to stand out in the competitive business
               environment of today.
             </p>
-            <button className="bg-red-700 text-white px-6 py-2 rounded-lg mt-4">
+            <button
+              onClick={scrollToContact}
+              className="bg-red-700 text-white px-6 py-2 rounded-lg mt-4 cursor-pointer"
+            >
               Get in touch
             </button>
           </div>
@@ -357,7 +372,7 @@ const DigitalSolutions = () => {
         <div className="mt-10 flex flex-col gap-10">
           <TestimonialsSection />
           <RecognizedByBest />
-          <ContactUs />
+          <ContactUs ref={contactRef} />
         </div>
       </div>
     </>

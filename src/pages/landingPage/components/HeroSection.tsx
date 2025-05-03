@@ -1,7 +1,8 @@
-import Button from "../../../components/Button";
-import { ROUTES } from "../../../constants";
+interface Props {
+  handleScrollButtonClick?: () => void;
+}
 
-const HeroSection = () => {
+const HeroSection = ({ handleScrollButtonClick }: Props) => {
   return (
     <div className="flex flex-col px-4 md:px-10 bg-[#f2f3f5]">
       <div className="flex flex-col-reverse md:flex-row justify-around items-center gap-10">
@@ -13,12 +14,13 @@ const HeroSection = () => {
           <p className="text-lg md:text-2xl text-red-700 font-semibold">
             Take charge of your business continuity with our Custom Solutions.
           </p>
-          <Button
-            label={"Schedule a Free Consultant"}
-            route={ROUTES.CONTACT}
-            className="!px-5 !py-3 my-6 w-fit"
-            hoverStyle
-          />
+
+          <button
+            className={`cursor-pointer md:mt-0 bg-red-700  text-white   rounded-full font-semibold transition-colors text-sm whitespace-nowrap px-5 py-3 my-6 w-fit`}
+            onClick={handleScrollButtonClick}
+          >
+            Schedule a Free Consultation
+          </button>
         </div>
 
         {/* Spinning Logo Section */}
