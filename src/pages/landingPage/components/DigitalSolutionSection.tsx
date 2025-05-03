@@ -1,4 +1,6 @@
 import { FaDesktop, FaMobileAlt, FaBullhorn } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link
+import { ROUTES } from "../../../constants"; // Import ROUTES
 
 const services = [
   {
@@ -9,6 +11,7 @@ const services = [
     title: "Web Development",
     description:
       "Unleashing the power of custom web development and creative website design.",
+    url: ROUTES.WEBDEVELOPMENT, // Route for Web Development
   },
   {
     id: 2,
@@ -18,6 +21,7 @@ const services = [
     title: "Mobile App Development",
     description:
       "Crafting user-friendly mobile applications to enhance your business reach.",
+    url: ROUTES.MOBILEDEVELOPMENT, // Route for Mobile App Development
   },
   {
     id: 3,
@@ -27,6 +31,7 @@ const services = [
     title: "Digital Marketing",
     description:
       "Boosting your brand's visibility with tailored digital marketing strategies.",
+    url: ROUTES.DIGIALMARKETING, // Route for Digital Marketing
   },
 ];
 
@@ -65,9 +70,12 @@ const DigitalSolutionSection = () => {
             <div key={service.id} className="flex gap-3 md:gap-4 items-start">
               {service.icon}
               <div className="text-left">
-                <h1 className="text-xs font-semibold hover:text-red-500 text-white transition-all cursor-pointer mb-2 md:mb-1">
+                <Link
+                  to={service.url} // Add Link to route
+                  className="text-xs font-semibold hover:text-red-500 text-white transition-all cursor-pointer mb-2 md:mb-1"
+                >
                   {service.title}
-                </h1>
+                </Link>
                 <p className="text-xs font-light text-white leading-relaxed md:leading-normal">
                   {service.description}
                 </p>
