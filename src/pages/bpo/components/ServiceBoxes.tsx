@@ -15,8 +15,8 @@ interface Props {
 const ServiceBoxes = ({ data }: Props) => {
   return (
     <div className="w-full bg-gradient-to-b from-[#B0C7E6] to-[#E8E6EF]">
-      <div className="py-28 max-w-7xl mx-auto ">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="py-12 sm:py-20 lg:py-28 px-4 sm:px-6 md:px-10 xl:px-0 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
           {data?.map((item) => {
             return (
               <ServiceBox
