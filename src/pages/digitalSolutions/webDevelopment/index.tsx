@@ -209,7 +209,7 @@ const WebDevelopment = () => {
        */}
       <div className="w-full flex flex-col lg:flex-row" id="contact">
         {/* Left section with gray background */}
-        <div className="w-full lg:w-1/2 bg-[#F7F7F7] py-4 px-4 md:px-10">
+        <div className="w-full lg:w-1/2 bg-[#F7F7F7] py-4 px-4 md:px-10 xl:pl-16 ">
           <div className="lg:max-w-7xl mx-auto ">
             <p className="text-[30px] font-semibold mb-2">
               Brand and Business Awareness
@@ -236,7 +236,7 @@ const WebDevelopment = () => {
         </div>
 
         {/* Right section with red background */}
-        <div className="w-full lg:w-1/2 bg-[#A71717] py-4 px-4 md:px-10">
+        <div className="w-full lg:w-1/2 bg-[#A71717] py-4 px-4 md:px-10 xl:pr-16">
           <div className="lg:max-w-7xl mx-auto text-white">
             <p className="text-[30px] font-semibold mb-2">
               Expertise and Experience
