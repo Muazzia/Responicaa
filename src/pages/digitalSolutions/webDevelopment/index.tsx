@@ -5,6 +5,8 @@ import ImageWithServiceDetails from "../../../components/ImageWithServiceDetails
 import TestimonialsSection from "../../../components/TestimonialsSection";
 import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest";
 import WebDevService from "./components/webDevService";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../../constants";
 
 const WebDevelopment = () => {
   const whyChooseOurServiceData = [
@@ -46,6 +48,8 @@ const WebDevelopment = () => {
     window.scrollTo({ top, behavior: "smooth" });
   };
 
+  const nav = useNavigate();
+
   return (
     <div className="">
       <HeroSectionWithCTA
@@ -74,7 +78,10 @@ const WebDevelopment = () => {
 
           <RenderWebDevService />
 
-          <div className="w-full text-center mt-[30px]  bg-primary rounded-md  py-2 text-white">
+          <div
+            onClick={() => nav(ROUTES.CONTACT)}
+            className="w-full text-center mt-[30px]  bg-primary hover:bg-primary/80 hover:cursor-pointer rounded-md  py-2 text-white"
+          >
             <p>Talk To an expert</p>
           </div>
         </div>
@@ -177,7 +184,7 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className=" flex flex-col lg:flex-row w-full " id="contact">
+      {/* <div className=" flex flex-col lg:flex-row w-full " id="contact">
         <div className="px-4 lg:px-0 py-4 lg:py-0 lg:flex-1/2 flex w-full bg-[#F7F7F7] justify-end">
           <p className=" text-[16px]">
             Brand and Business Awareness A well-designed website acts as a
@@ -197,6 +204,61 @@ const WebDevelopment = () => {
         </div>
         <div className="px-4 lg:px-0 py-4 lg:py-0 lg:flex-1/2 bg-[#A71717]">
           asdlkfjsald
+        </div>
+      </div>
+       */}
+      <div className="w-full flex flex-col lg:flex-row" id="contact">
+        {/* Left section with gray background */}
+        <div className="w-full lg:w-1/2 bg-[#F7F7F7] py-4 px-4 md:px-10">
+          <div className="lg:max-w-7xl mx-auto ">
+            <p className="text-[30px] font-semibold mb-2">
+              Brand and Business Awareness
+            </p>
+            <p className="text-[16px]">
+              A well-designed website acts as a visitor’s virtual storefront,
+              creating a lasting first impression. Your website can become an
+              extension of your brand’s identity by combining the appropriate
+              amount of aesthetics and functionality. Our professional CMS
+              development services can design your website with your brand’s
+              colors, logo, and messaging in mind to create a visually appealing
+              identity that will appeal to visitors and improve brand recall and
+              recognition.
+            </p>
+            <p className="mt-4">
+              You can present your brand’s unique story and values online
+              because of our web design services. You can effectively
+              communicate your brand’s mission and culture by using attractive
+              imagery, exciting information, and interactive features. This
+              emotional bond develops a closer connection with your audience,
+              transforming casual site visitors into committed brand promoters.
+            </p>
+          </div>
+        </div>
+
+        {/* Right section with red background */}
+        <div className="w-full lg:w-1/2 bg-[#A71717] py-4 px-4 md:px-10">
+          <div className="lg:max-w-7xl mx-auto text-white">
+            <p className="text-[30px] font-semibold mb-2">
+              Expertise and Experience
+            </p>
+            <p className="text-[16px]">
+              A high level of knowledge and experience is necessary to create a
+              website that looks great and performs smoothly. Our professional
+              website design and development services know design principles,
+              user experience, and market trends. By doing this, you can be sure
+              that your website is aesthetically pleasing, simple to use, and
+              user-friendly, increasing visitor engagement.
+            </p>
+            <p className="mt-4">
+              Technical expertise is brought to the table by experienced web
+              developers. To ensure that your website loads quickly and runs
+              without any problems across all devices and browsers, they use
+              cutting-edge technologies, responsive design, and performance
+              optimization. This degree of technical skill reduces bounce rates,
+              keeps visitors interested, and raises the possibility of
+              conversions.
+            </p>
+          </div>
         </div>
       </div>
 
