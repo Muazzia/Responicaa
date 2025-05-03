@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import ContactUs from "../../../components/ContactUs";
 import HeroSectionWithCTA from "../../../components/HeroSectionWithCTA";
 import ImageWithServiceDetails from "../../../components/ImageWithServiceDetails";
@@ -31,15 +32,27 @@ const CustomerSupport = () => {
         "For your convenience, we offer multiple help methods including live chat, email, and phone. Contact us using your favorite method of communication for smooth conversation.",
     },
   ];
+
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   return (
     <div className="">
       <HeroSectionWithCTA
         primaryButtonLabel="Solutions"
-        primaryButtonUrl="/digitalSolutions"
         heading="Customer Support Service"
         description="Greetings to our dedicated customer support outsourcing service department, where we put your satisfaction first. We are dedicated to providing unmatched support that exceeds expectations because we recognize that every encounter you have with us forms your overall impression of us."
         secondaryButtonLabel="Schedule A Free Consultation"
-        secondaryButtonUrl="contact"
+        onSecondaryButtonClick={scrollToContact}
       />
 
       <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
@@ -225,7 +238,7 @@ const CustomerSupport = () => {
       </div>
 
       <div>
-        <ContactUs />
+        <ContactUs ref={contactRef} />
       </div>
     </div>
   );

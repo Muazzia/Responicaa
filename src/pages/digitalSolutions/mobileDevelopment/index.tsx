@@ -4,9 +4,21 @@ import HeroSectionWithCTA from "../../../components/HeroSectionWithCTA";
 import TestimonialsSection from "../../../components/TestimonialsSection";
 import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest";
 import { FaCircleCheck } from "react-icons/fa6";
+import { useRef } from "react";
 
 export const MobileDevelopment = () => {
-  
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   return (
     <>
       {" "}
@@ -14,9 +26,8 @@ export const MobileDevelopment = () => {
         description="Transforming your ideas into modern, high-quality, and flawless mobile app solutions is our specialty! With our full-cycle custom mobile development services, we help you to transform your idea into a product that is ready for the market. Our experienced staff ensures seamless delivery and provides continuous technical assistance to ensure the success of your app."
         heading="Custom Mobile App Development Services"
         primaryButtonLabel="Solutions"
-        primaryButtonUrl="/digitalSolutions"
         secondaryButtonLabel="Schedule A Free Consultation"
-        secondaryButtonUrl="contact"
+        onSecondaryButtonClick={scrollToContact}
       />
       <div className="max-w-7xl mx-auto">
         <div>
@@ -184,7 +195,7 @@ export const MobileDevelopment = () => {
         <div className="mt-10 flex flex-col gap-10">
           <TestimonialsSection />
           <RecognizedByBest />
-          <ContactUs />
+          <ContactUs ref={contactRef} />
         </div>
       </div>
     </>

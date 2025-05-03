@@ -4,6 +4,7 @@ import { IoCall } from "react-icons/io5";
 import TestimonialsSection from "../../../components/TestimonialsSection";
 import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest";
 import ContactUs from "../../../components/ContactUs";
+import { useRef } from "react";
 
 const Sales = () => {
   const outBoundParaData = [
@@ -128,15 +129,27 @@ const Sales = () => {
         "Pull communication involves the agent asking the proper questions to obtain the required information. As the conversation moves forward, the agent asks yes/no questions and considers the best solutions for the customers. The agent doesn't waste time obtaining information when communicating in this manner",
     },
   ];
+
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   return (
     <div className="">
       <HeroSectionWithCTA
         primaryButtonLabel="Solutions"
-        primaryButtonUrl="/digitalSolutions"
         heading="Outsource Tele Sales Services"
         description="You may produce and close quality leads with the help of our professional inbound/outbound Tele Sales services.Our B2B lead generation service uses a variety of calling strategies to attract potential customers."
         secondaryButtonLabel="Schedule A Free Consultation"
-        secondaryButtonUrl="contact"
+        onSecondaryButtonClick={scrollToContact}
       />
 
       <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto py-5 md:py-10 space-y-5 md:space-y-0 md:flex md:gap-5 lg:gap-10">
@@ -210,7 +223,7 @@ const Sales = () => {
       </div>
 
       <div>
-        <ContactUs />
+        <ContactUs ref={contactRef} id="contact" />
       </div>
     </div>
   );

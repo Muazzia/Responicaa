@@ -4,6 +4,7 @@ import { IoShieldCheckmark } from "react-icons/io5";
 import TestimonialsSection from "../../../components/TestimonialsSection";
 import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest";
 import ContactUs from "../../../components/ContactUs";
+import { useRef } from "react";
 
 const HomeWarranty = () => {
   const warrantyCoverageData = [
@@ -122,15 +123,26 @@ const HomeWarranty = () => {
         "Try our service risk-free for 30 days. If you're not completely satisfied, we'll refund your premium with no questions asked.",
     },
   ];
+
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
   return (
     <div className="">
       <HeroSectionWithCTA
         primaryButtonLabel="Plans"
-        primaryButtonUrl="/warrantyPlans"
         heading="Home Warranty Protection"
         description="Protect your home and budget with our comprehensive home warranty plans. We cover repairs and replacements for your major home systems and appliances, giving you peace of mind and financial protection against unexpected breakdowns."
         secondaryButtonLabel="Get a Free Quote"
-        secondaryButtonUrl="contact"
+        onSecondaryButtonClick={scrollToContact}
       />
 
       <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto py-5 md:py-10 space-y-5 md:space-y-0 md:flex md:gap-5 lg:gap-10">
@@ -203,7 +215,7 @@ const HomeWarranty = () => {
       </div>
 
       <div>
-        <ContactUs />
+        <ContactUs ref={contactRef} />
       </div>
     </div>
   );

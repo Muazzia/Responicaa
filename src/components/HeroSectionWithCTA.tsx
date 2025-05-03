@@ -2,16 +2,14 @@ const HeroSectionWithCTA = ({
   heading,
   description,
   primaryButtonLabel,
-  primaryButtonUrl,
   secondaryButtonLabel,
-  secondaryButtonUrl,
+  onSecondaryButtonClick = () => {},
 }: {
   heading: string;
   description: string;
   primaryButtonLabel: string;
-  primaryButtonUrl: string;
   secondaryButtonLabel: string;
-  secondaryButtonUrl: string;
+  onSecondaryButtonClick?: () => void;
 }) => {
   return (
     <div
@@ -22,12 +20,12 @@ const HeroSectionWithCTA = ({
     >
       <div className="px-4 md:px-8 xl:px-0  max-w-7xl mx-auto flex bg-transparent text-white lg:py-[60px]">
         <div className="mt-[40px] space-y-[20px] max-w-[768px]">
-          <a
-            href={primaryButtonUrl}
+          <span
+            // href={primaryButtonUrl}
             className=" leading-none bg-[#CCCECF] text-black rounded-xs px-2 py-2 text-xs font-semibold"
           >
             {primaryButtonLabel}
-          </a>
+          </span>
           <div className="mt-2 lg:mt-0">
             <p className="text-[30px] lg:text-[60px] font-semibold">
               {heading}
@@ -38,12 +36,13 @@ const HeroSectionWithCTA = ({
           </div>
 
           <div className="mb-4 lg:mb-0">
-            <a
-              href={`#${secondaryButtonUrl}`}
+            <button
+              onClick={onSecondaryButtonClick}
+              // href={`#${secondaryButtonUrl}`}
               className="rounded-xs text-primary bg-[#CCCECF] px-3 py-2 font-semibold"
             >
               {secondaryButtonLabel}
-            </a>
+            </button>
           </div>
         </div>
       </div>

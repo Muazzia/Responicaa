@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import ContactUs from "../../../components/ContactUs";
 import HeroSectionWithCTA from "../../../components/HeroSectionWithCTA";
 import ImageWithServiceDetails from "../../../components/ImageWithServiceDetails";
@@ -33,15 +34,26 @@ const WebDevelopment = () => {
     },
   ];
 
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   return (
     <div className="">
       <HeroSectionWithCTA
         description="Welcome to Nexcel Solutions, your trusted partner in shaping digital dreams into reality. As a leading web development services company, we specialize in transforming innovative ideas and business goals into powerful, user-friendly websites and web applications. Our dedicated team of skilled developers, designers, and strategists collaborates seamlessly to deliver tailor-made solutions that not only meet but exceed your expectations."
         heading="Web Development Services"
         primaryButtonLabel="Digital Solutions"
-        primaryButtonUrl="/digitalSolutions"
         secondaryButtonLabel="Schedule A Free Consultation  "
-        secondaryButtonUrl="contact"
+        onSecondaryButtonClick={scrollToContact}
       />
       <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto py-[40px] space-y-[30px]">
         <div>
@@ -227,7 +239,7 @@ const WebDevelopment = () => {
       </div>
 
       <div>
-        <ContactUs />
+        <ContactUs ref={contactRef} />
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import TestimonialsSection from "../../../components/TestimonialsSection";
 import { RecognizedByBest } from "../../landingPage/components/RecognizedByBest";
 import { FaCircleCheck } from "react-icons/fa6";
 import { ServiceProcess } from "./components/ServicesProcess";
+import { useRef } from "react";
 
 export const DigitalMarketing = () => {
   const marketingServices = [
@@ -35,15 +36,25 @@ export const DigitalMarketing = () => {
     },
   ];
 
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
   return (
     <>
       <HeroSectionWithCTA
         description="As modern-age digital storytellers, we craft narratives that enchant, engage, and elevate your brand's voice. Nexcel Solutions transforms your digital presence through data-driven strategies, delivering measurable growth in today's competitive landscape."
         heading="Full-Service Digital Marketing Agency"
         primaryButtonLabel="View Services"
-        primaryButtonUrl="/digitalSolutions"
         secondaryButtonLabel="Get Free Audit"
-        secondaryButtonUrl="contact"
+        onSecondaryButtonClick={scrollToContact}
       />
 
       <div className="max-w-7xl mx-auto">
@@ -239,7 +250,7 @@ export const DigitalMarketing = () => {
             </div>
           </div>
           <RecognizedByBest />
-          <ContactUs />
+          <ContactUs ref={contactRef} />
         </div>
       </div>
     </>

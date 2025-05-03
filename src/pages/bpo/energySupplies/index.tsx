@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import ContactUs from "../../../components/ContactUs";
 import HeroSectionWithCTA from "../../../components/HeroSectionWithCTA";
 import ImageWithServiceDetails from "../../../components/ImageWithServiceDetails";
@@ -31,15 +32,26 @@ const EnergySupplies = () => {
         "We offer comprehensive energy solutions across all sources including renewable options, traditional power, and hybrid systems. Access the perfect energy mix for your operational needs and environmental commitments.",
     },
   ];
+
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
   return (
     <div className="">
       <HeroSectionWithCTA
         primaryButtonLabel="Solutions"
-        primaryButtonUrl="/digitalSolutions"
         heading="Energy Supply Services"
         description="Welcome to our comprehensive energy supply division, where reliability meets innovation. We are committed to delivering sustainable energy solutions that power businesses efficiently while reducing environmental impact. Our end-to-end energy services ensure you have access to stable, cost-effective power solutions tailored to your operational requirements."
         secondaryButtonLabel="Request Energy Consultation"
-        secondaryButtonUrl="contact"
+        onSecondaryButtonClick={scrollToContact}
       />
 
       <div className="px-4 md:px-8 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
@@ -205,7 +217,7 @@ const EnergySupplies = () => {
       </div>
 
       <div>
-        <ContactUs />
+        <ContactUs ref={contactRef} />
       </div>
     </div>
   );

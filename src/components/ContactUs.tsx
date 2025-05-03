@@ -1,9 +1,18 @@
 import { Form, Input, Button } from "antd";
 import { PhoneOutlined, EnvironmentOutlined } from "@ant-design/icons";
 
-const ContactUs = () => {
+interface Props {
+  id?: string;
+  ref?: React.Ref<HTMLDivElement>;
+}
+
+const ContactUs = ({ id, ref }: Props) => {
   return (
-    <div className="bg-white text-center py-8 md:py-14 px-4">
+    <div
+      id={id ?? ""}
+      ref={ref}
+      className="bg-white text-center py-8 md:py-14 px-4"
+    >
       <h1 className="text-3xl md:text-5xl font-semibold mb-2 md:mb-4">
         Contact Nexcel Solutions Today!
       </h1>
