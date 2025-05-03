@@ -1,4 +1,65 @@
-import { FaDesktop } from "react-icons/fa";
+import {
+  FaHeadset,
+  FaPhoneAlt,
+  FaCheckCircle,
+  FaHome,
+  FaBolt,
+} from "react-icons/fa"; // Import relevant icons
+import { Link } from "react-router-dom"; // Import Link for routing
+import { ROUTES } from "../../../constants"; // Import ROUTES
+
+const boxData = [
+  {
+    id: 1,
+    title: "Customer Support",
+    description:
+      "We are here to ensure that your customers receive impeccable service. Our BPO outsourcing service USA enables you to always communicate with your clients.",
+    icon: (
+      <FaHeadset className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+    ),
+    url: ROUTES.CUSTOMERSUPPORT, // Route for Customer Support
+  },
+  {
+    id: 2,
+    title: "TeleSales",
+    description:
+      "Our telemarketing sales in BPO outsourcing service involve promoting products or services over the phone, targeting potential customers to increase your sales.",
+    icon: (
+      <FaPhoneAlt className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+    ),
+    url: ROUTES.SALES, // Route for TeleSales
+  },
+  {
+    id: 3,
+    title: "Quality Assurance",
+    description:
+      "Quality assurance is a process for confirming and validating a good or service that involves testing the software to find and fix any problems before making it available to users.",
+    icon: (
+      <FaCheckCircle className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+    ),
+    url: ROUTES.QUALITYASSURANCE, // Route for Quality Assurance
+  },
+  {
+    id: 4,
+    title: "Home Warranty",
+    description:
+      "A home warranty is a service contract that covers the repair or replacement of major home systems and appliances that break down due to normal wear and tear.",
+    icon: (
+      <FaHome className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+    ),
+    url: ROUTES.HOMEWARRANTY, // Route for Home Warranty
+  },
+  {
+    id: 5,
+    title: "Energy Supplies",
+    description:
+      "Energy supplies refer to the various sources of energy that are used to generate electricity, heat, and power for homes and businesses.",
+    icon: (
+      <FaBolt className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+    ),
+    url: ROUTES.ENERGYSUPPLIES, // Route for Energy Supplies
+  },
+];
 
 const BPOServicesSection = () => {
   return (
@@ -22,27 +83,24 @@ const BPOServicesSection = () => {
           </div>
         </div>
         <div className="relative w-full h-full flex items-center justify-center">
-          <img
-            src="/images/landingPage/bop.png"
-            alt="BPO Services"
-            width={400}
-            height={400}
-            className="w-auto h-auto"
-          />
+          <FaHeadset className="text-9xl text-[#a10202]" />{" "}
+          {/* Replace image with a large icon */}
         </div>
       </div>
       <div className="max-w-full lg:max-w-[80%] xl:max-w-6xl mx-auto px-4 sm:px-6">
         <div className="bg-gradient-to-b from-[#A10202] to-[#960000] text-center py-8 md:py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-10 rounded-sm gap-4 md:gap-8 lg:gap-10">
-          {[...Array(6)].map((_, i) => (
-            <div key={i} className="flex gap-3 md:gap-4 items-start">
-              <FaDesktop className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+          {boxData.map((box) => (
+            <div key={box.id} className="flex gap-3 md:gap-4 items-start">
+              {box.icon}
               <div className="text-left">
-                <h1 className="text-xs font-semibold hover:text-red-500 text-white transition-all cursor-pointer mb-2 md:mb-1">
-                  Web Development
-                </h1>
+                <Link
+                  to={box.url} // Add Link to route
+                  className="text-xs font-semibold hover:text-red-500 text-white transition-all cursor-pointer mb-2 md:mb-1"
+                >
+                  {box.title}
+                </Link>
                 <p className="text-xs font-light text-white leading-relaxed md:leading-normal">
-                  Unleashing the power of custom web development and creative
-                  website design.
+                  {box.description}
                 </p>
               </div>
             </div>
