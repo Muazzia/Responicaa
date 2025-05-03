@@ -44,7 +44,7 @@ export const Navbar = () => {
               >
                 Digital Solutions
               </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="bg-white">
                 <ul className="grid w-[200px] gap-1 p-2">
                   <NavigationMenuLink asChild>
                     <Link
@@ -82,7 +82,7 @@ export const Navbar = () => {
               >
                 BPO
               </NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="bg-white">
                 <ul className="grid w-[200px] gap-1 p-2">
                   <NavigationMenuLink asChild>
                     <Link

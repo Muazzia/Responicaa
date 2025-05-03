@@ -58,7 +58,7 @@ export const DigitalMarketing = () => {
         onSecondaryButtonClick={scrollToContact}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-0">
         <div className="mt-10">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-red-700">
             Comprehensive Digital Marketing Solutions
@@ -147,7 +147,7 @@ export const DigitalMarketing = () => {
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="https://picsum.photos/600/400?random=2"
+                src="/images/digitalSolutions/artificial-intelligence.webp"
                 alt="Marketing Analytics"
                 className="rounded-lg shadow-xl w-full"
               />

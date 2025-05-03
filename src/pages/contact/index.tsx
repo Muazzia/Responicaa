@@ -17,7 +17,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto px-4 md:px-10">
+    <div className="max-w-7xl mx-auto px-4 md:px-0">
       <div className="my-5 flex flex-col justify-center items-center">
         <h1 className="text-4xl md:text-6xl text-center font-semibold text-red-700">
           We're here to help
@@ -69,7 +69,7 @@ export const Contact = () => {
             <span className="font-bold text-red-700">1-302-797-8888</span> or
             simply write your needs to{" "}
             <span className="text-red-700 font-bold">
-              support@responica.com
+              support@nexcelsolutions.com
             </span>
             .
           </p>

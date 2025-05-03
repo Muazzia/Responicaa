@@ -103,10 +103,10 @@ export const Footer = () => {
       <div className="border-t border-gray-600 text-center text-white text-sm py-4 px-4">
         Copyright © 2024{" "}
         <a
-          href="mailto:contact@responica.com"
+          href="mailto:contact@nexcelsolutions.com"
           className="text-white hover:text-red-500 transition-colors"
         >
-          contact@responica.com
+          contact@nexcelsolutions.com
         </a>
         . All rights reserved.
       </div>
