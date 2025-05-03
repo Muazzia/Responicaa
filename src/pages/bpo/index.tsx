@@ -85,7 +85,7 @@ const BPO = () => {
 
   return (
     <div className="">
-      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto">
+      <div className="px-4 md:px-10  xl:px-0  max-w-7xl mx-auto">
         <div className="w-full space-y-5 text-center my-7">
           <p className="text-3xl sm:text-4xl lg:text-[48px] text-primary font-semibold">
             Trusted BPO Services
@@ -337,11 +337,11 @@ const BPO = () => {
         </div>
       </div>
 
-      <div className="px-4 md:px-8  xl:px-0 max-w-7xl mx-auto">
+      <div className="px-4 md:px-10  xl:px-0 max-w-7xl mx-auto">
         <TestimonialsSection />
       </div>
 
-      <div className="px-4 md:px-8  xl:px-0  max-w-7xl mx-auto mb-10">
+      <div className="px-4 md:px-10  xl:px-0  max-w-7xl mx-auto mb-10">
         <RecognizedByBest />
       </div>
 

@@ -23,7 +23,7 @@ const ImageWithServiceDetails = ({
   imageClass = "",
 }: Props) => {
   return (
-    <div className="px-4 md:px-8 xl:px-0 max-w-7xl my-[70px] mx-auto flex flex-col-reverse lg:flex-row items-center gap-[20px] lg:gap-[50px]">
+    <div className="px-4 md:px-10 xl:px-0 max-w-7xl my-[70px] mx-auto flex flex-col-reverse lg:flex-row items-center gap-[20px] lg:gap-[50px]">
       <div className="flex-[0.59]">
         <p className="text-[20px] lg:text-[30px] font-semibold">{label}</p>
         <p className="mt-2 lg:mt-0 text-[15px] lg:text-[16px]">{description}</p>
