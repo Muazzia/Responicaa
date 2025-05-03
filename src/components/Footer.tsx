@@ -25,7 +25,7 @@ const ContactInfoItem = ({ icon: Icon, text, href }: ContactInfoItemProps) => (
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#232323] text-white px-4 sm:px-6 lg:px-10">
+    <footer className="bg-[#232323] text-white px-4 md:px-10 xl:px-0">
       <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row justify-between items-center border-b border-gray-700 gap-4">
         <div className="text-center md:text-left max-w-[600px] md:max-w-none">
           <h2 className="text-lg sm:text-xl font-medium mb-2">
