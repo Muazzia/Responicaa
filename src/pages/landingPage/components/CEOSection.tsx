@@ -17,7 +17,7 @@ const CEOSection = () => {
       </div>
       <div className="flex items-center gap-2 justify-center text-sm md:text-base">
         <TbMailBitcoin className="text-base md:text-lg" />
-        <h1>zain@responica.com</h1>
+        <h1>zain@nexcelsolutions.com</h1>
       </div>
     </div>
   );

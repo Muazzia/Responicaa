@@ -15,7 +15,7 @@ const HeroSection = () => {
           </p>
           <Button
             label={"Schedule a Free Consultant"}
-            route={ROUTES.LANDINGPAGE}
+            route={ROUTES.CONTACT}
             className="!px-5 !py-3 my-6 w-fit"
             hoverStyle
           />

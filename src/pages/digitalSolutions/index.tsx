@@ -7,7 +7,7 @@ import MobileDevelopmentCard from "./components/mobileDevelopmentCard";
 const DigitalSolutions = () => {
   return (
     <>
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 md:px-0">
         <div className="my-4">
           <div className="flex flex-col items-center justify-center text-center gap-4">
             <h1 className="text-red-700 font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[39px] max-w-6/10 leading-8 sm:leading-9 md:leading-10">

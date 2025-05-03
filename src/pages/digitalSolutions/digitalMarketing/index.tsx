@@ -58,7 +58,7 @@ export const DigitalMarketing = () => {
         onSecondaryButtonClick={scrollToContact}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4 md:px-0">
         <div className="mt-10">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-red-700">
             Comprehensive Digital Marketing Solutions
