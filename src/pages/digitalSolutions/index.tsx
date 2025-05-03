@@ -1,9 +1,10 @@
 import { useRef } from "react";
 import ContactUs from "../../components/ContactUs";
-import ServiceCard from "../../components/ServiceCard";
 import TestimonialsSection from "../../components/TestimonialsSection";
 import { RecognizedByBest } from "../landingPage/components/RecognizedByBest";
 import MobileDevelopmentCard from "./components/mobileDevelopmentCard";
+import ServiceBox from "../bpo/components/BpoServiceBox";
+import { ROUTES } from "../../constants";
 
 const DigitalSolutions = () => {
   const contactRef = useRef<HTMLDivElement>(null);
@@ -322,12 +323,18 @@ const DigitalSolutions = () => {
       <div className="bg-gradient-to-b from-[#AFC6E6] to-[#E9E6EF] w-full">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-12 max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
           {services.map((service) => (
-            <ServiceCard
+            <ServiceBox
               key={service.id}
-              imgSrc={service.imgSrc}
-              imgAlt={service.imgAlt}
+              logo={
+                <img
+                  src={service.imgSrc}
+                  alt={service.imgAlt}
+                  className="w-12 h-12"
+                />
+              }
               title={service.title}
               description={service.description}
+              url={`/services/${service.id}`} // Adjust the URL as needed
             />
           ))}
         </div>
@@ -424,45 +431,24 @@ const services = [
     title: "Web Development",
     description:
       "Maximize your online presence with elements including best SEO practices, catering to your targeted audience all while following your branding guidelines.",
+    url: ROUTES.WEBDEVELOPMENT, // Use route from ROUTES
   },
   {
     id: 2,
-    imgSrc: "/images/digitalSolutions/service/ux.png",
-    imgAlt: "UI/UX Design Icon",
-    title: "UI/UX Design",
-    description:
-      "Create stunning and responsive UI/UX for websites and applications alike by using a structured approach from the right designs to models to the final design.",
-  },
-  {
-    id: 3,
-    imgSrc: "/images/digitalSolutions/service/ecommerce.png",
-    imgAlt: "ECommerce Development Icon",
-    title: "ECommerce Development",
-    description:
-      "Produce responsive and user-friendly digital stores across all the main e-commerce platforms.",
-  },
-  {
-    id: 4,
-    imgSrc: "/images/digitalSolutions/service/cms.png",
-    imgAlt: "CMS Icon",
-    title: "Content Management Systems (CMS)",
-    description:
-      "Development of custom programming interfaces (APIs) for automation, eCommerce extensions, and other applications.",
-  },
-  {
-    id: 5,
     imgSrc: "/images/digitalSolutions/service/mobile.png",
     imgAlt: "Mobile App Development Icon",
     title: "Mobile App Development",
     description:
       "Get effective mobile apps that satisfy your user needs, strengthen brand identity all while promoting your business images.",
+    url: ROUTES.MOBILEDEVELOPMENT, // Use route from ROUTES
   },
   {
-    id: 6,
-    imgSrc: "/images/digitalSolutions/service/cloud.png",
-    imgAlt: "Cloud Solutions Icon",
-    title: "Cloud Solutions",
+    id: 3,
+    imgSrc: "/images/digitalSolutions/service/digital.png",
+    imgAlt: "Digital Marketing Icon",
+    title: "Digital Marketing",
     description:
-      "Deliver computing services including servers, storage, databases, networking, software, analytics, and intelligence.",
+      "Boost your brand's visibility and engagement with our tailored digital marketing strategies, including SEO, PPC, and social media marketing.",
+    url: ROUTES.DIGIALMARKETING, // Use route from ROUTES
   },
 ];
