@@ -7,7 +7,7 @@ const IndustriesSection = () => {
         <p className="text-3xl">Serving</p>
         <h1 className="text-5xl font-bold">INDUSTRIES</h1>
       </div>
-      <div className="bg-[#eadeff] text-center py-14">
+      <div className="bg-[#eadeff] text-center ">
         <Carousel
           autoplay
           autoplaySpeed={2000}

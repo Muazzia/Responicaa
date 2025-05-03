@@ -14,20 +14,20 @@ const TestimonialsSection = () => {
             dots={false}
             slidesToShow={3}
             swipeToSlide
-            responsive={[
-              {
-                breakpoint: 1024,
-                settings: {
-                  slidesToShow: 2,
-                },
-              },
-              {
-                breakpoint: 768,
-                settings: {
-                  slidesToShow: 1,
-                },
-              },
-            ]}
+            // responsive={[
+            //   {
+            //     breakpoint: 1024,
+            //     settings: {
+            //       slidesToShow: 2,
+            //     },
+            //   },
+            //   {
+            //     breakpoint: 768,
+            //     settings: {
+            //       slidesToShow: 3,
+            //     },
+            //   },
+            // ]}
             className="m-2 md:m-4"
           >
             {[...Array(6)].map((_, i) => (
