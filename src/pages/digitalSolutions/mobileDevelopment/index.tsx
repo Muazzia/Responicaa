@@ -60,32 +60,23 @@ export const MobileDevelopment = () => {
               design while considering your business's unique features.
             </p>
             <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="text-white p-6 bg-gradient-to-b from-[#AE0000] to-[#000000E0] flex flex-col items-center gap-5">
-                <div className="text-5xl mb-4">
-                  <FaGooglePlay className="text-white" />
-                </div>
-                <h4 className="text-xl sm:text-2xl lg:text-3xl font-medium text-center">
-                  Android App Development Services
-                </h4>
-                <p className="mt-2 text-center text-sm sm:text-base">
-                  In the rapidly evolving digital landscape, having an Android
-                  app for your business has become more than just a trend – it's
-                  a strategic necessity.
-                </p>
-              </div>
-              <div className="text-white p-6 bg-gradient-to-b from-[#AE0000] to-[#000000E0] flex flex-col items-center gap-5">
-                <div className="text-5xl mb-4">
-                  <FaAppStoreIos className="text-white" />
-                </div>
-                <h4 className="text-xl sm:text-2xl lg:text-3xl font-medium text-center">
-                  iOS App Development Services
-                </h4>
-                <p className="mt-2 text-center text-sm sm:text-base">
-                  The iOS ecosystem, characterized by its user-friendly
-                  interface and robust security measures, presents businesses
-                  with a powerful platform to enhance their digital presence.
-                </p>
-              </div>
+              <RotatingCard
+                label="Android App Development Services"
+                description="In the rapidly evolving digital landscape, having an Android app for your business has become more than just a trend – it's a strategic necessity."
+                invertedCardLabel="Why Android?"
+                invertedCardDescription="Android apps provide businesses with a vast user base and unparalleled customization opportunities, making them a strategic choice for growth."
+                invertedCardButtonLabel="Learn More"
+                invertedCardButtonUrl="/android-development"
+              />
+              <RotatingCard
+                label="iOS App Development Services"
+                description="The iOS ecosystem, characterized by its user-friendly interface and robust security measures, presents businesses with a powerful platform to enhance their digital presence."
+                logoInverted={true}
+                invertedCardLabel="Why iOS?"
+                invertedCardDescription="iOS apps offer a premium user experience and access to a loyal customer base, ensuring your business stands out in the competitive market."
+                invertedCardButtonLabel="Learn More"
+                invertedCardButtonUrl="/ios-development"
+              />
             </div>
             <h3 className="mt-10 text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-red-600">
               Seamless Experience With Our Mobile App Development Services
@@ -201,5 +192,59 @@ export const MobileDevelopment = () => {
         </div>
       </div>
     </>
+  );
+};
+
+interface RotatingCardProps {
+  label: string;
+  description: string;
+  logoInverted?: boolean;
+  invertedCardLabel: string;
+  invertedCardDescription: string;
+  invertedCardButtonLabel: string;
+  invertedCardButtonUrl: string;
+}
+
+const RotatingCard = ({
+  description,
+  label,
+  logoInverted = false,
+  invertedCardButtonLabel,
+  invertedCardButtonUrl,
+  invertedCardDescription,
+  invertedCardLabel,
+}: RotatingCardProps) => {
+  return (
+    <div className="w-full h-[300px] md:h-[350px] perspective group">
+      <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-180">
+        {/* Front Side */}
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#AE0000] to-[#000000E0] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden">
+          <div className="text-5xl mb-4">
+            {logoInverted ? <FaAppStoreIos /> : <FaGooglePlay />}
+          </div>
+          <h4 className="text-xl sm:text-2xl lg:text-3xl font-medium">
+            {label}
+          </h4>
+          <p className="mt-2 text-sm sm:text-base">{description}</p>
+        </div>
+        {/* Back Side */}
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#AE0000] to-[#000000E0] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden transform rotate-x-180">
+          <p className="text-lg sm:text-xl font-semibold">
+            {invertedCardLabel}
+          </p>
+          <span className="text-xs sm:text-sm md:text-[14px]">
+            {invertedCardDescription}
+          </span>
+            <button
+            onClick={() => {
+                console.log(invertedCardButtonUrl);
+                }}
+                className="mt-2 px-3 py-1 sm:px-4 sm:py-2 border-2 border-white text-white rounded-full text-sm sm:text-base hover:bg-red-600 hover:text-white transition-colors"
+                >
+            {invertedCardButtonLabel}
+            </button>
+        </div>
+      </div>
+    </div>
   );
 };
