@@ -30,7 +30,7 @@ export const Navbar = () => {
           <img
             src="/logo.jpeg"
             alt="Company Logo"
-            className="w-48 md:w-64 h-auto"
+            className="w-[120px] md:w-[180px] h-auto"
           />
         </Link>
 
