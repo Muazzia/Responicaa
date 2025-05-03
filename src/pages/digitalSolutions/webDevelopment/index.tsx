@@ -62,7 +62,7 @@ const WebDevelopment = () => {
       <div className="px-4 md:px-10  xl:px-0  max-w-7xl mx-auto py-[40px] space-y-[30px]">
         <div>
           <div className="text-center">
-            <p className="text-[25px] lg:text-[48px] font-semibold text-primary">
+            <p className="text-[25px] lg:text-[48px] font-semibold text-primary-red">
               Our Process of Web Development Services
             </p>
             <p className="text-[16px] lg:text-[14px] mt-4 lg:mt-0">
@@ -80,7 +80,7 @@ const WebDevelopment = () => {
 
           <div
             onClick={() => nav(ROUTES.CONTACT)}
-            className="w-full text-center mt-[30px]  bg-primary hover:bg-primary/80 hover:cursor-pointer rounded-md  py-2 text-white"
+            className="w-full text-center mt-[30px]  bg-primary-red hover:bg-primary-red/80 hover:cursor-pointer rounded-md  py-2 text-white"
           >
             <p>Talk To an expert</p>
           </div>
@@ -89,7 +89,7 @@ const WebDevelopment = () => {
         <div className="mb-[20px] flex flex-col  gap-[55px] lg:gap-[80px]">
           <div className="flex flex-col lg:flex-row w-full">
             <div className="flex-[0.5] order-2 lg:order-1">
-              <p className="mb-2 lg:mb-0 text-center lg:text-left text-[25px] capitalize lg:text-[48px] font-semibold text-primary">
+              <p className="mb-2 lg:mb-0 text-center lg:text-left text-[25px] capitalize lg:text-[48px] font-semibold text-primary-red">
                 How Things Works?
               </p>
 
@@ -144,7 +144,7 @@ const WebDevelopment = () => {
 
           <div className="flex flex-col lg:flex-row w-full lg:gap-[20px]">
             <div className="flex-1/2 flex justify-center items-center">
-              <p className="mb-2 lg:mb-0 text-center lg:text-left text-primary text-[25px] lg:text-[48px] font-semibold ">
+              <p className="mb-2 lg:mb-0 text-center lg:text-left text-primary-red text-[25px] lg:text-[48px] font-semibold ">
                 Enterprise Web Development & Design Company
               </p>
             </div>
@@ -171,7 +171,7 @@ const WebDevelopment = () => {
 
       <div className="bg-black py-[50px] text-white text-center">
         <div className="px-4 lg:max-w-7xl lg:mx-auto">
-          <p className="text-[25px] lg:text-[48px] mb-[10px] text-primary font-semibold">
+          <p className="text-[25px] lg:text-[48px] mb-[10px] text-primary-red font-semibold">
             Benefits of Web Development
           </p>
           <p className="text-[15px] lg:text-[16px]">
@@ -263,7 +263,7 @@ const WebDevelopment = () => {
       </div>
 
       <div className="px-4 md:px-10  xl:px-0 max-w-7xl mx-auto text-center py-[30px]">
-        <p className="text-[25px] lg:text-[48px] font-semibold text-primary">
+        <p className="text-[25px] lg:text-[48px] font-semibold text-primary-red">
           Who We Are?
         </p>
         <p className="font-[16px]">

@@ -39,7 +39,7 @@ const HeroSectionWithCTA = ({
             <button
               onClick={onSecondaryButtonClick}
               // href={`#${secondaryButtonUrl}`}
-              className="rounded-xs text-primary bg-[#CCCECF] px-3 py-2 font-semibold cursor-pointer"
+              className="rounded-xs text-primary-red bg-[#CCCECF] px-3 py-2 font-semibold cursor-pointer"
             >
               {secondaryButtonLabel}
             </button>
