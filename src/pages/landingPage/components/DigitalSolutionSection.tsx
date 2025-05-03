@@ -3,7 +3,7 @@ import { FaDesktop } from "react-icons/fa";
 const DigitalSolutionSection = () => {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 py-10 md:py-28 gap-8 md:gap-4">
+      <div className=" xl:px-0 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 px-4 md:px-8 py-10 md:py-28 gap-8 md:gap-4">
         <div className="flex flex-col gap-6 md:gap-8 order-first">
           <h1 className="text-4xl md:text-6xl font-bold text-[#014fd3]">
             Digital Solution

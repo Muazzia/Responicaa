@@ -3,7 +3,7 @@ import { ROUTES } from "../../../constants";
 
 const AboutSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 py-12 md:py-28 gap-8 md:gap-4">
+    <div className="xl:px-0 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 px-4 md:px-10 py-12 md:py-28 gap-8 md:gap-4">
       <div className="flex flex-col gap-6 md:gap-8 order-first">
         <div className="flex flex-col gap-1">
           <h1 className="text-2xl md:text-3xl">About</h1>
