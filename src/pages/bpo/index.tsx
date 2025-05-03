@@ -11,48 +11,62 @@ const BPO = () => {
       title: "Customer Support",
       description:
         "We are here to ensure that your customers receive impeccable service. Our BPO outsourcing service USA enables you to always communicate with your clients.",
-      logo: <></>,
-      url: ROUTES.BPO,
+      logo: (
+        <img
+          className="w-full h-full object-cover"
+          src="/svg/bpo/customerSupport.svg"
+        />
+      ),
+      url: ROUTES.CUSTOMERSUPPORT,
     },
     {
       id: 2,
       title: "TeleSales",
       description:
         "Our telemarketing sales in BPO outsourcing service involve promoting products or services over the phone, targeting potential customers to increase your sales.",
-      logo: <></>,
-      url: ROUTES.BPO,
+      logo: (
+        <img className="w-full h-full object-cover" src="/svg/bpo/sales.svg" />
+      ),
+      url: ROUTES.SALES,
     },
     {
       id: 3,
-      title: "Technical Support",
+      title: "Quality Assurance",
       description:
-        "Technical Support will also assist with the integration of computer applications by identifying and resolving network issues.",
-      logo: <></>,
-      url: ROUTES.BPO,
+        "Quality assurance is a process for confirming and validating a good or service that involves testing the software to find and fix any problems before making it available to users.",
+      logo: (
+        <img
+          className="w-full h-full object-cover"
+          src="/svg/bpo/qualityAssurance.svg"
+        />
+      ),
+      url: ROUTES.QUALITYASSURANCE,
     },
     {
       id: 4,
-      title: "Truck Dispatch Service",
+      title: "Home Warranty",
       description:
-        "Lets make trucking easy, we have trucks and loads specialized dirve.",
-      logo: <></>,
-      url: ROUTES.BPO,
+        "A home warranty is a service contract that covers the repair or replacement of major home systems and appliances that break down due to normal wear and tear.",
+      logo: (
+        <img
+          className="w-full h-full object-cover"
+          src="/svg/bpo/homeWarranty.svg"
+        />
+      ),
+      url: ROUTES.HOMEWARRANTY,
     },
     {
       id: 5,
-      title: "Lead Generation",
+      title: "Energy Supplies",
       description:
-        "A lead-generation service is used to grow your business, attract new clients, and create sales pipelines. It is a fundamental key to success for many businesses.",
-      logo: <></>,
-      url: ROUTES.BPO,
-    },
-    {
-      id: 6,
-      title: "Medical Billing Service",
-      description:
-        "Manage medical billing with ease and make the practice more efficient.",
-      logo: <></>,
-      url: ROUTES.BPO,
+        "Energy supplies refer to the various sources of energy that are used to generate electricity, heat, and power for homes and businesses.",
+      logo: (
+        <img
+          className="w-full h-full object-cover"
+          src="/svg/bpo/energySupplies.svg"
+        />
+      ),
+      url: ROUTES.ENERGYSUPPLIES,
     },
   ];
   return (
