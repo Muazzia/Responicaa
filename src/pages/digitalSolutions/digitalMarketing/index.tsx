@@ -147,7 +147,7 @@ export const DigitalMarketing = () => {
           <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="order-2 lg:order-1">
               <img
-                src="https://picsum.photos/600/400?random=2"
+                src="/images/digitalSolutions/artificial-intelligence.webp"
                 alt="Marketing Analytics"
                 className="rounded-lg shadow-xl w-full"
               />

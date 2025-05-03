@@ -404,7 +404,7 @@ const madItems = [
 const services = [
   {
     id: 1,
-    imgSrc: "/images/digitalSolutions/web-development.png",
+    imgSrc: "/images/digitalSolutions/service/web.png",
     imgAlt: "Web Development Icon",
     title: "Web Development",
     description:
@@ -412,7 +412,7 @@ const services = [
   },
   {
     id: 2,
-    imgSrc: "/images/digitalSolutions/ui-ux.png",
+    imgSrc: "/images/digitalSolutions/service/ux.png",
     imgAlt: "UI/UX Design Icon",
     title: "UI/UX Design",
     description:
@@ -420,7 +420,7 @@ const services = [
   },
   {
     id: 3,
-    imgSrc: "/images/digitalSolutions/ecommerce.png",
+    imgSrc: "/images/digitalSolutions/service/ecommerce.png",
     imgAlt: "ECommerce Development Icon",
     title: "ECommerce Development",
     description:
@@ -428,7 +428,7 @@ const services = [
   },
   {
     id: 4,
-    imgSrc: "/images/digitalSolutions/cms.png",
+    imgSrc: "/images/digitalSolutions/service/cms.png",
     imgAlt: "CMS Icon",
     title: "Content Management Systems (CMS)",
     description:
@@ -436,7 +436,7 @@ const services = [
   },
   {
     id: 5,
-    imgSrc: "/images/digitalSolutions/mobile-app.png",
+    imgSrc: "/images/digitalSolutions/service/mobile.png",
     imgAlt: "Mobile App Development Icon",
     title: "Mobile App Development",
     description:
@@ -444,7 +444,7 @@ const services = [
   },
   {
     id: 6,
-    imgSrc: "/images/digitalSolutions/cloud.png",
+    imgSrc: "/images/digitalSolutions/service/cloud.png",
     imgAlt: "Cloud Solutions Icon",
     title: "Cloud Solutions",
     description:

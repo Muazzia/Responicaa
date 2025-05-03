@@ -178,7 +178,7 @@ export const MobileDevelopment = () => {
           </div>
           <div className="flex-1">
             <img
-              src="https://picsum.photos/600/500"
+              src="/images/digitalSolutions/smartphone.jpg"
               alt="Mobile App Development"
               className="rounded-lg shadow-lg w-full"
             />

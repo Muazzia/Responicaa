@@ -15,8 +15,12 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <div className="bg-white shadow rounded-lg p-6 text-start border border-gray-200 relative h-[310px]">
-      <div className="w-12 h-12 mb-4 flex justify-center items-center rounded-full text-blue-600 text-3xl">
-        <img src={imgSrc} alt={imgAlt} className="w-8 h-8" />
+      <div className="w-12 h-12 mb-4 flex justify-center items-center rounded-full">
+        <img
+          src={imgSrc}
+          alt={imgAlt}
+          className="w-12 h-12 filter hue-rotate-[240deg] saturate-[100%] brightness-[100%] contrast-[100%]"
+        />
       </div>
       <h3 className="text-2xl font-semibold text-gray-900 mb-2">{title}</h3>
       <p className="text-base text-gray-600">{description}</p>
