@@ -11,6 +11,7 @@ import { DigitalMarketing } from "../pages/digitalSolutions/digitalMarketing";
 import BPO from "../pages/bpo";
 import DigitalSolutions from "../pages/digitalSolutions";
 import QualityAssurance from "../pages/bpo/qualityAssurance";
+import EnergySupplies from "../pages/bpo/energySupplies";
 
 export const routes = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ export const routes = createBrowserRouter([
       {
         path: ROUTES.QUALITYASSURANCE,
         element: <QualityAssurance />,
+      },
+      {
+        path: ROUTES.ENERGYSUPPLIES,
+        element: <EnergySupplies />,
       },
     ],
   },

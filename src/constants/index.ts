@@ -14,4 +14,5 @@ export class ROUTES {
   static SALES = this.BPO + "/sales";
   static CUSTOMERSUPPORT = this.BPO + "/customerSupport";
   static QUALITYASSURANCE = this.BPO + "/qualityAssurance";
+  static ENERGYSUPPLIES = this.BPO + "/energySupplies";
 }
