@@ -10,11 +10,24 @@ import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "../../components/TestimonialsSection";
 import { RecognizedByBest } from "./components/RecognizedByBest";
 import ContactUs from "../../components/ContactUs";
+import { useRef } from "react";
 
 const LandingPage = () => {
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    const offset = 100; // adjust for navbar
+    const top =
+      contactRef.current!.getBoundingClientRect().top +
+      window.pageYOffset -
+      offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+  };
+
   return (
     <>
-      <HeroSection />
+      <HeroSection handleScrollButtonClick={scrollToContact} />
       <AboutSection />
       <div className="bg-gradient-to-b from-[#FFDBDB8F] to-[#E9E6EF] text-center py-14">
         <h1 className="text-5xl font-semibold">Our Services</h1>
@@ -29,7 +42,7 @@ const LandingPage = () => {
       <div className="mt-10 flex flex-col gap-10">
         <TestimonialsSection />
         <RecognizedByBest />
-        <ContactUs />
+        <ContactUs ref={contactRef} />
       </div>{" "}
     </>
   );

@@ -130,7 +130,7 @@ export const Navbar = () => {
             {/* Contact Link */}
             <NavigationMenuItem>
               <Link to={ROUTES.CONTACT}>
-                <NavigationMenuLink className="text-gray-700 hover:text-blue-600 px-4 py-2">
+                <NavigationMenuLink className="text-gray-700 font-medium hover:text-blue-600 px-4 py-2">
                   Contact
                 </NavigationMenuLink>
               </Link>
