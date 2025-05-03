@@ -1,4 +1,34 @@
-import { FaDesktop } from "react-icons/fa";
+import { FaDesktop, FaMobileAlt, FaBullhorn } from "react-icons/fa";
+
+const services = [
+  {
+    id: 1,
+    icon: (
+      <FaDesktop className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+    ),
+    title: "Web Development",
+    description:
+      "Unleashing the power of custom web development and creative website design.",
+  },
+  {
+    id: 2,
+    icon: (
+      <FaMobileAlt className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+    ),
+    title: "Mobile App Development",
+    description:
+      "Crafting user-friendly mobile applications to enhance your business reach.",
+  },
+  {
+    id: 3,
+    icon: (
+      <FaBullhorn className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+    ),
+    title: "Digital Marketing",
+    description:
+      "Boosting your brand's visibility with tailored digital marketing strategies.",
+  },
+];
 
 const DigitalSolutionSection = () => {
   return (
@@ -31,16 +61,15 @@ const DigitalSolutionSection = () => {
       </div>
       <div className="max-w-full lg:max-w-[80%] xl:max-w-6xl mx-auto px-4 sm:px-6">
         <div className="bg-gradient-to-b from-[#014FD3] to-[#003FAA] text-center py-8 md:py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-10 rounded-sm gap-4 md:gap-8 lg:gap-10">
-          {[...Array(6)].map((_, i) => (
-            <div key={i} className="flex gap-3 md:gap-4 items-start">
-              <FaDesktop className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+          {services.map((service) => (
+            <div key={service.id} className="flex gap-3 md:gap-4 items-start">
+              {service.icon}
               <div className="text-left">
                 <h1 className="text-xs font-semibold hover:text-red-500 text-white transition-all cursor-pointer mb-2 md:mb-1">
-                  Web Development
+                  {service.title}
                 </h1>
                 <p className="text-xs font-light text-white leading-relaxed md:leading-normal">
-                  Unleashing the power of custom web development and creative
-                  website design.
+                  {service.description}
                 </p>
               </div>
             </div>
