@@ -56,7 +56,7 @@ const DigitalSolutionSection = () => {
         </div>
         <div className="relative w-full h-full flex items-center justify-center">
           <img
-            src="/images/landingPage/digital.png"
+            src="/gif/perfect.gif"
             alt="Digital Solution"
             width={400}
             height={400}

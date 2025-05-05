@@ -39,7 +39,7 @@ const HeroSection = ({ handleScrollButtonClick }: Props) => {
                 <div className="absolute top-0 right-0 border-2 border-[#ff904c] rounded-full w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56"></div>
                 <div className="absolute top-2 right-2 border-2 border-black rounded-full w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52"></div>
                 <div className="relative flex items-center justify-center w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52">
-                  <span className="text-8xl md:text-9xl font-bold text-black mr-2 sm:mr-4">
+                  <span className="animate-text bg-gradient-to-b from-[#ff904c] to-[#f96204] s bg-clip-text text-transparent  text-8xl md:text-9xl font-bold  mr-2 sm:mr-4">
                     R
                   </span>
                 </div>

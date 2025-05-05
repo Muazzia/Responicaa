@@ -84,7 +84,7 @@ const BPOServicesSection = () => {
         </div>
         <div className="relative w-full h-full flex items-center justify-center">
           <img
-            src="/images/landingPage/bop.png"
+            src="/gif/perfect2.gif"
             alt="BPO Services"
             width={400}
             height={400}
