@@ -334,7 +334,7 @@ const DigitalSolutions = () => {
               }
               title={service.title}
               description={service.description}
-              url={`/services/${service.id}`} // Adjust the URL as needed
+              url={service.url} // Adjust the URL as needed
             />
           ))}
         </div>
