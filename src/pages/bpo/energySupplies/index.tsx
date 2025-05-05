@@ -49,7 +49,7 @@ const EnergySupplies = () => {
       <HeroSectionWithCTA
         primaryButtonLabel="Solutions"
         heading="Energy Supply Services"
-        description="Welcome to our comprehensive energy supply division, where reliability meets innovation. We are committed to delivering sustainable energy solutions that power businesses efficiently while reducing environmental impact. Our end-to-end energy services ensure you have access to stable, cost-effective power solutions tailored to your operational requirements."
+              description="Welcome to our comprehensive energy supply division, where reliability meets innovation. We are committed to delivering sustainable energy solutions that power businesses efficiently while reducing environmental impact. Our end-to-end energy services ensure you have access to stable, cost-effective power solutions tailored to your operational requirements."
         secondaryButtonLabel="Request Energy Consultation"
         onSecondaryButtonClick={scrollToContact}
       />

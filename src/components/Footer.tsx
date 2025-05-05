@@ -12,7 +12,8 @@ interface ContactInfoItemProps {
 
 const ContactInfoItem = ({ icon: Icon, text, href }: ContactInfoItemProps) => (
   <li className="flex items-center gap-2">
-    <Icon className="text-white text-xl min-w-[20px]" />
+    <Icon className="text-black text-xl min-w-[20px]" />{" "}
+    {/* Changed text-white to text-black */}
     {href ? (
       <a href={href} className="hover:text-red-500 transition-colors">
         {text}
@@ -25,13 +26,13 @@ const ContactInfoItem = ({ icon: Icon, text, href }: ContactInfoItemProps) => (
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#232323] text-white px-4 md:px-10 xl:px-0">
-      <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row justify-between items-center border-b border-gray-700 gap-4">
+    <footer className="bg-white text-black px-4 md:px-10 xl:px-0">
+      <div className="max-w-7xl mx-auto py-12 flex flex-col md:flex-row justify-between items-center border-y border-gray-300 gap-4">
         <div className="text-center md:text-left max-w-[600px] md:max-w-none">
           <h2 className="text-lg sm:text-xl font-medium mb-2">
             Connect with us and let's make your business thrive.
           </h2>
-          <p className="text-white text-sm">
+          <p className="text-black text-sm">
             We’re here to help, let’s connect.
           </p>
         </div>
@@ -53,7 +54,7 @@ export const Footer = () => {
               className="h-auto w-full"
             />
           </Link>
-          <p className="text-white text-sm mt-2 max-w-[300px] leading-6">
+          <p className="text-black text-sm mt-2 max-w-[300px] leading-6">
             We are constantly looking for solutions to solve critical problems
             in the market.
           </p>
@@ -61,10 +62,10 @@ export const Footer = () => {
 
         <div className="w-full md:flex-1 flex flex-col items-center md:items-start text-center md:text-left">
           <h3 className="text-base font-semibold mb-4">Contact us</h3>
-          <p className="text-white text-sm mb-2 max-w-[300px]">
+          <p className="text-black text-sm mb-2 max-w-[300px]">
             Our Support and Sales team is available 24/7 to answer your queries
           </p>
-          <ul className="text-white text-sm space-y-3 font-medium mt-4">
+          <ul className="text-black text-sm space-y-3 font-medium mt-4">
             {CONTACT_INFO.addresses.map((address, index) => (
               <ContactInfoItem
                 key={index}
@@ -85,7 +86,7 @@ export const Footer = () => {
 
         <div className="w-full md:flex-[0.6] flex flex-col items-center md:items-start text-center md:text-left">
           <h3 className="text-base font-semibold mb-4">Quick Links</h3>
-          <ul className="text-white space-y-3">
+          <ul className="text-black space-y-3">
             {FOOTER_LINKS.map((link) => (
               <li key={link.title}>
                 <Link
@@ -100,13 +101,13 @@ export const Footer = () => {
         </div>
       </div>
 
-      <div className="border-t border-gray-600 text-center text-white text-sm py-4 px-4">
+      <div className="border-t border-gray-300 text-center text-black text-sm py-4 px-4">
         Copyright © 2024{" "}
         <a
-          href="mailto:contact@nexcelsolutions.com"
-          className="text-white hover:text-red-500 transition-colors"
+          href="mailto:info@responica.com"
+          className="text-black hover:text-red-500 transition-colors"
         >
-          contact@nexcelsolutions.com
+          info@responica.com
         </a>
         . All rights reserved.
       </div>
@@ -124,24 +125,20 @@ const FOOTER_LINKS = [
 const CONTACT_INFO = {
   addresses: [
     {
-      text: "Main Branch: 112 Capitol Tr, Newark, DE 19711",
-      icon: MdLocationOn,
-    },
-    {
-      text: "Sub-Branch: 1 Floor - 322 G3, Johar Town, Lahore",
+      text: "Montana, USA",
       icon: MdLocationOn,
     },
   ],
   contacts: [
     {
-      text: "1-302-797-8888",
+      text: "+1-773-669-2604",
       icon: FaPhoneAlt,
-      href: "tel:1-302-797-8888",
+      href: "tel:+1-773-669-2604",
     },
     {
-      text: "support@responica.com",
+      text: "info@responica.com",
       icon: FaEnvelope,
-      href: "mailto:support@responica.com",
+      href: "mailto:info@responica.com",
     },
   ],
 };
