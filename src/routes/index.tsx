@@ -74,6 +74,10 @@ export const routes = createBrowserRouter([
         path: ROUTES.HOMEWARRANTY,
         element: <HomeWarranty />,
       },
+      {
+        path: "*",
+        element: <LandingPage />,
+      },
     ],
   },
 ]);
