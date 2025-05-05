@@ -25,7 +25,7 @@ export const Contact = () => {
         <div className="flex md:flex-row flex-col justify-center gap-10 my-10 md:items-center items-start">
           <div className="text-base font-medium">
             <p>Call us at:</p>
-            <p>1-302-797-8888</p>
+            <p>+1-773-669-2604</p>
           </div>
           <div className="md:flex flex-col hidden gap-2">
             <div className="h-8 w-[1px] bg-gray-400 -rotate-45 relative top-4"></div>
@@ -33,7 +33,7 @@ export const Contact = () => {
           </div>
           <div className="text-base font-medium">
             <p>Email us:</p>
-            <p>support@responica.com</p>
+            <p>info@responica.com</p>
           </div>
         </div>
         <button
@@ -66,12 +66,9 @@ export const Contact = () => {
           <p className="text-base mt-2">
             Explain your business needs and goals to us. Feel free to call us
             and say what you want to say at{" "}
-            <span className="font-bold text-red-700">1-302-797-8888</span> or
+            <span className="font-bold text-red-700">+1-773-669-2604</span> or
             simply write your needs to{" "}
-            <span className="text-red-700 font-bold">
-              support@nexcelsolutions.com
-            </span>
-            .
+            <span className="text-red-700 font-bold">info@responica.com</span>.
           </p>
         </div>
         <div className="mt-8 max-w-4xl mx-auto">
