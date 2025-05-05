@@ -1,7 +1,12 @@
-import { PhoneOutlined, EnvironmentOutlined } from "@ant-design/icons";
+import {
+  PhoneOutlined,
+  EnvironmentOutlined,
+  LoadingOutlined,
+} from "@ant-design/icons"; // Import a new spinner icon
+import { Alert } from "antd"; // Import Ant Design Alert
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { Ref } from "react";
+import { Ref, useState } from "react";
 
 interface Props {
   id?: string;
@@ -15,20 +20,32 @@ const ContactUs = ({ id, ref }: Props) => {
     formState: { errors },
     reset,
   } = useForm();
+  const [loading, setLoading] = useState(false); // State for button loader
+  const [alert, setAlert] = useState<{
+    type: "success" | "error";
+    message: string;
+  } | null>(null); // State for alert
 
   const onSubmit = async (data: unknown) => {
+    setLoading(true); // Start loader
+    setAlert(null); // Reset alert
     try {
       const response = await axios.post(
         "https://formspree.io/f/xgvkkvpg",
         data
       );
       if (response.status === 200) {
-        alert("Message sent successfully!");
+        setAlert({ type: "success", message: "Message sent successfully!" }); // Show success alert
         reset(); // Reset the form after successful submission
       }
     } catch (error) {
       console.error("Error sending message:", error);
-      alert("Failed to send the message. Please try again.");
+      setAlert({
+        type: "error",
+        message: "Failed to send the message. Please try again.",
+      }); // Show error alert
+    } finally {
+      setLoading(false); // Stop loader
     }
   };
 
@@ -41,6 +58,17 @@ const ContactUs = ({ id, ref }: Props) => {
       <h1 className="text-3xl md:text-5xl font-semibold mb-2 md:mb-4">
         Contact Responica Today!
       </h1>
+      {alert && (
+        <div className="mb-4">
+          <Alert
+            message={alert.message}
+            type={alert.type}
+            showIcon
+            closable
+            onClose={() => setAlert(null)} // Close alert
+          />
+        </div>
+      )}
       <p className="text-sm md:text-base text-gray-500 mb-2 md:mb-4">
         <EnvironmentOutlined /> USA | Newark, Delaware, United States
       </p>
@@ -105,9 +133,14 @@ const ContactUs = ({ id, ref }: Props) => {
           </div>
           <button
             type="submit"
-            className="bg-red-800 text-white w-full rounded-full py-4 font-semibold text-sm"
+            className="bg-red-800 !text-white w-full rounded-full py-4 font-semibold text-sm flex items-center justify-center cursor-pointer"
+            disabled={loading}
           >
-            SEND MESSAGE
+            {loading ? (
+              <LoadingOutlined className="!text-white" spin /> // New spinner
+            ) : (
+              "SEND MESSAGE"
+            )}
           </button>
         </form>
       </div>
