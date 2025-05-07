@@ -32,7 +32,7 @@ const AboutSection = () => {
         </div>
         <Button
           label="Enquire Now"
-          route={ROUTES.LANDINGPAGE}
+          route={ROUTES.CONTACT}
           className="w-fit py-3 md:self-start"
         />
       </div>
