@@ -144,7 +144,7 @@ const ContactUs = ({ id, ref }: Props) => {
               placeholder="Name"
             />
             {errors.name && (
-              <p className="text-[#004aad] text-sm mt-1">
+              <p className="text-red-700 text-sm mt-1 text-left">
                 {String(errors.name.message)}
               </p>
             )}
@@ -162,7 +162,7 @@ const ContactUs = ({ id, ref }: Props) => {
               placeholder="Email"
             />
             {errors.email && (
-              <p className="text-[#004aad] text-sm mt-1">
+              <p className="text-red-700 text-sm mt-1 text-left">
                 {String(errors.email.message)}
               </p>
             )}
@@ -175,7 +175,7 @@ const ContactUs = ({ id, ref }: Props) => {
               rows={4}
             />
             {errors.message && (
-              <p className="text-[#004aad] text-sm mt-1">
+              <p className="text-red-700 text-sm mt-1 text-left">
                 {String(errors.message.message)}
               </p>
             )}
