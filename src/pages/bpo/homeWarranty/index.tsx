@@ -261,7 +261,7 @@ const RotatingCard = ({
     <div className="w-full h-[300px] md:h-[350px] perspective group">
       <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-180">
         {/* Front Side */}
-        <div className="absolute w-full h-full bg-[#0066cc] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden">
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#004aad] to-[#3B82F6]  text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden">
           <span
             className={`transform transition-transform duration-700 ${
               logoInverted ? "rotate-260" : ""
@@ -282,7 +282,7 @@ const RotatingCard = ({
         </div>
 
         {/* Back Side */}
-        <div className="absolute w-full h-full bg-gradient-to-b from-[#f7f3f3] to-[#0066cc] text-black flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden transform rotate-x-180">
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#004aad] to-[#3B82F6]  text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden transform rotate-x-180">
           <p className="text-lg sm:text-xl font-semibold">
             {invertedCardLabel}
           </p>

@@ -15,7 +15,7 @@ const ContactInfoItem = ({ icon: Icon, text, href }: ContactInfoItemProps) => (
     <Icon className="text-black text-xl min-w-[20px]" />{" "}
     {/* Changed text-white to text-black */}
     {href ? (
-      <a href={href} className="hover:text-red-500 transition-colors">
+      <a href={href} className="hover:text-[#004aad] transition-colors">
         {text}
       </a>
     ) : (
@@ -91,7 +91,7 @@ export const Footer = () => {
               <li key={link.title}>
                 <Link
                   to={link.href}
-                  className="hover:text-red-500 text-sm transition-colors"
+                  className="hover:text-[#004aad] text-sm transition-colors"
                 >
                   {link.title}
                 </Link>
@@ -105,7 +105,7 @@ export const Footer = () => {
         Copyright © 2024{" "}
         <a
           href="mailto:info@responica.com"
-          className="text-black hover:text-red-500 transition-colors"
+          className="text-black hover:text-[#004aad] transition-colors"
         >
           info@responica.com
         </a>

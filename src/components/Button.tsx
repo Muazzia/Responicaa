@@ -20,7 +20,7 @@ const Button = ({
   return (
     <Link
       to={route}
-      className={`md:mt-0 bg-red-700 ${hoverClass} text-white px-6 py-1.5 rounded-full font-semibold transition-colors text-sm whitespace-nowrap ${className}`}
+      className={`md:mt-0 bg-[#004aad] ${hoverClass} text-white px-6 py-1.5 rounded-full font-semibold transition-colors text-sm whitespace-nowrap ${className}`}
       aria-label={ariaLabel}
     >
       {label}

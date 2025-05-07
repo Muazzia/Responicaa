@@ -70,11 +70,11 @@ const ContactUs = ({ id, ref }: Props) => {
         </div>
       )}
       <p className="text-sm md:text-base text-gray-500 mb-2 md:mb-4">
-        <EnvironmentOutlined /> USA | Newark, Delaware, United States
+        <EnvironmentOutlined /> Montana, USA
       </p>
       <p className="text-lg md:text-xl font-semibold mb-4 md:mb-6">
         <PhoneOutlined /> Call us at:{" "}
-        <a href="tel:+1-773-669-2604" className="hover:text-red-800">
+        <a href="tel:+1-773-669-2604" className="hover:text-[#004aad]">
           +1-773-669-2604
         </a>
       </p>
@@ -95,7 +95,7 @@ const ContactUs = ({ id, ref }: Props) => {
               placeholder="Name"
             />
             {errors.name && (
-              <p className="text-red-500 text-sm mt-1">
+              <p className="text-[#004aad] text-sm mt-1">
                 {String(errors.name.message)}
               </p>
             )}
@@ -113,7 +113,7 @@ const ContactUs = ({ id, ref }: Props) => {
               placeholder="Email"
             />
             {errors.email && (
-              <p className="text-red-500 text-sm mt-1">
+              <p className="text-[#004aad] text-sm mt-1">
                 {String(errors.email.message)}
               </p>
             )}
@@ -126,14 +126,14 @@ const ContactUs = ({ id, ref }: Props) => {
               rows={4}
             />
             {errors.message && (
-              <p className="text-red-500 text-sm mt-1">
+              <p className="text-[#004aad] text-sm mt-1">
                 {String(errors.message.message)}
               </p>
             )}
           </div>
           <button
             type="submit"
-            className="bg-red-800 !text-white w-full rounded-full py-4 font-semibold text-sm flex items-center justify-center cursor-pointer"
+            className="bg-[#004aad] !text-white w-full rounded-full py-4 font-semibold text-sm flex items-center justify-center cursor-pointer"
             disabled={loading}
           >
             {loading ? (

@@ -7,7 +7,7 @@ const FAQSection = () => {
         Frequently Asked Questions
       </h2>
       <div className="max-w-4xl mx-auto space-y-10 px-4">
-        <Collapse accordion>
+        <Collapse accordion >
           <Collapse.Panel
             header={
               <div className="flex justify-between items-center">

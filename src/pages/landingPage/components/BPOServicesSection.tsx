@@ -15,7 +15,7 @@ const boxData = [
     description:
       "We are here to ensure that your customers receive impeccable service. Our BPO outsourcing service USA enables you to always communicate with your clients.",
     icon: (
-      <FaHeadset className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+      <FaHeadset className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
     ),
     url: ROUTES.CUSTOMERSUPPORT, // Route for Customer Support
   },
@@ -25,7 +25,7 @@ const boxData = [
     description:
       "Our telemarketing sales in BPO outsourcing service involve promoting products or services over the phone, targeting potential customers to increase your sales.",
     icon: (
-      <FaPhoneAlt className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+      <FaPhoneAlt className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
     ),
     url: ROUTES.SALES, // Route for TeleSales
   },
@@ -35,7 +35,7 @@ const boxData = [
     description:
       "Quality assurance is a process for confirming and validating a good or service that involves testing the software to find and fix any problems before making it available to users.",
     icon: (
-      <FaCheckCircle className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+      <FaCheckCircle className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
     ),
     url: ROUTES.QUALITYASSURANCE, // Route for Quality Assurance
   },
@@ -45,7 +45,7 @@ const boxData = [
     description:
       "A home warranty is a service contract that covers the repair or replacement of major home systems and appliances that break down due to normal wear and tear.",
     icon: (
-      <FaHome className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+      <FaHome className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
     ),
     url: ROUTES.HOMEWARRANTY, // Route for Home Warranty
   },
@@ -55,7 +55,7 @@ const boxData = [
     description:
       "Energy supplies refer to the various sources of energy that are used to generate electricity, heat, and power for homes and businesses.",
     icon: (
-      <FaBolt className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+      <FaBolt className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
     ),
     url: ROUTES.ENERGYSUPPLIES, // Route for Energy Supplies
   },
@@ -100,7 +100,7 @@ const BPOServicesSection = () => {
               <div className="text-left">
                 <Link
                   to={box.url} // Add Link to route
-                  className="text-xs font-semibold hover:text-red-500 text-white transition-all cursor-pointer mb-2 md:mb-1"
+                  className="text-xs font-semibold hover:text-[#004aad] text-white transition-all cursor-pointer mb-2 md:mb-1"
                 >
                   {box.title}
                 </Link>

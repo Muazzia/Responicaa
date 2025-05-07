@@ -269,7 +269,7 @@ const RotatingCard = ({
     <div className="w-full h-[300px] md:h-[350px] perspective group">
       <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-180">
         {/* Front Side */}
-        <div className="absolute w-full h-full bg-[#AC0404] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden">
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#004aad] to-[#3B82F6]  text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden">
           <span
             className={`transform transition-transform duration-700 ${
               logoInverted ? "rotate-260" : ""
@@ -290,7 +290,7 @@ const RotatingCard = ({
         </div>
 
         {/* Back Side */}
-        <div className="absolute w-full h-full bg-gradient-to-b from-[#f7f3f3] to-[#6d0c0c] text-black flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden transform rotate-x-180">
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#004aad] to-[#3B82F6]  text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden transform rotate-x-180">
           <p className="text-lg sm:text-xl font-semibold">
             {invertedCardLabel}
           </p>
@@ -301,7 +301,7 @@ const RotatingCard = ({
             onClick={() => {
               console.log(invertedCardButtonUrl);
             }}
-            className="mt-2 px-3 py-1 sm:px-4 sm:py-2 bg-[#AC0404] text-white rounded text-sm sm:text-base"
+            className="mt-2 px-3 py-1 sm:px-4 sm:py-2 bg-[#004aad] cursor-pointer text-white rounded text-sm sm:text-base"
           >
             {invertedCardButtonLabel}
           </button>

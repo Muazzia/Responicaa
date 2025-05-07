@@ -60,7 +60,7 @@ export const DigitalMarketing = () => {
 
       <div className="max-w-7xl mx-auto px-4 md:px-0">
         <div className="mt-10">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-red-700">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-[#004aad]">
             Comprehensive Digital Marketing Solutions
           </h2>
 
@@ -76,15 +76,15 @@ export const DigitalMarketing = () => {
               </p>
               <ul className="mt-4 space-y-3">
                 <li className="flex items-center">
-                  <FaCircleCheck className="text-red-600 mr-2" />
+                  <FaCircleCheck className="text-[#004aad] mr-2" />
                   500+ successful client campaigns since 2015
                 </li>
                 <li className="flex items-center">
-                  <FaCircleCheck className="text-red-600 mr-2" />
+                  <FaCircleCheck className="text-[#004aad] mr-2" />
                   Google Premier Partner status
                 </li>
                 <li className="flex items-center">
-                  <FaCircleCheck className="text-red-600 mr-2" />
+                  <FaCircleCheck className="text-[#004aad] mr-2" />
                   Proprietary AI-powered analytics platform
                 </li>
               </ul>
@@ -104,7 +104,7 @@ export const DigitalMarketing = () => {
                     key={index}
                     className="p-4 border rounded-lg hover:shadow-lg transition"
                   >
-                    <div className="text-red-600 mb-2">{service.icon}</div>
+                    <div className="text-[#004aad] mb-2">{service.icon}</div>
                     <h4 className="text-lg sm:text-xl font-semibold">
                       {service.title}
                     </h4>
@@ -118,7 +118,7 @@ export const DigitalMarketing = () => {
           </div>
 
           <div className="mt-16 bg-gray-50 p-6 sm:p-8 rounded-xl">
-            <h3 className="text-3xl sm:text-4xl text-center text-red-700 mb-8">
+            <h3 className="text-3xl sm:text-4xl text-center text-[#004aad] mb-8">
               Our 4-Pillar Marketing Process
             </h3>
             <ServiceProcess
@@ -153,7 +153,7 @@ export const DigitalMarketing = () => {
               />
             </div>
             <div className="order-1 lg:order-2">
-              <h3 className="text-3xl sm:text-4xl text-red-700 mb-4">
+              <h3 className="text-3xl sm:text-4xl text-[#004aad] mb-4">
                 Data-Driven Growth Strategies
               </h3>
               <p className="text-gray-700 mb-6">
@@ -162,7 +162,7 @@ export const DigitalMarketing = () => {
               </p>
               <div className="space-y-4">
                 <div className="flex items-center bg-white p-4 rounded-lg shadow">
-                  <MdAnalytics className="text-3xl text-red-600 mr-4" />
+                  <MdAnalytics className="text-3xl text-[#004aad] mr-4" />
                   <div>
                     <h4 className="text-lg sm:text-xl font-semibold">
                       Real-Time Optimization
@@ -173,7 +173,7 @@ export const DigitalMarketing = () => {
                   </div>
                 </div>
                 <div className="flex items-center bg-white p-4 rounded-lg shadow">
-                  <FaChartLine className="text-3xl text-red-600 mr-4" />
+                  <FaChartLine className="text-3xl text-[#004aad] mr-4" />
                   <div>
                     <h4 className="text-lg sm:text-xl font-semibold">
                       Predictive Analytics
@@ -188,7 +188,7 @@ export const DigitalMarketing = () => {
           </div>
 
           <div className="mt-16">
-            <h3 className="text-3xl sm:text-4xl text-center text-red-700 mb-8">
+            <h3 className="text-3xl sm:text-4xl text-center text-[#004aad] mb-8">
               Industries We Master
             </h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
@@ -212,7 +212,7 @@ export const DigitalMarketing = () => {
             </div>
           </div>
 
-          <div className="mt-16 bg-red-700 text-white p-6 sm:p-8 rounded-xl">
+          <div className="mt-16 bg-[#004aad] text-white p-6 sm:p-8 rounded-xl">
             <h3 className="text-3xl sm:text-4xl text-center mb-8">
               Why Choose Responica?
             </h3>
@@ -236,7 +236,7 @@ export const DigitalMarketing = () => {
         <div className="mt-16 flex flex-col gap-10">
           <TestimonialsSection />
           <div className="bg-gray-50 p-6 sm:p-8 rounded-xl">
-            <h3 className="text-3xl sm:text-4xl text-center text-red-700 mb-8">
+            <h3 className="text-3xl sm:text-4xl text-center text-[#004aad] mb-8">
               Marketing Technologies We Use
             </h3>
             <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 items-center justify-center">

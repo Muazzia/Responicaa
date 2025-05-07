@@ -19,7 +19,7 @@ export const Contact = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 md:px-0">
       <div className="my-5 flex flex-col justify-center items-center">
-        <h1 className="text-4xl md:text-6xl text-center font-semibold text-red-700">
+        <h1 className="text-4xl md:text-6xl text-center font-semibold text-[#004aad]">
           We're here to help
         </h1>
         <div className="flex md:flex-row flex-col justify-center gap-10 my-10 md:items-center items-start">
@@ -38,8 +38,8 @@ export const Contact = () => {
         </div>
         <button
           onClick={scrollToContact}
-          // className={`md:mt-0 bg-red-700 ${hoverClass} text-white px-6 py-1.5 rounded-full font-semibold transition-colors text-sm whitespace-nowrap ${className}`}
-          className="bg-red-800 w-fit text-white rounded-full  cursor-pointer px-6 py-3 !font-semibold  transition-colors text-sm whitespace-nowrap"
+          // className={`md:mt-0 bg-[#004aad] ${hoverClass} text-white px-6 py-1.5 rounded-full font-semibold transition-colors text-sm whitespace-nowrap ${className}`}
+          className="bg-[#004aad] w-fit text-white rounded-full  cursor-pointer px-6 py-3 !font-semibold  transition-colors text-sm whitespace-nowrap"
         >
           Schedule a free consultation
         </button>
@@ -60,19 +60,20 @@ export const Contact = () => {
           hello, we're all ears.
         </p>
         <div className="mt-8 max-w-4xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-red-700">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#004aad]">
             Reach Out
           </h3>
           <p className="text-base mt-2">
             Explain your business needs and goals to us. Feel free to call us
             and say what you want to say at{" "}
-            <span className="font-bold text-red-700">+1-773-669-2604</span> or
+            <span className="font-bold text-[#004aad]">+1-773-669-2604</span> or
             simply write your needs to{" "}
-            <span className="text-red-700 font-bold">info@responica.com</span>.
+            <span className="text-[#004aad] font-bold">info@responica.com</span>
+            .
           </p>
         </div>
         <div className="mt-8 max-w-4xl mx-auto">
-          <h3 className="text-2xl md:text-3xl font-bold text-red-700">
+          <h3 className="text-2xl md:text-3xl font-bold text-[#004aad]">
             Find Us On Socials
           </h3>
           <p className="text-base mt-2">

@@ -36,7 +36,7 @@ export const Navbar = () => {
             {/* Digital Solutions */}
             <NavigationMenuItem>
               <NavigationMenuTrigger
-                className="text-gray-700 hover:text-blue-600 cursor-pointer"
+                className="text-gray-700 hover:text-[#004aad] cursor-pointer"
                 onClick={() => navigate(ROUTES.DIGITALSOLUTIONS)} // Navigate to Digital Solutions
               >
                 Digital Solutions
@@ -74,7 +74,7 @@ export const Navbar = () => {
             {/* BPO */}
             <NavigationMenuItem>
               <NavigationMenuTrigger
-                className="text-gray-700 hover:text-blue-600 cursor-pointer"
+                className="text-gray-700 hover:text-[#004aad] cursor-pointer"
                 onClick={() => navigate(ROUTES.BPO)} // Navigate to BPO
               >
                 BPO
@@ -127,7 +127,7 @@ export const Navbar = () => {
             {/* Contact Link */}
             <NavigationMenuItem>
               <Link to={ROUTES.CONTACT}>
-                <NavigationMenuLink className="text-gray-700 font-medium hover:text-blue-600 px-4 py-2">
+                <NavigationMenuLink className="text-gray-700 font-medium hover:text-[#004aad] px-4 py-2">
                   Contact
                 </NavigationMenuLink>
               </Link>
@@ -139,7 +139,7 @@ export const Navbar = () => {
         <div className="flex items-center gap-2 md:hidden">
           <Button
             variant="default"
-            className="bg-red-700 text-white hover:bg-red-600"
+            className="bg-[#004aad] text-white hover:bg-[#004aad]"
             onClick={() => navigate(ROUTES.CONTACT)} // Navigate to Enquire
           >
             Enquire
@@ -158,7 +158,7 @@ export const Navbar = () => {
                 <SheetClose asChild>
                   <Link
                     to={ROUTES.DIGITALSOLUTIONS}
-                    className="text-lg font-semibold text-gray-800 hover:text-blue-600"
+                    className="text-lg font-semibold text-gray-800 hover:text-[#004aad]"
                   >
                     Digital Solutions
                   </Link>
@@ -167,7 +167,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Link
                       to={ROUTES.DIGIALMARKETING}
-                      className="text-gray-700 hover:text-blue-600"
+                      className="text-gray-700 hover:text-[#004aad]"
                     >
                       Digital Marketing
                     </Link>
@@ -175,7 +175,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Link
                       to={ROUTES.WEBDEVELOPMENT}
-                      className="text-gray-700 hover:text-blue-600"
+                      className="text-gray-700 hover:text-[#004aad]"
                     >
                       Web Development
                     </Link>
@@ -183,7 +183,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Link
                       to={ROUTES.MOBILEDEVELOPMENT}
-                      className="text-gray-700 hover:text-blue-600"
+                      className="text-gray-700 hover:text-[#004aad]"
                     >
                       Mobile Development
                     </Link>
@@ -193,7 +193,7 @@ export const Navbar = () => {
                 <SheetClose asChild>
                   <Link
                     to={ROUTES.BPO}
-                    className="text-lg font-semibold text-gray-800 hover:text-blue-600"
+                    className="text-lg font-semibold text-gray-800 hover:text-[#004aad]"
                   >
                     BPO
                   </Link>
@@ -202,7 +202,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Link
                       to={ROUTES.SALES}
-                      className="text-gray-700 hover:text-blue-600"
+                      className="text-gray-700 hover:text-[#004aad]"
                     >
                       Sales
                     </Link>
@@ -210,7 +210,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Link
                       to={ROUTES.CUSTOMERSUPPORT}
-                      className="text-gray-700 hover:text-blue-600"
+                      className="text-gray-700 hover:text-[#004aad]"
                     >
                       Customer Support
                     </Link>
@@ -218,7 +218,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Link
                       to={ROUTES.QUALITYASSURANCE}
-                      className="text-gray-700 hover:text-blue-600"
+                      className="text-gray-700 hover:text-[#004aad]"
                     >
                       Quality Assurance
                     </Link>
@@ -226,7 +226,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Link
                       to={ROUTES.ENERGYSUPPLIES}
-                      className="text-gray-700 hover:text-blue-600"
+                      className="text-gray-700 hover:text-[#004aad]"
                     >
                       Energy Supplies
                     </Link>
@@ -234,7 +234,7 @@ export const Navbar = () => {
                   <SheetClose asChild>
                     <Link
                       to={ROUTES.HOMEWARRANTY}
-                      className="text-gray-700 hover:text-blue-600"
+                      className="text-gray-700 hover:text-[#004aad]"
                     >
                       Home Warranty
                     </Link>

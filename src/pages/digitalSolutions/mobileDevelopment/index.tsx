@@ -31,7 +31,7 @@ export const MobileDevelopment = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-0">
         <div>
           <div className="mt-10">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-red-700">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-[#004aad]">
               Tailored Mobile App Development Services
             </h2>
             <p className="mt-4 text-gray-700 text-sm sm:text-base">
@@ -49,7 +49,7 @@ export const MobileDevelopment = () => {
               functionality.
             </p>
             <h3 className="mt-10 text-3xl sm:text-4xl lg:text-5xl text-center text-gray-700">
-              Let us <span className="text-red-600">Create</span> An App For
+              Let us <span className="text-[#004aad]">Create</span> An App For
               Your Business
             </h3>
             <p className="mt-4 text-gray-700 text-sm sm:text-base">
@@ -78,7 +78,7 @@ export const MobileDevelopment = () => {
                 invertedCardButtonUrl="/ios-development"
               />
             </div>
-            <h3 className="mt-10 text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-red-600">
+            <h3 className="mt-10 text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-[#004aad]">
               Seamless Experience With Our Mobile App Development Services
             </h3>
             <div className="mt-14 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -127,7 +127,7 @@ export const MobileDevelopment = () => {
               Our goal is to make your ideas come to life through amazing
               websites that engage and involve your audience. Our skilled team
               creates customized
-              <span className="text-red-600 font-semibold">
+              <span className="text-[#004aad] font-semibold">
                 {" "}
                 cloud solutions
               </span>
@@ -218,7 +218,7 @@ const RotatingCard = ({
     <div className="w-full h-[300px] md:h-[350px] perspective group">
       <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-x-180">
         {/* Front Side */}
-        <div className="absolute w-full h-full bg-gradient-to-b from-[#AE0000] to-[#000000E0] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden">
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#004aad] to-[#3B82F6] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden">
           <div className="text-5xl mb-4">
             {logoInverted ? <FaAppStoreIos /> : <FaGooglePlay />}
           </div>
@@ -228,21 +228,21 @@ const RotatingCard = ({
           <p className="mt-2 text-sm sm:text-base">{description}</p>
         </div>
         {/* Back Side */}
-        <div className="absolute w-full h-full bg-gradient-to-b from-[#AE0000] to-[#000000E0] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden transform rotate-x-180">
+        <div className="absolute w-full h-full bg-gradient-to-b from-[#004aad] to-[#3B82F6] text-white flex flex-col items-center justify-center px-5 text-center gap-3 sm:gap-5 backface-hidden transform rotate-x-180">
           <p className="text-lg sm:text-xl font-semibold">
             {invertedCardLabel}
           </p>
           <span className="text-xs sm:text-sm md:text-[14px]">
             {invertedCardDescription}
           </span>
-            <button
+          <button
             onClick={() => {
-                console.log(invertedCardButtonUrl);
-                }}
-                className="mt-2 px-3 py-1 sm:px-4 sm:py-2 border-2 border-white text-white rounded-full text-sm sm:text-base hover:bg-red-600 hover:text-white transition-colors"
-                >
+              console.log(invertedCardButtonUrl);
+            }}
+            className="mt-2 px-3 py-1 sm:px-4 sm:py-2 border-2 border-white text-white rounded-full text-sm sm:text-base hover:bg-[#004aad] hover:text-white transition-colors"
+          >
             {invertedCardButtonLabel}
-            </button>
+          </button>
         </div>
       </div>
     </div>

@@ -23,7 +23,7 @@ const DigitalSolutions = () => {
       <div className="mx-auto max-w-7xl px-4 md:px-0">
         <div className="my-4">
           <div className="flex flex-col items-center justify-center text-center gap-4">
-            <h1 className="text-red-700 font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[39px] max-w-6/10 leading-8 sm:leading-9 md:leading-10">
+            <h1 className="text-[#004aad] font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[39px] max-w-6/10 leading-8 sm:leading-9 md:leading-10">
               Bespoke Digital Solutions For Guaranteed Better Results
             </h1>
             <p className="text-sm sm:text-base max-w-6/10">
@@ -45,7 +45,7 @@ const DigitalSolutions = () => {
         </div>
         <div>
           <div className="flex flex-col items-center justify-center text-center gap-8">
-            <h1 className="text-red-700 font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+            <h1 className="text-[#004aad] font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
               Bespoke Digital Solutions For Guaranteed Better Results
             </h1>
             <p className="text-sm sm:text-base">
@@ -61,13 +61,13 @@ const DigitalSolutions = () => {
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 my-12">
           <div className="lg:w-1/2 text-left">
-            <h2 className="text-red-700 font-semibold text-2xl sm:text-3xl md:text-4xl mb-4 text-center lg:text-left">
+            <h2 className="text-[#004aad] font-semibold text-2xl sm:text-3xl md:text-4xl mb-4 text-center lg:text-left">
               User-Centric UI/UX Design
             </h2>
             <p className="text-sm sm:text-base mb-4">
               We believe in a continuous design approach in which designers
               closely monitor user needs. Choose our{" "}
-              <span className="text-red-700 font-semibold">
+              <span className="text-[#004aad] font-semibold">
                 UI/UX design services
               </span>{" "}
               and get a variety of research and design approaches to involve
@@ -105,7 +105,7 @@ const DigitalSolutions = () => {
               business to stand out in today’s competitive marketplace, your
               online store needs to be more than just a collection of products.
               Worry not, our{" "}
-              <span className="text-red-700 font-semibold">
+              <span className="text-[#004aad] font-semibold">
                 ecommerce website development service
               </span>{" "}
               enables your company to not only survive but also prosper, trust
@@ -129,7 +129,7 @@ const DigitalSolutions = () => {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-8 my-12">
-          <h2 className="text-red-700 font-semibold text-2xl sm:text-3xl md:text-4xl mb-4 text-center">
+          <h2 className="text-[#004aad] font-semibold text-2xl sm:text-3xl md:text-4xl mb-4 text-center">
             Content Management Systems Mastery (CMS)
           </h2>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-10 mb-4">
@@ -137,7 +137,7 @@ const DigitalSolutions = () => {
               <p className="text-sm sm:text-base mb-4">
                 Unlock the true potential of your online platform with our
                 expert{" "}
-                <span className="text-red-700 font-semibold underline">
+                <span className="text-[#004aad] font-semibold underline">
                   Content Management System services
                 </span>{" "}
                 ? Great call. Your web platform can reach its full potential
@@ -204,13 +204,13 @@ const DigitalSolutions = () => {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-8 my-12">
-          <h2 className="text-red-700 font-semibold text-2xl sm:text-3xl md:text-4xl text-center">
+          <h2 className="text-[#004aad] font-semibold text-2xl sm:text-3xl md:text-4xl text-center">
             Seamless Cloud Integration
           </h2>
           <p className="text-sm sm:text-base text-center">
             Businesses increasingly use cloud solutions to improve services and
             simplify operations in today’s fast-paced digital environment. Our{" "}
-            <span className="text-red-700 font-semibold underline">
+            <span className="text-[#004aad] font-semibold underline">
               cloud management services
             </span>{" "}
             aspire to provide you with the tools and knowledge you require to
@@ -272,7 +272,7 @@ const DigitalSolutions = () => {
             exceed the competition in the hectic digital market. Utilizing the
             strength of digital services is a crucial component to stay ahead.
             We are experts in transforming organizations through our specialized{" "}
-            <span className="text-red-700 font-semibold underline">
+            <span className="text-[#004aad] font-semibold underline">
               digital transformation
             </span>{" "}
             techniques.
@@ -302,7 +302,7 @@ const DigitalSolutions = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center gap-4 my-12">
-          <h2 className="text-red-700 font-semibold text-2xl sm:text-3xl md:text-4xl">
+          <h2 className="text-[#004aad] font-semibold text-2xl sm:text-3xl md:text-4xl">
             Achieve More
           </h2>
           <p className="text-sm sm:text-base text-center">
@@ -342,7 +342,7 @@ const DigitalSolutions = () => {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 my-12">
           <div className="lg:w-1/2 text-left">
-            <h2 className="text-red-700 font-semibold text-2xl sm:text-3xl md:text-4xl mb-4">
+            <h2 className="text-[#004aad] font-semibold text-2xl sm:text-3xl md:text-4xl mb-4">
               Digital Solutions Tailored for Your Business
             </h2>
             <p className="text-sm sm:text-base mb-4">
@@ -363,7 +363,7 @@ const DigitalSolutions = () => {
             </p>
             <button
               onClick={scrollToContact}
-              className="bg-red-700 text-white px-6 py-2 rounded-lg mt-4 cursor-pointer"
+              className="bg-[#004aad] text-white px-6 py-2 rounded-lg mt-4 cursor-pointer"
             >
               Get in touch
             </button>

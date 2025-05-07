@@ -202,7 +202,7 @@ const WebDevelopment = () => {
             transforming casual site visitors into committed brand promoters.
           </p>
         </div>
-        <div className="px-4 lg:px-0 py-4 lg:py-0 lg:flex-1/2 bg-[#A71717]">
+        <div className="px-4 lg:px-0 py-4 lg:py-0 lg:flex-1/2 bg-[#004aad]">
           asdlkfjsald
         </div>
       </div>
@@ -236,7 +236,7 @@ const WebDevelopment = () => {
         </div>
 
         {/* Right section with red background */}
-        <div className="w-full lg:w-1/2 bg-[#A71717] py-4 px-4 md:px-10 xl:pr-16">
+        <div className="w-full lg:w-1/2 bg-[#004aad] py-4 px-4 md:px-10 xl:pr-16">
           <div className="lg:max-w-7xl mx-auto text-white">
             <p className="text-[30px] font-semibold mb-2">
               Expertise and Experience

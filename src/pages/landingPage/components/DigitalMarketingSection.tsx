@@ -35,9 +35,9 @@ const DigitalMarketingSection = () => {
         <div className="bg-gradient-to-b from-[#02AC06] to-[#008003] text-center py-8 md:py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-10 rounded-sm gap-4 md:gap-8 lg:gap-10">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="flex gap-3 md:gap-4 items-start">
-              <FaDesktop className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+              <FaDesktop className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
               <div className="text-left">
-                <h1 className="text-xs font-semibold hover:text-red-500 text-white transition-all cursor-pointer mb-2 md:mb-1">
+                <h1 className="text-xs font-semibold hover:text-[#004aad] text-white transition-all cursor-pointer mb-2 md:mb-1">
                   Web Development
                 </h1>
                 <p className="text-xs font-light text-white leading-relaxed md:leading-normal">

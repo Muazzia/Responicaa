@@ -6,7 +6,7 @@ const services = [
   {
     id: 1,
     icon: (
-      <FaDesktop className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+      <FaDesktop className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
     ),
     title: "Web Development",
     description:
@@ -16,7 +16,7 @@ const services = [
   {
     id: 2,
     icon: (
-      <FaMobileAlt className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+      <FaMobileAlt className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
     ),
     title: "Mobile App Development",
     description:
@@ -26,7 +26,7 @@ const services = [
   {
     id: 3,
     icon: (
-      <FaBullhorn className="text-3xl md:text-4xl hover:text-red-500 text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
+      <FaBullhorn className="text-3xl md:text-4xl hover:text-[#004aad] text-white transition-all cursor-pointer flex-shrink-0 min-w-[2rem]" />
     ),
     title: "Digital Marketing",
     description:
@@ -72,7 +72,7 @@ const DigitalSolutionSection = () => {
               <div className="text-left">
                 <Link
                   to={service.url} // Add Link to route
-                  className="text-xs font-semibold hover:text-red-500 text-white transition-all cursor-pointer mb-2 md:mb-1"
+                  className="text-xs font-semibold hover:text-[#004aad] text-white transition-all cursor-pointer mb-2 md:mb-1"
                 >
                   {service.title}
                 </Link>
