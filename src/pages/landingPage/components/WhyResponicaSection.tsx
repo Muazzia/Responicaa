@@ -4,7 +4,7 @@ const WhyResponicaSection = () => {
       <h1 className="text-3xl md:text-5xl font-bold">
         Why Responica Solutions?
       </h1>
-      <p className="text-base md:text-lg text-center max-w-6xl mx-auto">
+      <p className="text-base md:text-lg text-center px-4 md:px-10 max-w-7xl mx-auto">
         Eager to perform better than your competitors? Want sales to boost like
         never before? Well, for that purpose and many more, Responica is the
         only Digital Marketing Agency that you need. We provide growth-oriented

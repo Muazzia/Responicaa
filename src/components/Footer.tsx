@@ -125,7 +125,7 @@ const FOOTER_LINKS = [
 const CONTACT_INFO = {
   addresses: [
     {
-      text: "Montana, USA",
+      text: "1001 S MAIN ST STE 500 KALISPELL, MT 59901",
       icon: MdLocationOn,
     },
   ],

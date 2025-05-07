@@ -4,7 +4,6 @@ import DigitalSolutionSection from "./components/DigitalSolutionSection";
 import BPOServicesSection from "./components/BPOServicesSection";
 import IndustriesSection from "./components/IndustriesSection";
 import WhyResponicaSection from "./components/WhyResponicaSection";
-import CEOSection from "./components/CEOSection";
 import FAQSection from "./components/FAQSection";
 import TestimonialsSection from "../../components/TestimonialsSection";
 import { RecognizedByBest } from "./components/RecognizedByBest";
@@ -36,7 +35,7 @@ const LandingPage = () => {
       <BPOServicesSection />
       <IndustriesSection />
       <WhyResponicaSection />
-      <CEOSection />
+      {/* <CEOSection /> */}
       <FAQSection />
       <div className="mt-10 flex flex-col gap-10">
         <TestimonialsSection />

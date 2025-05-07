@@ -119,7 +119,7 @@ const ContactUs = ({ id, ref }: Props) => {
         </div>
       )}
       <p className="text-sm md:text-base text-gray-500 mb-2 md:mb-4">
-        <EnvironmentOutlined /> Montana, USA
+        <EnvironmentOutlined /> 1001 S MAIN ST STE 500 KALISPELL, MT 59901
       </p>
       <p className="text-lg md:text-xl font-semibold mb-4 md:mb-6">
         <PhoneOutlined /> Call us at:{" "}
