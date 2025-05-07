@@ -5,7 +5,6 @@ import {
 } from "@ant-design/icons"; // Import a new spinner icon
 import { Alert } from "antd"; // Import Ant Design Alert
 import { useForm } from "react-hook-form";
-import axios from "axios";
 import { Ref, useState } from "react";
 
 interface Props {
@@ -13,39 +12,89 @@ interface Props {
   ref?: Ref<HTMLDivElement>;
 }
 
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
 const ContactUs = ({ id, ref }: Props) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
-  } = useForm();
-  const [loading, setLoading] = useState(false); // State for button loader
+  } = useForm<FormData>();
+  const [loading, setLoading] = useState(false);
   const [alert, setAlert] = useState<{
     type: "success" | "error";
     message: string;
   } | null>(null); // State for alert
 
-  const onSubmit = async (data: unknown) => {
-    setLoading(true); // Start loader
-    setAlert(null); // Reset alert
+  // const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  //   event.preventDefault();
+  //   setLoading(true);
+  //   setAlert(null);
+
+  //   const formData = new FormData(event.currentTarget);
+  //   formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+  //   try {
+  //     const response = await fetch("https://api.web3forms.com/submit", {
+  //       method: "POST",
+  //       body: formData,
+  //     });
+
+  //     const data = await response.json();
+
+  //     if (data.success) {
+  //       setAlert({ type: "success", message: "Form Submitted Successfully" });
+  //       event.currentTarget.reset();
+  //     } else {
+  //       console.error("Error:", data);
+  //       setAlert({ type: "error", message: data.message });
+  //     }
+  //   } catch (error) {
+  //     console.error("Error submitting form:", error);
+  //     setAlert({
+  //       type: "error",
+  //       message: "Failed to submit the form. Please try again.",
+  //     }); // Show error alert
+  //   } finally {
+  //     setLoading(false);
+  //   }
+  // };
+
+  const onSubmit = async (_: FormData, event?: React.BaseSyntheticEvent) => {
+    if (!event) return;
+    setLoading(true);
+    setAlert(null);
+
+    const formData = new FormData(event.target); // use event.target to get the form
+    formData.append("access_key", "0951b36a-d08b-4391-93cf-878cbdd75a3c");
+
     try {
-      const response = await axios.post(
-        "https://formspree.io/f/xgvkkvpg",
-        data
-      );
-      if (response.status === 200) {
-        setAlert({ type: "success", message: "Message sent successfully!" }); // Show success alert
-        reset(); // Reset the form after successful submission
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setAlert({ type: "success", message: "Form Submitted Successfully" });
+        event.target.reset();
+      } else {
+        console.error("Error:", result);
+        setAlert({ type: "error", message: result.message });
       }
     } catch (error) {
-      console.error("Error sending message:", error);
+      console.error("Error submitting form:", error);
       setAlert({
         type: "error",
-        message: "Failed to send the message. Please try again.",
-      }); // Show error alert
+        message: "Failed to submit the form. Please try again.",
+      });
     } finally {
-      setLoading(false); // Stop loader
+      setLoading(false);
     }
   };
 
