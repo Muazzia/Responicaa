@@ -9,27 +9,33 @@ const QualityAssurance = () => {
   const whyChooseOurServiceData = [
     {
       id: 1,
-      title: "Comprehensive Testing",
+      title: "Better Customer Experiences",
       description:
-        "Our QA team employs rigorous testing methodologies to ensure your products meet the highest standards. We identify and resolve issues before they reach your customers, saving you time and resources.",
+        "Our QA program ensures every customer interaction is seamless and meets your brand standards, leading to improved customer satisfaction.",
     },
     {
       id: 2,
-      title: "Tailored QA Solutions",
+      title: "Higher Sales Conversion Rates",
       description:
-        "We understand that each product has unique requirements. Our quality assurance specialists develop customized testing strategies that align with your specific business needs and objectives.",
+        "By maintaining high-quality interactions, our QA services help boost sales conversion rates and drive business growth.",
     },
     {
       id: 3,
-      title: "Expert QA Team",
+      title: "Fewer Compliance Risks",
       description:
-        "Our certified quality assurance professionals stay current with the latest testing technologies and methodologies. They bring deep expertise to ensure your products perform flawlessly in real-world scenarios.",
+        "We ensure adherence to legal and regulatory standards, reducing compliance risks and protecting your business.",
     },
     {
       id: 4,
-      title: "Multi-Platform Testing",
+      title: "Ongoing Agent Development",
       description:
-        "We provide comprehensive testing across all platforms and devices, ensuring consistent performance whether your customers access your product on web, mobile, or desktop environments.",
+        "Our QA process identifies areas for agent improvement, fostering continuous development and enhanced performance.",
+    },
+    {
+      id: 5,
+      title: "Detailed Weekly/Monthly QA Reports",
+      description:
+        "We provide comprehensive QA reports that offer actionable insights for performance tracking and strategic decision-making.",
     },
   ];
 
@@ -45,52 +51,172 @@ const QualityAssurance = () => {
     window.scrollTo({ top, behavior: "smooth" });
   };
   return (
-    <div className="">
-      <HeroSectionWithCTA
-        primaryButtonLabel="Solutions"
-        heading="Quality Assurance Services"
-        description="Welcome to our dedicated Quality Assurance department, where excellence is our standard. We are committed to delivering meticulous testing services that ensure your products meet the highest quality benchmarks. Our comprehensive QA processes help prevent defects, enhance user experience, and protect your brand reputation."
-        secondaryButtonLabel="Schedule A Free Consultation"
-        onSecondaryButtonClick={scrollToContact}
-      />
+    <>
+      <div className="">
+        <HeroSectionWithCTA
+          primaryButtonLabel="Solutions"
+          heading="Quality Assurance Services"
+          description="At Responica, Quality Assurance is at the core of our call center operations. We don’t just focus on making calls, we focus on making them right. Our QA team ensures every customer interaction meets your brand standards, legal compliance, and performance goals."
+          secondaryButtonLabel="Schedule A Free Consultation"
+          onSecondaryButtonClick={scrollToContact}
+        />
 
-      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
-        <div className="flex items-center justify-center">
+        <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
+          <div className="flex items-center justify-center">
+            <p className="text-primary-red font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
+              How Does Quality Assurance Service Work?
+            </p>
+          </div>
+          <div className="space-y-4 mt-4 text-sm sm:text-base">
+            <p>
+              Quality Assurance is the foundation of product excellence in
+              today's competitive digital landscape. Our systematic approach
+              ensures that every aspect of your product meets defined quality
+              criteria before reaching your customers.
+            </p>
+            <p>
+              QA begins with understanding your product requirements and
+              business objectives. Our specialists develop detailed test plans
+              covering all functional and non-functional aspects. This includes
+              functionality testing, performance evaluation, security audits,
+              and user experience assessment.
+            </p>
+            <p>
+              We employ both manual and automated testing methodologies to
+              maximize coverage and efficiency. Our testers meticulously
+              document all findings, providing clear reports with prioritized
+              issues and actionable recommendations.
+            </p>
+            <p>
+              The true value of our QA services lies in our attention to detail.
+              Our experienced testers approach each product with fresh eyes,
+              simulating real user behavior to uncover issues that might
+              otherwise go unnoticed. We don't just identify problems - we help
+              you understand their impact and work with your team to implement
+              effective solutions.
+            </p>
+          </div>
+        </div>
+        <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12"></div>
+        <div className="flex items-center justify-center  ">
           <p className="text-primary-red font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
-            How Does Quality Assurance Service Work?
+            Why QA Matters
           </p>
         </div>
-        <div className="space-y-4 mt-4 text-sm sm:text-base">
-          <p>
-            Quality Assurance is the foundation of product excellence in today's
-            competitive digital landscape. Our systematic approach ensures that
-            every aspect of your product meets defined quality criteria before
-            reaching your customers.
-          </p>
-          <p>
-            QA begins with understanding your product requirements and business
-            objectives. Our specialists develop detailed test plans covering all
-            functional and non-functional aspects. This includes functionality
-            testing, performance evaluation, security audits, and user
-            experience assessment.
-          </p>
-          <p>
-            We employ both manual and automated testing methodologies to
-            maximize coverage and efficiency. Our testers meticulously document
-            all findings, providing clear reports with prioritized issues and
-            actionable recommendations.
-          </p>
-          <p>
-            The true value of our QA services lies in our attention to detail.
-            Our experienced testers approach each product with fresh eyes,
-            simulating real user behavior to uncover issues that might otherwise
-            go unnoticed. We don't just identify problems - we help you
-            understand their impact and work with your team to implement
-            effective solutions.
-          </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8 px-4 md:px-10 xl:px-0 max-w-7xl mx-auto">
+          {[
+            {
+              id: 1,
+              title: "Ensure Accuracy",
+              description:
+                "Our QA team ensures the accuracy of information shared by agents, building trust with your customers.",
+            },
+            {
+              id: 2,
+              title: "Compliance Standards",
+              description:
+                "We confirm compliance with legal and regulatory standards like TCPA, PUC, and FTC to protect your business.",
+            },
+            {
+              id: 3,
+              title: "Agent Improvement",
+              description:
+                "Identify opportunities for agent improvement and coaching to enhance performance and customer satisfaction.",
+            },
+            {
+              id: 4,
+              title: "Professional Interactions",
+              description:
+                "Guarantee that all customer interactions are professional, ethical, and effective to uphold your brand reputation.",
+            },
+          ].map((item) => (
+            <div
+              key={item.id}
+              className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center"
+            >
+              <p className="text-primary-red font-semibold text-xl sm:text-2xl">
+                {item.title}
+              </p>
+              <p className="text-black mt-4 text-sm sm:text-base">
+                {item.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
-
+      <div>
+        <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
+          <div className="text-center">
+            <h2 className="text-primary-red font-bold text-3xl sm:text-4xl lg:text-[48px]">
+              Our QA Process
+            </h2>
+            <p className="mt-4 text-gray-600 text-sm sm:text-base max-w-3xl mx-auto">
+              We use a structured monitoring framework tailored to your campaign. Each call is evaluated against a customized QA scorecard, which may include:
+            </p>
+          </div>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+            {[
+              {
+          title: "Greeting & Identification",
+          items: [
+            "Was the agent polite and professional?",
+            "Did they introduce themselves and the company clearly?",
+          ],
+              },
+              {
+          title: "Compliance Checks",
+          items: [
+            "Was the script followed where required?",
+            "Were disclaimers, opt-ins, or third-party verifications handled properly?",
+          ],
+              },
+              {
+          title: "Product Knowledge",
+          items: [
+            "Did the agent provide accurate and relevant information?",
+            "Were product benefits clearly communicated?",
+          ],
+              },
+              {
+          title: "Sales Technique",
+          items: [
+            "Did the agent listen actively and address customer needs?",
+            "Was the closing handled confidently and ethically?",
+          ],
+              },
+              {
+          title: "Call Handling Skills",
+          items: [
+            "Was the tone positive and professional throughout?",
+            "Was the call wrapped up appropriately?",
+          ],
+              },
+            ].map((section, index) => (
+              <div
+          key={index}
+          className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow"
+              >
+          <h3 className="text-primary-red font-semibold text-xl sm:text-2xl">
+            {section.title}
+          </h3>
+          <ul className="mt-4 space-y-2 text-gray-700 text-sm sm:text-base">
+            {section.items.map((item, idx) => (
+              <li key={idx} className="flex items-start">
+                <span className="mr-2 text-primary-red">•</span>
+                {item}
+              </li>
+            ))}
+          </ul>
+              </div>
+            ))}
+          </div>
+          <div className="mt-8 text-center">
+            <p className="text-gray-600 text-sm sm:text-base max-w-3xl mx-auto">
+              Each call is given a QA score, and reports are shared with team leads for feedback, coaching, and performance tracking.
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
         <div className="flex items-center justify-center">
           <p className="text-primary-red font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
@@ -204,7 +330,7 @@ const QualityAssurance = () => {
           <div className="mt-8 md:mt-12">
             <ImageWithServiceDetails
               imageUrl="/images/bpo/qa.jpg"
-              label="Why Choose Our Quality Assurance?"
+              label="Benefits of Our QA Program"
               description="Our comprehensive QA services help you deliver products that meet the highest standards of quality and reliability. Whether you need functional testing, performance evaluation, security auditing, or user experience assessment, our QA specialists have the expertise to ensure your product excels."
               data={whyChooseOurServiceData}
               imageClass="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[680px]"
@@ -224,7 +350,7 @@ const QualityAssurance = () => {
       <div>
         <ContactUs ref={contactRef} />
       </div>
-    </div>
+    </>
   );
 };
 

@@ -100,27 +100,33 @@ const HomeWarranty = () => {
   const whyChooseOurServiceData = [
     {
       id: 1,
-      title: "Comprehensive Protection",
+      title: "Experience with Home Warranty & Appliance Coverage",
       description:
-        "Our home warranty plans offer the most complete coverage in the industry, protecting all your major home systems and appliances under one affordable plan.",
+        "We bring years of expertise in handling home warranty and appliance coverage, ensuring reliable and professional service for our clients.",
     },
     {
       id: 2,
-      title: "Nationwide Network",
+      title: "Conversion-Focused Sales Approach",
       description:
-        "We maintain a network of over 50,000 licensed and certified technicians across the country, ensuring fast and reliable service wherever you live.",
+        "Our sales strategies are designed to maximize conversions, helping you grow your customer base effectively.",
     },
     {
       id: 3,
-      title: "No Hidden Fees",
+      title: "Inbound & Outbound Call Handling",
       description:
-        "Unlike other providers, we offer transparent pricing with no surprise charges. You'll always know exactly what's covered and what your service fee will be.",
+        "We specialize in managing both inbound and outbound calls, providing seamless communication and support for your customers.",
     },
     {
       id: 4,
-      title: "30-Day Risk-Free Trial",
+      title: "Real-Time Reporting & CRM Integration",
       description:
-        "Try our service risk-free for 30 days. If you're not completely satisfied, we'll refund your premium with no questions asked.",
+        "Our solutions include real-time reporting and CRM integration, giving you actionable insights and streamlined operations.",
+    },
+    {
+      id: 5,
+      title: "Fully Compliant Operations",
+      description:
+        "We ensure full compliance with industry standards and regulations, giving you peace of mind and reliable service.",
     },
   ];
 
@@ -140,30 +146,82 @@ const HomeWarranty = () => {
       <HeroSectionWithCTA
         primaryButtonLabel="Plans"
         heading="Home Warranty Protection"
-        description="Protect your home and budget with our comprehensive home warranty plans. We cover repairs and replacements for your major home systems and appliances, giving you peace of mind and financial protection against unexpected breakdowns."
+        description="At Responica, we offer professional telecommunications solutions for home warranty providers, specializing in both inbound and outbound sales for warranties that cover electronic appliances, home systems, and more. Our goal is to help you grow your customer base while maintaining top-tier service and compliance."
         secondaryButtonLabel="Get a Free Quote"
         onSecondaryButtonClick={scrollToContact}
       />
 
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto py-10 md:py-20">
+        <div className="w-full text-center">
+          <p className="text-3xl sm:text-4xl lg:text-[48px] font-semibold">
+        What is a Home Warranty?
+          </p>
+        </div>
+        <div className="mt-5 md:mt-10">
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-black/60 text-center">
+        A home warranty is a service contract that covers the repair or
+        replacement of major home systems and appliances due to normal wear
+        and tear. This includes HVAC systems, kitchen appliances,
+        electrical systems, plumbing, and more. Unlike homeowners insurance,
+        which covers damage from external events, home warranties provide
+        peace of mind by protecting against unexpected appliance breakdowns.
+          </p>
+        </div>
+      </div>
+
       <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto py-5 md:py-10 space-y-5 md:space-y-0 md:flex md:gap-5 lg:gap-10">
         <RotatingCard
-          label="Basic Home Warranty"
-          description="Essential coverage for your major home systems including HVAC, electrical, plumbing, and water heater."
-          invertedCardLabel="What's Covered"
-          invertedCardDescription="Our basic plan protects the core systems that keep your home functioning: heating/cooling systems, electrical panels, plumbing stoppages, water heaters, and ductwork."
-          invertedCardButtonLabel="View Details"
-          invertedCardButtonUrl="/basic-plan"
+          label="Comprehensive Protection"
+          description="Our home warranty plans offer the most complete coverage in the industry, protecting all your major home systems and appliances under one affordable plan."
+          invertedCardLabel="Why Choose Us"
+          invertedCardDescription="We provide unmatched protection for your home systems and appliances, ensuring peace of mind and reliable service when you need it most."
+          invertedCardButtonLabel="Learn More"
+          invertedCardButtonUrl="/comprehensive-protection"
         />
         <RotatingCard
-          label="Complete Home Protection"
-          description="Full coverage for both home systems and appliances - the most comprehensive protection we offer."
-          invertedCardLabel="What's Covered"
-          invertedCardDescription="Our complete plan includes all basic coverage plus major appliances: refrigerator, oven, dishwasher, washer/dryer, garbage disposal, and built-in microwave."
-          invertedCardButtonLabel="View Details"
-          invertedCardButtonUrl="/complete-plan"
+          label="Nationwide Network"
+          description="We maintain a network of over 50,000 licensed and certified technicians across the country, ensuring fast and reliable service wherever you live."
+          invertedCardLabel="Our Technicians"
+          invertedCardDescription="Our certified technicians are available nationwide to provide prompt and professional service for all your home warranty needs."
+          invertedCardButtonLabel="Find Out More"
+          invertedCardButtonUrl="/nationwide-network"
         />
       </div>
 
+      <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
+        <div className="flex items-center justify-center">
+          <p className="text-primary-red font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
+        Our Services
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+          <div className="p-6 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <p className="text-xl font-bold text-primary-red mb-4">Outbound Sales Campaigns</p>
+        <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
+          <li>Explaining coverage clearly and effectively</li>
+          <li>Highlighting the benefits of protection</li>
+          <li>Closing deals while following all compliance standards</li>
+        </ul>
+          </div>
+          <div className="p-6 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <p className="text-xl font-bold text-primary-red mb-4">Inbound Customer Support & Sales</p>
+        <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
+          <li>Assisting with plan selection</li>
+          <li>Processing warranty claims</li>
+          <li>Managing billing and renewals</li>
+          <li>Providing quick, courteous service</li>
+        </ul>
+          </div>
+          <div className="p-6 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <p className="text-xl font-bold text-primary-red mb-4">Claims Assistance & Renewals</p>
+        <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
+          <li>Handling service requests</li>
+          <li>Processing warranty renewals</li>
+          <li>Ensuring a seamless experience for both the customer and the provider</li>
+        </ul>
+          </div>
+        </div>
+      </div>
       <ImageWithServiceDetails
         imageUrl="/images/bpo/homeWarranty.jpg"
         label="Why Choose Our Home Warranty"
