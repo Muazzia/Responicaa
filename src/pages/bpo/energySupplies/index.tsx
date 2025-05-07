@@ -9,27 +9,33 @@ const EnergySupplies = () => {
   const whyChooseOurServiceData = [
     {
       id: 1,
-      title: "Reliable Energy Solutions",
+      title: "Specialized in U.S. Energy Deregulation Market",
       description:
-        "We provide dependable energy supply services with minimal downtime, ensuring your operations run smoothly without interruption. Our robust infrastructure guarantees consistent power delivery when you need it most.",
+        "We have extensive expertise in navigating the U.S. energy deregulation market, ensuring businesses benefit from competitive energy solutions tailored to their needs.",
     },
     {
       id: 2,
-      title: "Customized Energy Plans",
+      title: "Expert Call Handling (Outbound + Inbound)",
       description:
-        "Every business has unique energy requirements. We develop tailored energy solutions that match your specific consumption patterns and sustainability goals, optimizing both cost and efficiency.",
+        "Our team excels in managing both outbound and inbound calls, providing professional and efficient communication to support your energy service requirements.",
     },
     {
       id: 3,
-      title: "Expert Energy Consultants",
+      title: "Sales-Driven, Customer-Focused",
       description:
-        "Our team of energy specialists stays current with the latest industry trends and technologies. They bring deep expertise to help you navigate complex energy markets and regulatory requirements.",
+        "We prioritize customer satisfaction while driving sales, ensuring a seamless experience that aligns with your business objectives.",
     },
     {
       id: 4,
-      title: "Multi-Source Energy Supply",
+      title: "Full Legal Compliance",
       description:
-        "We offer comprehensive energy solutions across all sources including renewable options, traditional power, and hybrid systems. Access the perfect energy mix for your operational needs and environmental commitments.",
+        "Our operations strictly adhere to all legal and regulatory requirements, giving you peace of mind and ensuring compliance at every step.",
+    },
+    {
+      id: 5,
+      title: "Scalable Solutions for Energy Providers",
+      description:
+        "We offer scalable energy solutions designed to grow with your business, providing flexibility and adaptability to meet evolving demands.",
     },
   ];
 
@@ -176,6 +182,40 @@ const EnergySupplies = () => {
                 for evolving regulatory requirements. We help you communicate
                 your energy achievements to stakeholders and customers.
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
+          <div className="flex items-center justify-center">
+            <p className="text-primary-red font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
+              Our Services
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <div className="p-6 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <p className="text-xl font-bold text-primary-red mb-4">Outbound Sales Campaigns</p>
+              <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
+                <li>Educate customers on their rights under deregulation laws</li>
+                <li>Present your supplier offers clearly and professionally</li>
+                <li>Handle objections and close deals compliantly</li>
+              </ul>
+            </div>
+            <div className="p-6 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <p className="text-xl font-bold text-primary-red mb-4">Inbound Customer Support & Sales</p>
+              <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
+                <li>Plan comparison and enrollment</li>
+                <li>Contract renewals and questions</li>
+                <li>Billing inquiries and issue resolution</li>
+              </ul>
+            </div>
+            <div className="p-6 border rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <p className="text-xl font-bold text-primary-red mb-4">Compliance-First Approach</p>
+              <ul className="list-disc pl-5 space-y-2 text-sm sm:text-base">
+                <li>Operate strictly in line with state and federal regulations</li>
+                <li>Adhere to TCPA, FERC, and PUC rules</li>
+                <li>QA team monitors calls for transparency and compliance</li>
+              </ul>
             </div>
           </div>
         </div>
