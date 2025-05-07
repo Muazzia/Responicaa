@@ -55,7 +55,7 @@ const EnergySupplies = () => {
       <HeroSectionWithCTA
         primaryButtonLabel="Solutions"
         heading="Energy Supply Services"
-              description="Welcome to our comprehensive energy supply division, where reliability meets innovation. We are committed to delivering sustainable energy solutions that power businesses efficiently while reducing environmental impact. Our end-to-end energy services ensure you have access to stable, cost-effective power solutions tailored to your operational requirements."
+        description="At Responica, we specialize in sales and customer support services for energy suppliers operating in deregulated U.S. markets. With a team trained in industry-specific regulations, we ensure seamless, compliant, and results-driven inbound and outbound telecommunications solutions that help energy suppliers connect with more customers."
         secondaryButtonLabel="Request Energy Consultation"
         onSecondaryButtonClick={scrollToContact}
       />
@@ -63,35 +63,21 @@ const EnergySupplies = () => {
       <div className="px-4 md:px-10 xl:px-0 max-w-7xl mx-auto mt-8 md:mt-12">
         <div className="flex items-center justify-center">
           <p className="text-primary-red font-semibold text-3xl sm:text-4xl lg:text-[48px] text-center">
-            How Does Our Energy Supply Service Work?
+            Understanding Energy Deregulation
           </p>
         </div>
         <div className="space-y-4 mt-4 text-sm sm:text-base">
           <p>
-            In today's energy-intensive business environment, having a reliable
-            power supply is crucial for operational continuity. Our energy
-            supply solutions bridge the gap between your power needs and
-            sustainable, cost-effective delivery.
+            Since the passage of energy deregulation laws in many U.S. states,
+            consumers no longer have to rely solely on their local utility for
+            electricity or natural gas supply. While utilities still deliver
+            energy and maintain infrastructure, customers now have the freedom
+            to choose their energy supplier based on price, contract terms,
+            green energy options, and more.
           </p>
           <p>
-            We begin by conducting a thorough energy audit of your facilities to
-            understand your consumption patterns and requirements. Our
-            specialists then design customized energy solutions that may include
-            grid power, renewable energy sources, or hybrid systems depending on
-            your location and operational needs.
-          </p>
-          <p>
-            Our energy procurement team leverages extensive market knowledge to
-            secure the most favorable supply contracts. We manage all aspects of
-            energy delivery including metering, billing, and ongoing consumption
-            monitoring to ensure optimal performance.
-          </p>
-          <p>
-            The true value of our energy services lies in our holistic approach.
-            We don't just supply power - we help you understand and optimize
-            your energy usage, implement efficiency measures, and transition to
-            cleaner energy sources when appropriate. Our energy consultants work
-            as partners in your sustainability journey.
+            This competitive landscape creates new opportunities for energy
+            suppliers—and that’s where we come in.
           </p>
         </div>
       </div>
@@ -222,7 +208,7 @@ const EnergySupplies = () => {
 
         <div className="mt-8 md:mt-12">
           <p className="text-center text-3xl sm:text-4xl lg:text-[48px] text-black px-4 md:px-10">
-            Why Choose Responica as Your Energy Provider
+            Why Partner With Us?
           </p>
 
           <div className="mt-4 text-sm sm:text-base">
