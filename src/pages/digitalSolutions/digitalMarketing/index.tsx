@@ -77,7 +77,7 @@ export const DigitalMarketing = () => {
               <ul className="mt-4 space-y-3">
                 <li className="flex items-center">
                   <FaCircleCheck className="text-[#004aad] mr-2" />
-                  500+ successful client campaigns since 2015
+                  50 successful client campaigns
                 </li>
                 <li className="flex items-center">
                   <FaCircleCheck className="text-[#004aad] mr-2" />
