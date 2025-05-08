@@ -70,7 +70,7 @@ const ContactUs = ({ id, ref }: Props) => {
     setAlert(null);
 
     const formData = new FormData(event.target); // use event.target to get the form
-    formData.append("access_key", "0951b36a-d08b-4391-93cf-878cbdd75a3c");
+    formData.append("access_key", "f36970c1-1969-4df7-bcf8-994c71754aca");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
